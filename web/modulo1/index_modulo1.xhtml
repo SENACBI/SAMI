@@ -7,9 +7,33 @@ and open the template in the editor.
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
-  <ui:composition template="/template.xhtml">
+    <ui:composition template="/template.xhtml">
         <ui:define name="title">Sami</ui:define>
         <ui:define name="menu"><ui:include src="/modulo1/menu_modulo1.xhtml"></ui:include></ui:define>
-         <ui:define name="body"></ui:define>
+        <ui:define name="body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default">Tutoriales</button>
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="caret"></span>
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="https://youtu.be/6HZswNFd84Y">Bienvenid@ a S.A.M.I.</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel-body text-center">
+                                <img src="../resources/images/inicio_modulo1.png" alt="..." class="img-responsive img-rounded center-block"></img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ui:define>
     </ui:composition>
 </html>

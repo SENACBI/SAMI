@@ -3,509 +3,195 @@
     <Scope Scope="Faces Configuration Only"/>
     <Scope Scope="Project">
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/Materiales/EditObservacion.xhtml" x="400" y="1350" zoom="true"/>
-        <Node id="pendientes/crp/Edit.xhtml" x="3400" y="1200" zoom="true"/>
-        <Node id="pendientes/trayectos/View.xhtml" x="900" y="1650" zoom="true"/>
         <Node id="modulo3/GestionContractual/EditarContrato.xhtml" x="3150" y="2550" zoom="true"/>
-        <Node id="pendientes/programaDeFormacion/List.xhtml" x="1400" y="2100" zoom="true"/>
         <Node id="Configuracion/Programa de Formacion/AgregarProgramasFormacion.xhtml" x="4400" y="1800" zoom="true"/>
-        <Node id="pendientes/proyectoFormacion/View.xhtml" x="2650" y="2400" zoom="true"/>
-        <Node id="pendientes/areas/Edit.xhtml" x="400" y="2700" zoom="true"/>
         <Node id="modulo6/menu_Usuarios.xhtml" x="4650" y="1050" zoom="true"/>
-        <Node id="pendientes/contratosPolizasUsuarios/View.xhtml" x="1150" y="3450" zoom="true"/>
-        <Node id="pendientes/listasDeChequeos/View.xhtml" x="1150" y="2250" zoom="true"/>
         <Node id="modulo6/index_modulo6.xhtml" x="4650" y="1800" zoom="true"/>
         <Node id="modulo1/menu_modulo1.xhtml" x="1400" y="3300" zoom="true"/>
-        <Node id="pendientes/tiposDeSolicitudes/Create.xhtml" x="1400" y="2700" zoom="true"/>
         <Node id="modulo5/index_modulo5.xhtml" x="5650" y="600" zoom="true"/>
         <Node id="Configuracion/Comunas/ModificarComunas.xhtml" x="5400" y="450" zoom="true"/>
-        <Node id="pendientes/ordenesDeViajeConceptosDeGastos/List.xhtml" x="3150" y="300" zoom="true"/>
-        <Node id="pendientes/aprobaciones/Edit.xhtml" x="1900" y="3150" zoom="true"/>
-        <Node id="pendientes/tipoDeCuenta/List.xhtml" x="4150" y="1200" zoom="true"/>
-        <Node id="pendientes/relacionesGastosDeTransporte/Create.xhtml" x="1400" y="900" zoom="true"/>
         <Node id="modulo5/Gestion Documental/Documentos/consultarGesdoc.xhtml" x="4900" y="1350" zoom="true"/>
-        <Node id="pendientes/categorias/Create.xhtml" x="1900" y="750" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Coordinacion/SolicitudesMateriales/Edit.xhtml" x="1900" y="450" zoom="true"/>
-        <Node id="pendientes/pagosContratos/View.xhtml" x="650" y="3450" zoom="true"/>
-        <Node id="pendientes/informes/Create.xhtml" x="6650" y="900" zoom="true"/>
-        <Node id="pendientes/servicios/List.xhtml" x="650" y="2100" zoom="true"/>
-        <Node id="pendientes/relacionesGastosDeTransporte/Edit.xhtml" x="1150" y="3900" zoom="true"/>
         <Node id="modulo3/index_modulo3.xhtml" x="650" y="1950" zoom="true"/>
-        <Node id="modulo2/mantenimiento/historial/View.xhtml" x="2900" y="750" zoom="true"/>
-        <Node id="pendientes/rubros/View.xhtml" x="150" y="4200" zoom="true"/>
         <Node id="Configuracion/Estrato Social/ListarEstratoSocial.xhtml" x="150" y="1650" zoom="true"/>
         <Node id="modulo4/Gestion_Talento_Humano/Ordenes de viaje/verOrdenDeViaje.xhtml" x="5650" y="1200" zoom="true"/>
-        <Node id="pendientes/pais/Create.xhtml" x="7400" y="300" zoom="true"/>
-        <Node id="pendientes/polizas/Edit.xhtml" x="4400" y="1500" zoom="true"/>
-        <Node id="pendientes/cdp/View.xhtml" x="2650" y="450" zoom="true"/>
         <Node id="Configuracion/Estrato Social/ModificarEstratoSocial.xhtml" x="1150" y="1800" zoom="true"/>
-        <Node id="pendientes/barrios/View.xhtml" x="400" y="4350" zoom="true"/>
         <Node id="Configuracion/Ciudad/AgregarCiudad.xhtml" x="5650" y="750" zoom="true"/>
         <Node id="modulo4/Gestion_Talento_Humano/Comisiones/AgregarDestinosDlg.xhtml" x="4650" y="1950" zoom="true"/>
-        <Node id="pendientes/fichaCaracterizacion/Create.xhtml" x="3400" y="1050" zoom="true"/>
-        <Node id="pendientes/notaEntrada/List.xhtml" x="4150" y="450" zoom="true"/>
         <Node id="Programa Formacion/Programa de Formacion/ListarProgramasFormacion.xhtml" x="3650" y="1650" zoom="true"/>
-        <Node id="pendientes/formacionAcademica/List.xhtml" x="1650" y="3750" zoom="true"/>
-        <Node id="pendientes/estados/List.xhtml" x="1900" y="1950" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/Facturas/Facturas.xhtml" x="3900" y="2400" zoom="true"/>
-        <Node id="pendientes/fondoDePensiones/View.xhtml" x="1400" y="3600" zoom="true"/>
         <Node id="Configuracion/Bancos/ListarBancos.xhtml" x="3400" y="1350" zoom="true"/>
-        <Node id="pendientes/tipoDocumentos/List.xhtml" x="400" y="1500" zoom="true"/>
-        <Node id="modulo2/mantenimiento/solicitudDeMantenimiento/View.xhtml" x="5400" y="900" zoom="true"/>
         <Node id="resources/html5gallery/skins/showcase/index.html" x="1150" y="150" zoom="true"/>
+        <Node id="modulo2/mantenimiento/solicitudDeMantenimiento/View.xhtml" x="5400" y="900" zoom="true"/>
         <Node id="modulo4/Gestion_Talento_Humano/Ordenes de viaje/ordenesDeViaje.xhtml" x="2150" y="450" zoom="true"/>
-        <Node id="pendientes/comisiones/Create.xhtml" x="1400" y="1500" zoom="true"/>
-        <Node id="pendientes/legalizaciones/View.xhtml" x="7150" y="150" zoom="true"/>
-        <Node id="pendientes/novedadesListasDeChequeos/Edit.xhtml" x="1400" y="3900" zoom="true"/>
-        <Node id="pendientes/comisiones/Edit.xhtml" x="4900" y="1800" zoom="true"/>
-        <Node id="pendientes/tarifas/View.xhtml" x="900" y="2850" zoom="true"/>
         <Node id="modulo1/ContratacionPrestacionDeServicios/polizas/List.xhtml" x="3150" y="2700" zoom="true"/>
-        <Node id="pendientes/tiposPasajes/List.xhtml" x="4650" y="450" zoom="true"/>
-        <Node id="pendientes/conceptosDeGastos/Edit.xhtml" x="1400" y="1200" zoom="true"/>
         <Node id="modulo5/Gestion Documental/Pqrsf/reporteIndividual.xhtml" x="7150" y="450" zoom="true"/>
-        <Node id="pendientes/comunas/Create.xhtml" x="6650" y="750" zoom="true"/>
-        <Node id="pendientes/tiposPasajes/Edit.xhtml" x="2150" y="1650" zoom="true"/>
         <Node id="inicio_sami/mensaje_sami.xhtml" x="2150" y="2400" zoom="true"/>
         <Node id="modulo4/Gestion_Talento_Humano/Comisiones/verInformeComision.xhtml" x="900" y="3450" zoom="true"/>
-        <Node id="pendientes/crp/Create.xhtml" x="3400" y="2400" zoom="true"/>
-        <Node id="pendientes/recursosOFuentes/Create.xhtml" x="2150" y="300" zoom="true"/>
         <Node id="inicio_sami/sami_ayuda.xhtml" x="900" y="1500" zoom="true"/>
-        <Node id="pendientes/eps/List.xhtml" x="4150" y="1350" zoom="true"/>
-        <Node id="modulo4/Gestion_Talento_Humano/Otros/historialComision.xhtml" x="650" y="3600" zoom="true"/>
         <Node id="modulo3/GestionContractual/ListaFacturas.xhtml" x="2900" y="1050" zoom="true"/>
+        <Node id="modulo4/Gestion_Talento_Humano/Otros/historialComision.xhtml" x="650" y="3600" zoom="true"/>
         <Node id="modulo4/Gestion_Talento_Humano/Ordenes de viaje/crearOrdenDeViaje.xhtml" x="150" y="2550" zoom="true"/>
-        <Node id="pendientes/rol/Create.xhtml" x="900" y="3750" zoom="true"/>
         <Node id="modulo3/GestionContractual/EditarSoporte.xhtml" x="6150" y="150" zoom="true"/>
-        <Node id="pendientes/arl/Edit.xhtml" x="1150" y="3600" zoom="true"/>
-        <Node id="pendientes/actaVerificacion/View.xhtml" x="2900" y="1650" zoom="true"/>
         <Node id="Configuracion/Centro de Formacion/ListarCentroFormacion.xhtml" x="900" y="4050" zoom="true"/>
         <Node id="modulo3/GestionContractual/CreatePolizas.xhtml" x="1900" y="1350" zoom="true"/>
-        <Node id="pendientes/usuariosSolicitudMaterialesAlmacen/Edit.xhtml" x="5400" y="750" zoom="true"/>
         <Node id="modulo4/Gestion_Talento_Humano/Comisiones/informeComision.xhtml" x="6400" y="600" zoom="true"/>
         <Node id="modulo1/ContratacionPrestacionDeServicios/Editor/Editor.xhtml" x="3900" y="1050" zoom="true"/>
         <Node id="modulo3/GestionContractual/CrearContrato.xhtml" x="2150" y="3000" zoom="true"/>
-        <Node id="pendientes/comunas/Edit.xhtml" x="4400" y="1050" zoom="true"/>
         <Node id="Programa Formacion/Programa de Formacion/AgregarProgramasFormacion.xhtml" x="900" y="2250" zoom="true"/>
-        <Node id="pendientes/empresa/Edit.xhtml" x="1650" y="3450" zoom="true"/>
-        <Node id="pendientes/trayectos/List.xhtml" x="1400" y="750" zoom="true"/>
-        <Node id="pendientes/ordenesDeViajeCrp/Edit.xhtml" x="3400" y="750" zoom="true"/>
-        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/ActasVerificacion/Create.xhtml" x="2900" y="1950" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/EntradaMateriales/NotasMateriales.xhtml" x="1400" y="150" zoom="true"/>
-        <Node id="pendientes/eps/Create.xhtml" x="400" y="4200" zoom="true"/>
+        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/ActasVerificacion/Create.xhtml" x="2900" y="1950" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/Materiales/SolicitudesAprobadas.xhtml" x="6650" y="150" zoom="true"/>
-        <Node id="pendientes/ciudad/Edit.xhtml" x="1150" y="2550" zoom="true"/>
         <Node id="modulo4/Gestion_Talento_Humano/Base de datos/Modificar.xhtml" x="4150" y="1950" zoom="true"/>
         <Node id="modulo2/mantenimiento/solicitudDeMantenimiento/CreateSolicitud.xhtml" x="4400" y="2100" zoom="true"/>
-        <Node id="pendientes/ccf/Create.xhtml" x="3400" y="2700" zoom="true"/>
         <Node id="modulo5/Gestion Documental/Pqrsf/CargarArchivos.xhtml" x="1900" y="1650" zoom="true"/>
-        <Node id="pendientes/barrios/Create.xhtml" x="4650" y="1350" zoom="true"/>
         <Node id="modulo4/Gestion_Talento_Humano/Comisiones/comision.xhtml" x="4900" y="300" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Instructor/Materiales/Materiales.xhtml" x="1650" y="300" zoom="true"/>
-        <Node id="pendientes/sexo/Create.xhtml" x="1400" y="1950" zoom="true"/>
-        <Node id="pendientes/aprobaciones/View.xhtml" x="1650" y="1950" zoom="true"/>
-        <Node id="pendientes/conceptosDeGastos/View.xhtml" x="150" y="1050" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Instructor/MainPage.xhtml" x="2650" y="3000" zoom="true"/>
-        <Node id="pendientes/notaEntradaMateriales/View.xhtml" x="2150" y="1200" zoom="true"/>
         <Node id="Configuracion/Rol/ModificarRol.xhtml" x="900" y="1050" zoom="true"/>
-        <Node id="pendientes/usuarios/View.xhtml" x="2650" y="1050" zoom="true"/>
-        <Node id="pendientes/novedadesListasDeChequeos/Create.xhtml" x="5650" y="900" zoom="true"/>
-        <Node id="pendientes/areas/View.xhtml" x="5650" y="150" zoom="true"/>
-        <Node id="pendientes/nivelesFormacion/Create.xhtml" x="4150" y="1050" zoom="true"/>
-        <Node id="pendientes/datosOnbase/Edit.xhtml" x="900" y="150" zoom="true"/>
-        <Node id="pendientes/ordenesDeViajeCrp/List.xhtml" x="1150" y="3750" zoom="true"/>
         <Node id="Configuracion/Arl/AgregarArl.xhtml" x="2400" y="2700" zoom="true"/>
-        <Node id="modulo5/Gestion Documental/Pqrsf/ListarRecibidas.xhtml" x="150" y="1500" zoom="true"/>
         <Node id="modulo5/Gestion Documental/Pqrsf/ListarProducidas.xhtml" x="150" y="2850" zoom="true"/>
-        <Node id="pendientes/riesgosLaborales/List.xhtml" x="900" y="450" zoom="true"/>
-        <Node id="pendientes/departamentos/List.xhtml" x="1150" y="750" zoom="true"/>
-        <Node id="pendientes/tiposDeSolicitudes/View.xhtml" x="4400" y="600" zoom="true"/>
-        <Node id="pendientes/eps/View.xhtml" x="3400" y="2250" zoom="true"/>
-        <Node id="pendientes/bancos/Create.xhtml" x="650" y="4200" zoom="true"/>
+        <Node id="modulo5/Gestion Documental/Pqrsf/ListarRecibidas.xhtml" x="150" y="1500" zoom="true"/>
         <Node id="Configuracion/Fondo de Pensiones/ModificarFondoPensiones.xhtml" x="2900" y="300" zoom="true"/>
         <Node id="modulo3/GestionContractual/VerContrato.xhtml" x="4900" y="450" zoom="true"/>
-        <Node id="pendientes/solicitudMaterialesAlmacenMateriales/Create.xhtml" x="2650" y="1650" zoom="true"/>
-        <Node id="pendientes/contratosPolizasUsuarios/Create.xhtml" x="400" y="1200" zoom="true"/>
-        <Node id="pendientes/contratos/View.xhtml" x="1150" y="4050" zoom="true"/>
         <Node id="modulo1/ContratacionPrestacionDeServicios/Contratistas/Ver.xhtml" x="3400" y="1650" zoom="true"/>
-        <Node id="Programa Formacion/Programa de Formacion/ConsultarProgramasFormacion.xhtml" x="2150" y="150" zoom="true"/>
         <Node id="Configuracion/EPS/ModificarEps.xhtml" x="900" y="900" zoom="true"/>
-        <Node id="modulo2/mantenimiento/historial/List.xhtml" x="3650" y="900" zoom="true"/>
-        <Node id="pendientes/rubros/List.xhtml" x="5900" y="300" zoom="true"/>
-        <Node id="pendientes/prioridades/Create.xhtml" x="2900" y="1200" zoom="true"/>
+        <Node id="Programa Formacion/Programa de Formacion/ConsultarProgramasFormacion.xhtml" x="2150" y="150" zoom="true"/>
         <Node id="Configuracion/Centro de Formacion/AgregarCentroFormacion.xhtml" x="1900" y="2400" zoom="true"/>
-        <Node id="pendientes/dependencias/View.xhtml" x="650" y="3900" zoom="true"/>
         <Node id="modulo1/index_modulo1.xhtml" x="3400" y="450" zoom="true"/>
-        <Node id="pendientes/bancos/View.xhtml" x="2650" y="1950" zoom="true"/>
-        <Node id="pendientes/cdp/Create.xhtml" x="3650" y="150" zoom="true"/>
-        <Node id="pendientes/estratoSocial/Edit.xhtml" x="1900" y="600" zoom="true"/>
-        <Node id="pendientes/gestiones/Create.xhtml" x="7650" y="300" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/ActasVerificacion/Actas.xhtml" x="900" y="600" zoom="true"/>
         <Node id="modulo1/ContratacionPrestacionDeServicios/Contratos/CreatePolizas.xhtml" x="900" y="1950" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Instructor/SolicitudMateriales/SolicitudMateriales.xhtml" x="4150" y="750" zoom="true"/>
         <Node id="modulo1/ContratacionPrestacionDeServicios/Contratistas/Agregar.xhtml" x="4650" y="1650" zoom="true"/>
-        <Node id="pendientes/ccf/List.xhtml" x="1150" y="2100" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/Materiales/Edit.xhtml" x="650" y="750" zoom="true"/>
-        <Node id="pendientes/aprobaciones/List.xhtml" x="400" y="150" zoom="true"/>
         <Node id="Configuracion/Programa de Formacion/ListarProgramasFormacion.xhtml" x="2650" y="900" zoom="true"/>
-        <Node id="pendientes/fondoDePensiones/Create.xhtml" x="150" y="2250" zoom="true"/>
         <Node id="modulo4/Gestion_Talento_Humano/Base de datos/Listar.xhtml" x="400" y="3900" zoom="true"/>
-        <Node id="pendientes/ciudad/View.xhtml" x="1900" y="3000" zoom="true"/>
-        <Node id="pendientes/pagosContratos/Edit.xhtml" x="5650" y="450" zoom="true"/>
-        <Node id="pendientes/sexo/Edit.xhtml" x="1900" y="3600" zoom="true"/>
-        <Node id="pendientes/pais/Edit.xhtml" x="5150" y="900" zoom="true"/>
-        <Node id="pendientes/nivelesFormacion/Edit.xhtml" x="6650" y="450" zoom="true"/>
-        <Node id="modulo3/GestionContractual/CreateInforme.xhtml" x="650" y="1800" zoom="true"/>
         <Node id="resources/html5gallery/skins/gallery/index.html" x="1400" y="2250" zoom="true"/>
-        <Node id="pendientes/novedades/List.xhtml" x="3150" y="1950" zoom="true"/>
+        <Node id="modulo3/GestionContractual/CreateInforme.xhtml" x="650" y="1800" zoom="true"/>
         <Node id="template.xhtml" x="3650" y="2250" zoom="true"/>
-        <Node id="pendientes/proyectoFormacion/List.xhtml" x="650" y="2400" zoom="true"/>
-        <Node id="pendientes/rubros/Create.xhtml" x="4150" y="1500" zoom="true"/>
-        <Node id="pendientes/pagosContratos/Create.xhtml" x="5150" y="1500" zoom="true"/>
-        <Node id="pendientes/tiposDeSolicitudes/Edit.xhtml" x="1650" y="3000" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/Materiales/Create.xhtml" x="3650" y="600" zoom="true"/>
         <Node id="modulo1/ContratacionPrestacionDeServicios/ImportarDocumentos/importarDocumentos.xhtml" x="1400" y="300" zoom="true"/>
-        <Node id="pendientes/informesDeComisiones/Edit.xhtml" x="2900" y="2850" zoom="true"/>
-        <Node id="inicio_sami/sami_InfoModulos.xhtml" x="2650" y="1350" zoom="true"/>
         <Node id="modulo3/GestionContractual/viewInforme.xhtml" x="6150" y="1050" zoom="true"/>
-        <Node id="pendientes/programaDeFormacion/Create.xhtml" x="650" y="150" zoom="true"/>
         <Node id="Configuracion/index_configuracion.xhtml" x="5150" y="1350" zoom="true"/>
         <Node id="Configuracion/Fondo de Pensiones/AgregarFondoPensiones.xhtml" x="2150" y="1050" zoom="true"/>
-        <Node id="pendientes/centroFormacion/Create.xhtml" x="400" y="750" zoom="true"/>
-        <Node id="pendientes/prioridades/Edit.xhtml" x="6150" y="750" zoom="true"/>
-        <Node id="pendientes/informesDeComisiones/View.xhtml" x="4900" y="1650" zoom="true"/>
-        <Node id="modulo3/GestionContractual/Buzon.xhtml" x="900" y="2700" zoom="true"/>
         <Node id="Configuracion/Usuarios/Listar.xhtml" x="1150" y="450" zoom="true"/>
-        <Node id="pendientes/tarifas/Create.xhtml" x="400" y="2550" zoom="true"/>
-        <Node id="pendientes/novedadesListasDeChequeos/List.xhtml" x="5650" y="1350" zoom="true"/>
-        <Node id="pendientes/comunas/View.xhtml" x="1150" y="1500" zoom="true"/>
-        <Node id="pendientes/descripcionesReferenciasViaticos/List.xhtml" x="2650" y="300" zoom="true"/>
-        <Node id="pendientes/polizas/Create.xhtml" x="4650" y="900" zoom="true"/>
+        <Node id="modulo3/GestionContractual/Buzon.xhtml" x="900" y="2700" zoom="true"/>
         <Node id="modulo5/Gestion Documental/Documentos/listaDocumentos.xhtml" x="1400" y="3750" zoom="true"/>
         <Node id="modulo4/Gestion_Talento_Humano/Ordenes de viaje/legalizar.xhtml" x="650" y="3150" zoom="true"/>
-        <Node id="pendientes/estadoCivil/View.xhtml" x="6400" y="450" zoom="true"/>
-        <Node id="pendientes/recursosOFuentes/List.xhtml" x="1900" y="300" zoom="true"/>
-        <Node id="pendientes/solicitudMaterialesAlmacenMateriales/List.xhtml" x="5400" y="150" zoom="true"/>
-        <Node id="pendientes/cdp/List.xhtml" x="650" y="4050" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/Facturas/Create.xhtml" x="2400" y="1650" zoom="true"/>
-        <Node id="pendientes/usuariosContratos/Edit.xhtml" x="150" y="300" zoom="true"/>
         <Node id="modulo2/index_modulo2.xhtml" x="1900" y="2700" zoom="true"/>
-        <Node id="pendientes/centroFormacion/List.xhtml" x="2900" y="2700" zoom="true"/>
-        <Node id="pendientes/nivelesFormacion/View.xhtml" x="2400" y="1350" zoom="true"/>
-        <Node id="pendientes/tipoDeCuenta/View.xhtml" x="1900" y="1500" zoom="true"/>
         <Node id="Configuracion/menu_configuracion.xhtml" x="2900" y="150" zoom="true"/>
-        <Node id="pendientes/notaEntradaMateriales/List.xhtml" x="6150" y="1200" zoom="true"/>
-        <Node id="Configuracion/CCF/AgregarCcf.xhtml" x="1400" y="1350" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Coordinacion/Materiales/Materiales.xhtml" x="6400" y="300" zoom="true"/>
+        <Node id="Configuracion/CCF/AgregarCcf.xhtml" x="1400" y="1350" zoom="true"/>
         <Node id="modulo1/ContratacionPrestacionDeServicios/polizas/Edit.xhtml" x="400" y="450" zoom="true"/>
         <Node id="modulo4/Gestion_Talento_Humano/Base de datos/Consultar.xhtml" x="900" y="2100" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/EntradaMateriales/CreateNota.xhtml" x="900" y="750" zoom="true"/>
         <Node id="Configuracion/Centro de Formacion/ModificarCentroFormacion.xhtml" x="2650" y="1500" zoom="true"/>
-        <Node id="pendientes/tipoDeServicios/Edit.xhtml" x="1400" y="3450" zoom="true"/>
-        <Node id="pendientes/fichaCaracterizacion/List.xhtml" x="150" y="2100" zoom="true"/>
-        <Node id="pendientes/ordenesDeviaje/Edit.xhtml" x="400" y="1950" zoom="true"/>
         <Node id="modulo4/Gestion_Talento_Humano/Comisiones/DestinosComision.xhtml" x="900" y="3150" zoom="true"/>
         <Node id="Configuracion/Rol/AgregarRol.xhtml" x="3650" y="2550" zoom="true"/>
         <Node id="modulo3/GestionContractual/ListaContratos.xhtml" x="3150" y="2100" zoom="true"/>
-        <Node id="pendientes/facturas/List.xhtml" x="150" y="2400" zoom="true"/>
         <Node id="modulo1/ContratacionPrestacionDeServicios/Contratistas/ListContratistas.xhtml" x="650" y="900" zoom="true"/>
-        <Node id="pendientes/areas/Create.xhtml" x="1400" y="1050" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Instructor/SolicitudMateriales/SolicitudesUsuario.xhtml" x="4650" y="1500" zoom="true"/>
-        <Node id="pendientes/crpRubros/Create.xhtml" x="3150" y="1500" zoom="true"/>
         <Node id="modulo2/menu_modulo2.xhtml" x="2150" y="2850" zoom="true"/>
-        <Node id="pendientes/informes/View.xhtml" x="5150" y="1650" zoom="true"/>
-        <Node id="pendientes/solicitudServicios/View.xhtml" x="6900" y="600" zoom="true"/>
         <Node id="modulo1/ContratacionPrestacionDeServicios/Contratos/ViewContrato.xhtml" x="2900" y="600" zoom="true"/>
-        <Node id="pendientes/estadoCivil/Edit.xhtml" x="3650" y="300" zoom="true"/>
-        <Node id="pendientes/contratos/Edit.xhtml" x="7900" y="150" zoom="true"/>
         <Node id="Configuracion/Estrato Social/AgregarEstratoSocial.xhtml" x="1150" y="1650" zoom="true"/>
-        <Node id="pendientes/rol/List.xhtml" x="5400" y="600" zoom="true"/>
-        <Node id="pendientes/solicitudMaterialesAlmacen/Create.xhtml" x="5150" y="750" zoom="true"/>
-        <Node id="pendientes/crpRubros/Edit.xhtml" x="3900" y="1800" zoom="true"/>
-        <Node id="pendientes/informes/Edit.xhtml" x="1650" y="1350" zoom="true"/>
-        <Node id="pendientes/legalizaciones/Create.xhtml" x="5400" y="1050" zoom="true"/>
         <Node id="Configuracion/Programa de Formacion/ModificarProgramasFormacion.xhtml" x="7150" y="600" zoom="true"/>
-        <Node id="pendientes/recursosOFuentes/View.xhtml" x="150" y="3000" zoom="true"/>
-        <Node id="pendientes/barrios/List.xhtml" x="900" y="3600" zoom="true"/>
-        <Node id="pendientes/datosOnbase/View.xhtml" x="2900" y="900" zoom="true"/>
-        <Node id="pendientes/solicitudMaterialesAlmacen/View.xhtml" x="1400" y="2850" zoom="true"/>
         <Node id="resources/html5gallery/skins/light/index.html" x="2650" y="2700" zoom="true"/>
-        <Node id="pendientes/crpRubros/View.xhtml" x="150" y="4350" zoom="true"/>
-        <Node id="pendientes/pagos/List.xhtml" x="3900" y="2250" zoom="true"/>
-        <Node id="pendientes/dependencias/Edit.xhtml" x="900" y="1350" zoom="true"/>
-        <Node id="pendientes/riesgosLaborales/View.xhtml" x="4400" y="1350" zoom="true"/>
         <Node id="Configuracion/Barrios/ModificarBarrios.xhtml" x="2400" y="750" zoom="true"/>
-        <Node id="pendientes/proyectoFormacion/Create.xhtml" x="3400" y="600" zoom="true"/>
-        <Node id="pendientes/estados/View.xhtml" x="900" y="300" zoom="true"/>
-        <Node id="pendientes/actaVerificacion/List.xhtml" x="3150" y="150" zoom="true"/>
-        <Node id="pendientes/estadoCivil/Create.xhtml" x="1650" y="150" zoom="true"/>
-        <Node id="pendientes/materiales/View.xhtml" x="2150" y="1950" zoom="true"/>
         <Node id="modulo5/Gestion Documental/Pqrsf/ConsultarProducidas.xhtml" x="150" y="1950" zoom="true"/>
-        <Node id="pendientes/bancos/List.xhtml" x="400" y="3150" zoom="true"/>
-        <Node id="pendientes/areas/List.xhtml" x="400" y="2850" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/ActasVerificacion/View.xhtml" x="2150" y="1500" zoom="true"/>
-        <Node id="pendientes/solicitudMaterialesAlmacen/Edit.xhtml" x="1650" y="3300" zoom="true"/>
         <Node id="modulo1/ContratacionPrestacionDeServicios/Aseguradora/Create.xhtml" x="1400" y="1800" zoom="true"/>
-        <Node id="pendientes/tarifas/List.xhtml" x="3150" y="900" zoom="true"/>
-        <Node id="modulo4/Gestion_Talento_Humano/Solicitud cdp/Agregar.xhtml" x="4150" y="2250" zoom="true"/>
-        <Node id="pendientes/ordenesDeViajeConceptosDeGastos/Create.xhtml" x="1900" y="3300" zoom="true"/>
-        <Node id="pendientes/usuarios/Edit.xhtml" x="2400" y="900" zoom="true"/>
-        <Node id="pendientes/gestiones/Edit.xhtml" x="5150" y="150" zoom="true"/>
-        <Node id="pendientes/notaEntrada/View.xhtml" x="2150" y="3450" zoom="true"/>
-        <Node id="pendientes/tiposDeSolicitudes/List.xhtml" x="650" y="450" zoom="true"/>
         <Node id="Configuracion/Arl/ModificarArl.xhtml" x="3650" y="750" zoom="true"/>
         <Node id="Configuracion/Barrios/AgregarBarrios.xhtml" x="1650" y="1500" zoom="true"/>
-        <Node id="pendientes/pagos/Create.xhtml" x="150" y="750" zoom="true"/>
-        <Node id="pendientes/novedades/View.xhtml" x="6150" y="600" zoom="true"/>
-        <Node id="pendientes/categorias/View.xhtml" x="5900" y="450" zoom="true"/>
-        <Node id="pendientes/soportesDeDocumentos/Edit.xhtml" x="1900" y="2850" zoom="true"/>
         <Node id="inicio_sami/confimacion.xhtml" x="1900" y="150" zoom="true"/>
-        <Node id="pendientes/tiposDeServiciosSolicitudDeServicios/Edit.xhtml" x="6900" y="750" zoom="true"/>
         <Node id="Configuracion/Tipo Documento/ListarTipoDocumento.xhtml" x="3650" y="1350" zoom="true"/>
         <Node id="modulo1/ContratacionPrestacionDeServicios/Contratos/EditContrato.xhtml" x="650" y="2850" zoom="true"/>
-        <Node id="pendientes/aseguradora/Create.xhtml" x="4150" y="900" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/EntradaMateriales/ListNotaEntrada.xhtml" x="1400" y="1650" zoom="true"/>
         <Node id="modulo1/ContratacionPrestacionDeServicios/Aseguradora/Edit.xhtml" x="3650" y="1800" zoom="true"/>
-        <Node id="pendientes/servicios/Edit.xhtml" x="650" y="1650" zoom="true"/>
-        <Node id="pendientes/empresa/Create.xhtml" x="2400" y="2550" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/Materiales/Materiales.xhtml" x="3900" y="1500" zoom="true"/>
-        <Node id="pendientes/facturas/View.xhtml" x="5150" y="300" zoom="true"/>
-        <Node id="pendientes/dependencias/List.xhtml" x="2400" y="2250" zoom="true"/>
-        <Node id="pendientes/contratosPolizasUsuarios/List.xhtml" x="3650" y="2100" zoom="true"/>
         <Node id="Configuracion/CCF/ListarCcf.xhtml" x="5900" y="150" zoom="true"/>
-        <Node id="pendientes/fichaCaracterizacion/Edit.xhtml" x="900" y="2550" zoom="true"/>
-        <Node id="pendientes/empresa/List.xhtml" x="1400" y="600" zoom="true"/>
-        <Node id="pendientes/descripcionesReferenciasViaticos/Edit.xhtml" x="150" y="3900" zoom="true"/>
-        <Node id="pendientes/ordenesDeViajeCrp/Create.xhtml" x="1400" y="450" zoom="true"/>
-        <Node id="pendientes/solicitudMaterialesAlmacen/List.xhtml" x="1650" y="2550" zoom="true"/>
-        <Node id="pendientes/ordenesDeviaje/View.xhtml" x="2400" y="3000" zoom="true"/>
-        <Node id="pendientes/soportesDeDocumentos/Create.xhtml" x="1900" y="900" zoom="true"/>
         <Node id="footer.xhtml" x="3400" y="2550" zoom="true"/>
-        <Node id="pendientes/estratoSocial/List.xhtml" x="5400" y="1500" zoom="true"/>
-        <Node id="pendientes/actaVerificacion/Create.xhtml" x="1650" y="2850" zoom="true"/>
-        <Node id="pendientes/categorias/List.xhtml" x="2150" y="3300" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/Facturas/Edit.xhtml" x="150" y="450" zoom="true"/>
         <Node id="Programa Formacion/Rol/ListarRol.xhtml" x="650" y="3000" zoom="true"/>
         <Node id="Configuracion/Bancos/AgregarBancos.xhtml" x="2900" y="1350" zoom="true"/>
         <Node id="modulo4/Gestion_Talento_Humano/Relacion gastos de transporte/relacionGastos.xhtml" x="5900" y="1200" zoom="true"/>
-        <Node id="pendientes/pagos/Edit.xhtml" x="2650" y="2850" zoom="true"/>
-        <Node id="pendientes/eps/Edit.xhtml" x="4900" y="150" zoom="true"/>
         <Node id="modulo4/Gestion_Talento_Humano/Comisiones/informesComisiones.xhtml" x="900" y="2400" zoom="true"/>
-        <Node id="pendientes/aseguradora/View.xhtml" x="3150" y="750" zoom="true"/>
-        <Node id="pendientes/datosOnbase/Create.xhtml" x="400" y="3750" zoom="true"/>
-        <Node id="pendientes/informesDeComisiones/List.xhtml" x="3900" y="1950" zoom="true"/>
-        <Node id="pendientes/tipoDeServicios/List.xhtml" x="650" y="2700" zoom="true"/>
-        <Node id="pendientes/aprobaciones/Create.xhtml" x="1900" y="1800" zoom="true"/>
-        <Node id="pendientes/tiposDeServiciosSolicitudDeServicios/Create.xhtml" x="900" y="3300" zoom="true"/>
-        <Node id="pendientes/legalizaciones/Edit.xhtml" x="2150" y="2700" zoom="true"/>
         <Node id="resources/html5gallery/skins/mediapage/index.html" x="2150" y="2100" zoom="true"/>
-        <Node id="pendientes/solicitudServicios/Create.xhtml" x="5900" y="900" zoom="true"/>
         <Node id="Configuracion/Departamentos/AgregarDepartamentos.xhtml" x="2900" y="2250" zoom="true"/>
-        <Node id="pendientes/descripcionesReferenciasViaticos/View.xhtml" x="3650" y="1050" zoom="true"/>
-        <Node id="pendientes/polizas/List.xhtml" x="650" y="2250" zoom="true"/>
-        <Node id="pendientes/servicios/View.xhtml" x="3150" y="1800" zoom="true"/>
-        <Node id="pendientes/solicitudMaterialesAlmacenMateriales/Edit.xhtml" x="1150" y="1050" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/Facturas/View.xhtml" x="2900" y="450" zoom="true"/>
-        <Node id="pendientes/riesgosLaborales/Edit.xhtml" x="5150" y="450" zoom="true"/>
-        <Node id="pendientes/tipoDeContrato/Create.xhtml" x="150" y="600" zoom="true"/>
-        <Node id="pendientes/tipoDocumentos/Create.xhtml" x="650" y="600" zoom="true"/>
-        <Node id="pendientes/contratosPolizasUsuarios/Edit.xhtml" x="2400" y="2850" zoom="true"/>
         <Node id="Configuracion/Departamentos/ListarDepartamentos.xhtml" x="6900" y="300" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Instructor/SolicitudMateriales/View.xhtml" x="1150" y="1950" zoom="true"/>
         <Node id="Configuracion/Comunas/AgregarComunas.xhtml" x="3400" y="1500" zoom="true"/>
-        <Node id="pendientes/contratos/Create.xhtml" x="1650" y="3150" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/ActasVerificacion/Edit.xhtml" x="5650" y="300" zoom="true"/>
         <Node id="Configuracion/Barrios/ListarBarrios.xhtml" x="3900" y="1350" zoom="true"/>
-        <Node id="pendientes/programaDeFormacion/View.xhtml" x="650" y="300" zoom="true"/>
-        <Node id="pendientes/solicitudMaterialesAlmacenMateriales/View.xhtml" x="2900" y="2550" zoom="true"/>
-        <Node id="pendientes/tipoDeServicios/View.xhtml" x="150" y="4050" zoom="true"/>
-        <Node id="pendientes/legalizaciones/List.xhtml" x="1900" y="2250" zoom="true"/>
         <Node id="Configuracion/Departamentos/ModificarDepartamentos.xhtml" x="6900" y="150" zoom="true"/>
         <Node id="modulo2/mantenimiento/historial/Create.xhtml" x="1650" y="1650" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/MainPage.xhtml" x="2900" y="2400" zoom="true"/>
-        <Node id="pendientes/notaEntrada/Edit.xhtml" x="400" y="2250" zoom="true"/>
-        <Node id="pendientes/riesgosLaborales/Create.xhtml" x="4150" y="600" zoom="true"/>
-        <Node id="pendientes/gestiones/List.xhtml" x="5900" y="600" zoom="true"/>
         <Node id="Configuracion/Sexo/ListarSexo.xhtml" x="400" y="600" zoom="true"/>
-        <Node id="pendientes/listasDeChequeos/Edit.xhtml" x="4900" y="1500" zoom="true"/>
-        <Node id="pendientes/aseguradora/List.xhtml" x="3900" y="900" zoom="true"/>
-        <Node id="pendientes/index.xhtml" x="6150" y="900" zoom="true"/>
-        <Node id="pendientes/crp/View.xhtml" x="400" y="2400" zoom="true"/>
-        <Node id="pendientes/arl/List.xhtml" x="2400" y="1950" zoom="true"/>
-        <Node id="pendientes/trayectos/Edit.xhtml" x="150" y="2700" zoom="true"/>
-        <Node id="pendientes/dependencias/Create.xhtml" x="400" y="3300" zoom="true"/>
         <Node id="modulo6/menu_Coordinacion.xhtml" x="2650" y="3150" zoom="true"/>
-        <Node id="pendientes/crp/List.xhtml" x="900" y="1800" zoom="true"/>
-        <Node id="pendientes/novedades/Create.xhtml" x="1650" y="600" zoom="true"/>
-        <Node id="pendientes/ciudad/List.xhtml" x="6400" y="900" zoom="true"/>
-        <Node id="pendientes/rol/View.xhtml" x="2400" y="1050" zoom="true"/>
-        <Node id="modulo6/menu_Almacen.xhtml" x="3900" y="1200" zoom="true"/>
-        <Node id="modulo2/mantenimiento/solicitudDeMantenimiento/ListSolicitud.xhtml" x="2900" y="1800" zoom="true"/>
         <Node id="modulo1/ContratacionPrestacionDeServicios/Contratos/CreateContrato.xhtml" x="1900" y="2550" zoom="true"/>
-        <Node id="pendientes/cuentasBancarias/List.xhtml" x="4150" y="300" zoom="true"/>
-        <Node id="pendientes/arl/View.xhtml" x="4400" y="900" zoom="true"/>
-        <Node id="pendientes/listasDeChequeos/Create.xhtml" x="6400" y="150" zoom="true"/>
-        <Node id="pendientes/contratos/List.xhtml" x="400" y="300" zoom="true"/>
-        <Node id="pendientes/sexo/View.xhtml" x="2900" y="1500" zoom="true"/>
-        <Node id="pendientes/conceptosDeGastos/Create.xhtml" x="2400" y="3150" zoom="true"/>
-        <Node id="pendientes/cuentasBancarias/View.xhtml" x="650" y="1500" zoom="true"/>
-        <Node id="modulo4/Gestion_Talento_Humano/Solicitud cdp/Listar.xhtml" x="3150" y="2250" zoom="true"/>
-        <Node id="pendientes/nivelesFormacion/List.xhtml" x="3900" y="2100" zoom="true"/>
+        <Node id="modulo2/mantenimiento/solicitudDeMantenimiento/ListSolicitud.xhtml" x="2900" y="1800" zoom="true"/>
+        <Node id="modulo6/menu_Almacen.xhtml" x="3900" y="1200" zoom="true"/>
         <Node id="modulo3/menu_modulo3.xhtml" x="650" y="3750" zoom="true"/>
-        <Node id="pendientes/ordenesDeviaje/Create.xhtml" x="1650" y="1200" zoom="true"/>
-        <Node id="pendientes/comisiones/View.xhtml" x="150" y="1200" zoom="true"/>
         <Node id="modulo3/GestionContractual/CreateSoporte.xhtml" x="2900" y="3000" zoom="true"/>
         <Node id="modulo4/Gestion_Talento_Humano/Comisiones/VerComision.xhtml" x="7400" y="450" zoom="true"/>
-        <Node id="pendientes/soportesDeDocumentos/View.xhtml" x="4650" y="1200" zoom="true"/>
-        <Node id="modulo3/GestionContractual/ListaSoportes.xhtml" x="4400" y="1650" zoom="true"/>
-        <Node id="pendientes/bancos/Edit.xhtml" x="1650" y="900" zoom="true"/>
         <Node id="modulo5/Gestion Documental/Pqrsf/ConsultarRecibidas.xhtml" x="5900" y="750" zoom="true"/>
-        <Node id="pendientes/ciudad/Create.xhtml" x="1150" y="2400" zoom="true"/>
-        <Node id="pendientes/informesDeComisiones/Create.xhtml" x="4400" y="750" zoom="true"/>
-        <Node id="pendientes/estadoCivil/List.xhtml" x="3400" y="900" zoom="true"/>
-        <Node id="pendientes/pais/List.xhtml" x="3400" y="150" zoom="true"/>
+        <Node id="modulo3/GestionContractual/ListaSoportes.xhtml" x="4400" y="1650" zoom="true"/>
         <Node id="Configuracion/EPS/ListarEps.xhtml" x="5400" y="1200" zoom="true"/>
-        <Node id="pendientes/arl/Create.xhtml" x="3400" y="1800" zoom="true"/>
         <Node id="modulo1/ContratacionPrestacionDeServicios/Aseguradora/List.xhtml" x="1150" y="1350" zoom="true"/>
         <Node id="Configuracion/Arl/ListarArl.xhtml" x="1650" y="2100" zoom="true"/>
-        <Node id="pendientes/tiposPasajes/View.xhtml" x="4150" y="2100" zoom="true"/>
-        <Node id="pendientes/tipoDeContrato/Edit.xhtml" x="2400" y="1200" zoom="true"/>
         <Node id="modulo4/index_modulo4.xhtml" x="6400" y="750" zoom="true"/>
-        <Node id="pendientes/tipoDeCuenta/Edit.xhtml" x="3650" y="1950" zoom="true"/>
-        <Node id="pendientes/comisiones/List.xhtml" x="650" y="1200" zoom="true"/>
-        <Node id="pendientes/fichaCaracterizacion/View.xhtml" x="3400" y="1950" zoom="true"/>
-        <Node id="pendientes/facturas/Edit.xhtml" x="2400" y="2400" zoom="true"/>
-        <Node id="pendientes/notaEntradaMateriales/Edit.xhtml" x="7400" y="150" zoom="true"/>
-        <Node id="pendientes/polizas/View.xhtml" x="1650" y="3600" zoom="true"/>
         <Node id="Programa Formacion/Rol/AgregarRol.xhtml" x="150" y="1350" zoom="true"/>
-        <Node id="pendientes/fondoDePensiones/List.xhtml" x="1650" y="2250" zoom="true"/>
-        <Node id="pendientes/tarifas/Edit.xhtml" x="2150" y="750" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Coordinacion/SolicitudesMateriales/View.xhtml" x="150" y="1800" zoom="true"/>
-        <Node id="pendientes/estratoSocial/Create.xhtml" x="400" y="3000" zoom="true"/>
-        <Node id="pendientes/ccf/View.xhtml" x="3150" y="450" zoom="true"/>
-        <Node id="pendientes/prioridades/View.xhtml" x="3400" y="300" zoom="true"/>
         <Node id="Configuracion/Usuarios/Agregar.xhtml" x="2650" y="750" zoom="true"/>
-        <Node id="pendientes/ccf/Edit.xhtml" x="2400" y="150" zoom="true"/>
         <Node id="Configuracion/Fondo de Pensiones/ListarFondoPensiones.xhtml" x="2150" y="600" zoom="true"/>
         <Node id="index.xhtml" x="2150" y="1800" zoom="true"/>
         <Node id="sami_inicio.xhtml" x="4900" y="600" zoom="true"/>
-        <Node id="pendientes/tipoDeCuenta/Create.xhtml" x="3900" y="450" zoom="true"/>
         <Node id="modulo3/GestionContractual/EditInforme.xhtml" x="400" y="4500" zoom="true"/>
-        <Node id="pendientes/materiales/Edit.xhtml" x="2650" y="1200" zoom="true"/>
-        <Node id="pendientes/centroFormacion/Edit.xhtml" x="4900" y="1200" zoom="true"/>
-        <Node id="pendientes/tipoDocumentos/View.xhtml" x="6400" y="1050" zoom="true"/>
         <Node id="modulo1/ContratacionPrestacionDeServicios/Contratos/ListContrato.xhtml" x="650" y="3300" zoom="true"/>
-        <Node id="pendientes/tiposDeServiciosSolicitudDeServicios/List.xhtml" x="3150" y="600" zoom="true"/>
-        <Node id="pendientes/ordenesDeviaje/List.xhtml" x="3150" y="1200" zoom="true"/>
-        <Node id="pendientes/centroFormacion/View.xhtml" x="1650" y="2700" zoom="true"/>
         <Node id="Configuracion/Bancos/ModificarBancos.xhtml" x="4400" y="150" zoom="true"/>
-        <Node id="pendientes/cuentasBancarias/Edit.xhtml" x="2650" y="150" zoom="true"/>
-        <Node id="pendientes/tiposPasajes/Create.xhtml" x="4400" y="300" zoom="true"/>
-        <Node id="pendientes/tipoDeServicios/Create.xhtml" x="1150" y="300" zoom="true"/>
-        <Node id="pendientes/formacionAcademica/Create.xhtml" x="150" y="4500" zoom="true"/>
-        <Node id="pendientes/cdp/Edit.xhtml" x="3150" y="1350" zoom="true"/>
-        <Node id="pendientes/formacionAcademica/Edit.xhtml" x="4150" y="1800" zoom="true"/>
         <Node id="modulo6/menu_Instructor.xhtml" x="4900" y="750" zoom="true"/>
-        <Node id="pendientes/tipoDeContrato/View.xhtml" x="2400" y="1800" zoom="true"/>
-        <Node id="pendientes/fondoDePensiones/Edit.xhtml" x="1150" y="2850" zoom="true"/>
-        <Node id="pendientes/departamentos/Edit.xhtml" x="3900" y="750" zoom="true"/>
-        <Node id="pendientes/soportesDeDocumentos/List.xhtml" x="1150" y="900" zoom="true"/>
         <Node id="modulo3/GestionContractual/CreatePagoContrato.xhtml" x="150" y="3150" zoom="true"/>
-        <Node id="pendientes/crpRubros/List.xhtml" x="3150" y="2400" zoom="true"/>
-        <Node id="pendientes/estratoSocial/View.xhtml" x="400" y="1050" zoom="true"/>
         <Node id="Configuracion/Pais/AgregarPais.xhtml" x="2400" y="3300" zoom="true"/>
         <Node id="Configuracion/Usuarios/Modificar.xhtml" x="2150" y="3150" zoom="true"/>
-        <Node id="pendientes/pais/View.xhtml" x="1400" y="3150" zoom="true"/>
-        <Node id="modulo3/GestionContractual/ListInformes.xhtml" x="3150" y="1650" zoom="true"/>
         <Node id="Configuracion/Estado Civil/ModificarEstadoCivil.xhtml" x="1650" y="2400" zoom="true"/>
+        <Node id="modulo3/GestionContractual/ListInformes.xhtml" x="3150" y="1650" zoom="true"/>
         <Node id="Configuracion/Estado Civil/ListarEstadoCivil.xhtml" x="1150" y="3000" zoom="true"/>
-        <Node id="pendientes/pagos/View.xhtml" x="7150" y="300" zoom="true"/>
-        <Node id="pendientes/notaEntradaMateriales/Create.xhtml" x="900" y="3900" zoom="true"/>
         <Node id="resources/html5gallery/index.html" x="4400" y="450" zoom="true"/>
-        <Node id="pendientes/tiposDeServiciosSolicitudDeServicios/View.xhtml" x="4650" y="300" zoom="true"/>
-        <Node id="pendientes/categorias/Edit.xhtml" x="3400" y="2100" zoom="true"/>
-        <Node id="pendientes/novedades/Edit.xhtml" x="2150" y="900" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Coordinacion/SolicitudesMateriales/Create.xhtml" x="1400" y="3000" zoom="true"/>
         <Node id="modulo3/GestionContractual/VerSoporte.xhtml" x="5150" y="1050" zoom="true"/>
-        <Node id="pendientes/rol/Edit.xhtml" x="5900" y="1050" zoom="true"/>
-        <Node id="pendientes/empresa/View.xhtml" x="4400" y="1950" zoom="true"/>
-        <Node id="pendientes/usuariosSolicitudMaterialesAlmacen/Create.xhtml" x="900" y="1200" zoom="true"/>
-        <Node id="pendientes/ordenesDeViajeConceptosDeGastos/Edit.xhtml" x="2400" y="450" zoom="true"/>
         <Node id="Programa Formacion/Rol/ModificarRol.xhtml" x="1150" y="1200" zoom="true"/>
-        <Node id="pendientes/informes/List.xhtml" x="1400" y="2550" zoom="true"/>
-        <Node id="pendientes/novedadesListasDeChequeos/View.xhtml" x="3650" y="450" zoom="true"/>
         <Node id="Configuracion/CCF/ModificarCcf.xhtml" x="1650" y="450" zoom="true"/>
         <Node id="modulo4/Gestion_Talento_Humano/Otros/cartasLaborales.xhtml" x="400" y="4050" zoom="true"/>
         <Node id="modulo5/Gestion Documental/Pqrsf/ListarInforme.xhtml" x="3900" y="600" zoom="true"/>
-        <Node id="pendientes/sexo/List.xhtml" x="150" y="3750" zoom="true"/>
         <Node id="Configuracion/Ciudad/ListarCiudad.xhtml" x="7650" y="150" zoom="true"/>
-        <Node id="pendientes/prioridades/List.xhtml" x="2650" y="2250" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Coordinacion/SolicitudesMateriales/SolicitudesNoAprobadas.xhtml" x="400" y="1800" zoom="true"/>
         <Node id="modulo2/mantenimiento/solicitudDeMantenimiento/CreateAvance.xhtml" x="5150" y="600" zoom="true"/>
         <Node id="Configuracion/Pais/ListarPais.xhtml" x="400" y="3600" zoom="true"/>
-        <Node id="pendientes/facturas/Create.xhtml" x="3900" y="150" zoom="true"/>
-        <Node id="pendientes/recursosOFuentes/Edit.xhtml" x="2650" y="600" zoom="true"/>
         <Node id="Configuracion/Ciudad/ModificarCiudad.xhtml" x="1650" y="1800" zoom="true"/>
-        <Node id="pendientes/rubros/Edit.xhtml" x="650" y="4350" zoom="true"/>
-        <Node id="pendientes/proyectoFormacion/Edit.xhtml" x="4900" y="1050" zoom="true"/>
         <Node id="Configuracion/Rol/ListarRol.xhtml" x="3150" y="2850" zoom="true"/>
-        <Node id="pendientes/gestiones/View.xhtml" x="2400" y="1500" zoom="true"/>
         <Node id="Configuracion/EPS/AgregarEps.xhtml" x="1900" y="2100" zoom="true"/>
-        <Node id="pendientes/formacionAcademica/View.xhtml" x="3150" y="1050" zoom="true"/>
         <Node id="modulo4/Gestion_Talento_Humano/Comisiones/CrearComision.xhtml" x="2650" y="2550" zoom="true"/>
-        <Node id="pendientes/estados/Edit.xhtml" x="3900" y="1650" zoom="true"/>
-        <Node id="pendientes/materiales/Create.xhtml" x="900" y="3000" zoom="true"/>
         <Node id="modulo5/Gestion Documental/Pqrsf/reporteConsolidado.xhtml" x="6650" y="300" zoom="true"/>
-        <Node id="pendientes/solicitudServicios/Edit.xhtml" x="6150" y="450" zoom="true"/>
-        <Node id="pendientes/usuariosContratos/List.xhtml" x="6650" y="600" zoom="true"/>
-        <Node id="pendientes/cuentasBancarias/Create.xhtml" x="2150" y="2550" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/EntradaMateriales/ViewNota.xhtml" x="3650" y="1500" zoom="true"/>
-        <Node id="pendientes/departamentos/Create.xhtml" x="1900" y="1050" zoom="true"/>
-        <Node id="pendientes/descripcionesReferenciasViaticos/Create.xhtml" x="1150" y="2700" zoom="true"/>
-        <Node id="pendientes/comunas/List.xhtml" x="6900" y="450" zoom="true"/>
         <Node id="Configuracion/Programa de Formacion/ConsultarProgramasFormacion.xhtml" x="4150" y="1650" zoom="true"/>
-        <Node id="pendientes/notaEntrada/Create.xhtml" x="400" y="2100" zoom="true"/>
-        <Node id="pendientes/barrios/Edit.xhtml" x="150" y="4650" zoom="true"/>
-        <Node id="resources/html5gallery/skins/vertical/index.html" x="1400" y="2400" zoom="true"/>
         <Node id="resources/html5gallery/skins/horizontal/index.html" x="5400" y="1350" zoom="true"/>
-        <Node id="pendientes/actaVerificacion/Edit.xhtml" x="900" y="4200" zoom="true"/>
-        <Node id="pendientes/usuariosContratos/Create.xhtml" x="2650" y="2100" zoom="true"/>
+        <Node id="resources/html5gallery/skins/vertical/index.html" x="1400" y="2400" zoom="true"/>
         <Node id="Configuracion/Comunas/ListarComunas.xhtml" x="3900" y="300" zoom="true"/>
-        <Node id="pendientes/listasDeChequeos/List.xhtml" x="1650" y="1050" zoom="true"/>
-        <Node id="pendientes/pagosContratos/List.xhtml" x="1650" y="750" zoom="true"/>
-        <Node id="pendientes/materiales/List.xhtml" x="150" y="3300" zoom="true"/>
-        <Node id="pendientes/usuariosSolicitudMaterialesAlmacen/View.xhtml" x="4650" y="150" zoom="true"/>
-        <Node id="pendientes/programaDeFormacion/Edit.xhtml" x="6150" y="300" zoom="true"/>
         <Node id="modulo4/menu_modulo4.xhtml" x="1150" y="3150" zoom="true"/>
-        <Node id="pendientes/solicitudServicios/List.xhtml" x="1150" y="3300" zoom="true"/>
         <Node id="modulo5/menu_modulo5.xhtml" x="2900" y="2100" zoom="true"/>
-        <Node id="pendientes/relacionesGastosDeTransporte/List.xhtml" x="1900" y="3450" zoom="true"/>
         <Node id="Configuracion/Pais/ModificarPais.xhtml" x="650" y="1050" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Coordinacion/MainPage.xhtml" x="3650" y="1200" zoom="true"/>
-        <Node id="pendientes/datosOnbase/List.xhtml" x="2400" y="300" zoom="true"/>
         <Node id="resources/html5gallery/skins/darkness/index.html" x="5650" y="1050" zoom="true"/>
         <Node id="modulo5/Gestion Documental/Documentos/crearGesdoc.xhtml" x="4650" y="750" zoom="true"/>
-        <Node id="pendientes/departamentos/View.xhtml" x="400" y="1650" zoom="true"/>
         <Node id="modulo3/GestionContractual/VerFactura.xhtml" x="2400" y="600" zoom="true"/>
         <Node id="Configuracion/Usuarios/Consultar.xhtml" x="5400" y="300" zoom="true"/>
         <Node id="modulo5/Gestion Documental/Pqrsf/ConsultarInforme.xhtml" x="5150" y="1200" zoom="true"/>
-        <Node id="pendientes/ordenesDeViajeCrp/View.xhtml" x="4150" y="150" zoom="true"/>
-        <Node id="pendientes/tipoDeContrato/List.xhtml" x="2150" y="2250" zoom="true"/>
         <Node id="Programa Formacion/Programa de Formacion/ModificarProgramasFormacion.xhtml" x="150" y="150" zoom="true"/>
-        <Node id="pendientes/tipoDocumentos/Edit.xhtml" x="4650" y="600" zoom="true"/>
-        <Node id="pendientes/usuarios/Create.xhtml" x="3650" y="2400" zoom="true"/>
-        <Node id="pendientes/trayectos/Create.xhtml" x="400" y="3450" zoom="true"/>
-        <Node id="pendientes/estados/Create.xhtml" x="2650" y="1800" zoom="true"/>
-        <Node id="pendientes/usuariosSolicitudMaterialesAlmacen/List.xhtml" x="650" y="2550" zoom="true"/>
         <Node id="Programa Formacion/index_programa.xhtml" x="1150" y="600" zoom="true"/>
         <Node id="Configuracion/Estado Civil/AgregarEstadoCivil.xhtml" x="1900" y="1200" zoom="true"/>
-        <Node id="pendientes/ordenesDeViajeConceptosDeGastos/View.xhtml" x="150" y="3450" zoom="true"/>
-        <Node id="pendientes/usuariosContratos/View.xhtml" x="4400" y="1200" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Coordinacion/SolicitudesMateriales/Solicitudes.xhtml" x="4900" y="900" zoom="true"/>
-        <Node id="pendientes/servicios/Create.xhtml" x="2150" y="1350" zoom="true"/>
-        <Node id="pendientes/relacionesGastosDeTransporte/View.xhtml" x="2400" y="2100" zoom="true"/>
         <Node id="modulo3/GestionContractual/EditarFactura.xhtml" x="400" y="900" zoom="true"/>
-        <Node id="pendientes/conceptosDeGastos/List.xhtml" x="150" y="3600" zoom="true"/>
-        <Node id="pendientes/aseguradora/Edit.xhtml" x="150" y="900" zoom="true"/>
-        <Node id="pendientes/usuarios/List.xhtml" x="650" y="1350" zoom="true"/>
     </Scope>
     <Scope Scope="All Faces Configurations"/>
 </Scene>

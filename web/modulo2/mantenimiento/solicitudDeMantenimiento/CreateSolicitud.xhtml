@@ -34,22 +34,21 @@
 
                     </p:panelGrid>                    
                 </p:carousel>
-                
-                <p> Describa el problema</p>
-                    <textarea type="text" jsf:id="descripcionServicioSolicitud" 
-                              required="true"
-                              jsf:requiredMessage="El campo Describa el problema es requerido."
-                              jsf:value="#{solicitudServiciosController.selected.descripcionservicioSolicitud}">
-                        <f:ajax execute="@this" render="descripcionServicioSolicitudMessage"/>
-                    </textarea>
-                    <h:message id="descripcionServicioSolicitudMessage" for="descripcionServicioSolicitud" styleClass="error"/>
+                <div class="form-group">
+                        <label value="Describa el problema:" jsf:for="descripcionServicioSolicitud"/>
+                        <textarea type="text" jsf:id="descripcionServicioSolicitud" 
+                                  required="true" class="form-control" rows="3"
+                                  jsf:requiredMessage="El campo Describa el problema es requerido."
+                                  jsf:value="#{solicitudServiciosController.selected.descripcionservicioSolicitud}">
+                            <f:ajax execute="@this" render="descripcionServicioSolicitudMessage"/>
+                        </textarea>
+                        <p:message id="descripcionServicioSolicitudMessage" for="descripcionServicioSolicitud" styleClass="error"/>
                     
-                    <p>Ubicacion</p>
-                    
-                    <input type="text" jsf:id="ubicacion" 
-                           jsf:value="#{solicitudServiciosController.selected.ubicacionSolicitud}" 
-                           jsf:requiredMessage="The Ubicacion field is required.">
-                    </input>
+                        <label value="Ubicación del problema:" jsf:for="ubicacion"/>
+                        <input type="text" jsf:id="ubicacion" class="form-control"
+                               jsf:value="#{solicitudServiciosController.selected.ubicacionSolicitud}">
+                        </input>
+                </div>
 
                 <h3>Solicitudes Realizadas</h3>
                 <p:dataTable value="#{solicitudServiciosController.listSolicituServiciosByUsuario}" var="item"
@@ -64,8 +63,7 @@
                         Pulse la flecha para ver detalles
                     </f:facet>
 
-
-                    <p:column style="width:16px">
+                    <p:column style="width:100px" headerText="Avances">
                         <p:rowToggler />
                     </p:column>
 
@@ -138,9 +136,7 @@
                 <p:button value="Regresar" outcome="ListSolicitud"/>
 
             </h:form>
-
         </ui:define>
-
     </ui:composition>
 
 </html>

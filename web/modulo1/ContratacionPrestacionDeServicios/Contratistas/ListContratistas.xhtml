@@ -33,51 +33,51 @@
 
                 <p:dataTable id="datalist" value="#{usuariosController.items}" var="item"
                              paginator="true" scrollable="true"
-                             rowKey="#{item.idUsuario}"
+                             rowKey="#{item.idUsuario}" 
                              rows="10" style="font-size:12px"
                              rowsPerPageTemplate="10,20,30,40,50">
                     <f:facet name="header">
                         Lista de Contratistas
-                        <p:commandButton id="toggler" type="button" value="Columns" style="float:right" icon="ui-icon-calculator" />
+                        <p:commandButton id="toggler" type="button" value="Datos" style="float:right" icon="ui-icon-calculator" />
                         <p:columnToggler datasource="datalist" trigger="toggler" />
                     </f:facet>
-                    <p:column>
+                    <p:column filterBy="#{item.numeroDoc}" filterMatchMode="contains">
                         <f:facet name="header">
                             <h:outputText value="#{bundle.ListUsuariosTitle_numeroDoc}"/>
                         </f:facet>
                         <h:outputText value="#{item.numeroDoc}"/>
                     </p:column>
-                    <p:column>
+                    <p:column filterBy="#{item.primerNombre}" filterMatchMode="contains">
                         <f:facet name="header">
                             <h:outputText value="#{bundle.ListUsuariosTitle_razonSocial}"/>
                         </f:facet>
                         <h:outputText value="#{item.primerNombre}"/>
                     </p:column>
-                    <p:column>
+                    <p:column filterBy="#{item.segundoNombre}" filterMatchMode="contains">
                         <f:facet name="header">
                             <h:outputText value="#{bundle.ListUsuariosTitle_segundoNombre}"/>
                         </f:facet>
                         <h:outputText value="#{item.segundoNombre}"/>
                     </p:column>
-                    <p:column>
+                    <p:column filterBy="#{item.primerApellido}" filterMatchMode="contains">
                         <f:facet name="header">
                             <h:outputText value="#{bundle.ListUsuariosTitle_primerApellido}"/>
                         </f:facet>
                         <h:outputText value="#{item.primerApellido}"/>
                     </p:column>
-                    <p:column>
+                    <p:column filterBy="#{item.segundoApellido}" filterMatchMode="contains">
                         <f:facet name="header">
                             <h:outputText value="#{bundle.ListUsuariosTitle_segundoApellido}"/>
                         </f:facet>
                         <h:outputText value="#{item.segundoApellido}"/>
                     </p:column>
-                    <p:column>
+                    <p:column filterBy="#{item.email}" filterMatchMode="contains">
                         <f:facet name="header">
                             <h:outputText value="#{bundle.ListUsuariosTitle_email}"/>
                         </f:facet>
                         <h:outputText value="#{item.email}"/>
                     </p:column>
-                    <p:column>
+                    <p:column >
                         <f:facet name="header">
                             <h:outputText value="#{bundle.ListUsuariosTitle_telefonoPrincipalUsu}"/>
                         </f:facet>
@@ -90,7 +90,7 @@
                         </f:facet>
                         <h:outputText value="#{item.direccionUsu}"/>
                     </p:column>
-                    <p:column>
+                    <p:column filterBy="#{item.ciudad1}" filterMatchMode="contains">
                         <f:facet name="header">
                             <h:outputText value="#{bundle.ListUsuariosTitle_ciudad1}"/>
                         </f:facet>

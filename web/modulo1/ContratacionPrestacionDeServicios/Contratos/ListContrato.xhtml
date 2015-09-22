@@ -4,17 +4,17 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
-      xmlns:p="http://primefaces.org/ui">
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:jsf="http://xmlns.jcp.org/jsf">
     <ui:composition template="/template.xhtml">
         <ui:define name="title">Lista de contratos</ui:define>
         <ui:define name="menu"><ui:include src="/modulo1/menu_modulo1.xhtml"></ui:include></ui:define>
         <ui:define name="body"> 
 
             <h:form >
-
                 <p:commandButton rendered="#{loginController.contratacion}" icon="ui-icon-plusthick" action="#{contratosModulo1Controller.prepareCreate}" value="#{bundle.Create}"/>
 
-                <h3>Export Data Complete</h3>
+                <h3>Exportar todos los datos</h3>
                 <h:commandLink>
                     <img src="../Recursos/Imagenes/excel.png" width="26"/>                   
                     <p:dataExporter type="xls" target="contratosModulo1Table" fileName="item"/>
@@ -34,16 +34,10 @@
                              paginator="true" style="font-size:12px"
                              paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
                              rows="10"
-                             rowsPerPageTemplate="10,20,30,40,50"
-
-                             >
-                    <!--    scrollable="true" scrollWidth="500"
-                            style="width:3400px" -->
+                             rowsPerPageTemplate="10,20,30,40,50">
 
                     <f:facet name="header">
-
-
-                        <p:commandButton id="toggler" type="button" value="Columns" style="float:right" icon="ui-icon-calculator" />
+                        <p:commandButton id="toggler" type="button" value="Datos" style="float:right" icon="ui-icon-calculator" />
                         <p:columnToggler datasource="contratosModulo1Table" trigger="toggler" transient="false"/>
                     </f:facet>
 
@@ -56,7 +50,7 @@
                         </f:facet>
                        <h:outputText value="#{contratosModulo1Controller.getUsuariosByContratos(item).informacionUsuario()}"/>
                     </p:column>
-                    <p:column   filterBy="#{item.numeroDeContrato}" filterMatchMode="contains" toggleable="false" >
+                    <p:column filterBy="#{item.numeroDeContrato}" filterMatchMode="contains" toggleable="false" >
                         <f:facet name="header">
                             <h:outputText value="#{bundle.ListContratosTitle_numeroDeContrato}"/>
                         </f:facet>
@@ -69,7 +63,6 @@
                         </f:facet>
                         <h:outputText value="#{contratosController.getUsuariosByContratos(item).polizas.toString()}"/>
                     </p:column>
-
 
                     <p:column toggleable="false">
                         <f:facet name="header">
@@ -181,7 +174,7 @@
                     </p:column> 
 
                 </p:dataTable>
-                <div class="container-fluid">
+                <div class="container-fluid" jsf:rendered="#{loginController.gestionDocumental}">
                     <div class="row">
                         <div class="col-md-2 col-md-offset-4">
                             <h5>Informe Talento Humano</h5>

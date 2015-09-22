@@ -5,151 +5,29 @@
         <ui:define name="title">Sami</ui:define>
         <ui:define name="menu"><ui:include src="/modulo3/menu_modulo3.xhtml"></ui:include></ui:define>
         <ui:define name="body">
-            <section class="Section-indexSCCS">
-
-                <div id="slider-wrapper">
-                    <div id="slider">
-                        <a href="http://10.72.252.74:8080/SAMI/"><img src="#{request.contextPath}/resources/images/modulo3/bienvenida.png"  /><p class="msj">Bienvenidos al módulo de supervisión de contratos de compras
-                                suministros y servicios, este proceso permite a los usuarios realizar el seguimiento de los contratos con el fin de beneficiar la formación académica del centro de formación</p></a>
-                        <a href="http://10.72.252.74:8080/SAMI/"><img src="#{request.contextPath}/resources/images/modulo3/equipo.png" /><p class="msj">Los usuarios que hacen parte de este proceso son: Gestor contractual,
-                                Coordinadora administrativa, supervisor de contrato y almacenista.</p></a>
-                        <a href="http://10.72.252.74:8080/SAMI/"><img src="#{request.contextPath}/resources/images/modulo3/v1.0.png"  /><p class="msj">El día 16 de marzo de 2015 fue modificado el aplicativo a su versión 1.0
-                                con mejoras y correcciones en los distintos procesos de los módulos. </p></a>
-                    </div><a href="javascript:void();" class="mas">&#8250;</a>
-                    <a href="javascript:void();" class="menos">&#8249;</a></div>
-
-
-            </section>
-            <script>
-
-                $(function () {
-                    $('#slider a:gt(0)').hide();
-                    var interval = setInterval(changeDiv, 4000);
-                    function changeDiv() {
-                        $('#slider a:first-child').fadeOut(1000).next('a').fadeIn(1000).end().appendTo('#slider');
-                    }
-                    ;
-                    $('.mas').click(function () {
-                        changeDiv();
-                        clearInterval(interval);
-                        interval = setInterval(changeDiv, 4000);
-                    });
-                    $('.menos').click(function () {
-                        $('#slider a:first-child').fadeOut(1000);
-                        $('#slider a:last-child').fadeIn(1000).prependTo('#slider');
-                        clearInterval(interval);
-                        interval = setInterval(changeDiv, 4000);
-                    });
-                });
-            </script>
-
-            <style>
-                /* Contenedor general */
-                #slider-wrapper {
-                    position: relative;
-                    width: 800px;
-                    max-width: 100%;
-                    margin: 0 auto;
-                    padding: 25px 10px;
-                    font-family: 'Open Sans', sans-serif;
-                    font-size: 0;
-                    -webkit-box-sizing: border-box;
-                    -moz-box-sizing: border-box;
-                    box-sizing: border-box;
-                }
-                /* Contenedor slider */
-                #slider { 
-                    position: relative;
-                    width: 100%;
-                    padding-bottom: 50%; /* Aspect ratio */
-                    overflow: hidden;
-                    border:2.5px solid rgba(0, 0, 0, 0.45);
-                    border-radius: 5%/10%;
-                    -webkit-box-sizing: border-box;
-                    -moz-box-sizing: border-box;
-                    box-sizing: border-box;
-                }
-                #slider > a {
-                    position:absolute;
-                    top:0;
-                    left:0;
-                    width: 100%;
-                    min-height: 100%;
-                }
-                /* Ajuste de las imÃ¡genes */
-                #slider img {
-                    width: 100%;
-                    min-height: 100%;
-                    position: absolute;
-                    margin:0;
-                    padding:0; 
-                    border:0;
-                }
-                /* Texto que acompaÃ±a a cada imagen */
-                #slider p {
-                    position: absolute;
-                    bottom: 5%;
-                    left: 0;
-                    display: block;
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    width: 80%;
-                    height: 50px;
-                    margin:0;
-                    padding: 5px 0;
-                    border-radius: 0 5px 5px 0;
-                    color: #eee;
-                    background: -webkit-linear-gradient(rgba(144, 128, 128, 0.07), rgba(3, 3, 3, 0.65));
-                    font-size: 12px;
-                    font-size-adjust:inherit; 
-                    line-height: 28px;
-                    text-align:center;
-                }
-                .msj{
-                    padding: 1em;
-                    display: inline-block;
-                }
-                /* Flechas de navegación */
-                a.mas, a.menos {
-                    position: absolute;
-                    top: 50%;
-                    left: 0px;
-                    z-index: 10;
-                    width: 20px;
-                    height: 30px;
-                    text-align: center;
-                    line-height: 30px;
-                    font-size: 30px;
-                    color: #eee;
-                    background: rgba(0, 0, 0, 0.45);
-                    text-decoration: none;
-                    transition: .5s margin ease;
-                }
-                a.mas {
-                    left: 100%;
-                    color: rgba(255, 255, 255, 0);
-                    background: rgba(255, 255, 255, 0);
-                }
-
-                #slider-wrapper:hover a.mas {
-                    margin-left: -30px;
-                    border-radius: 20px 0 0 20px;
-                    color: #eee;
-                    background: rgba(0, 0, 0, 0.45);
-                }
-                a.menos {
-                    left: 0;
-                    color: rgba(255, 255, 255, 0);
-                    background: rgba(255, 255, 255, 0);
-                }
-                #slider-wrapper:hover a.menos {
-                    margin-left: 10px;
-                    border-radius: 0 20px 20px 0;
-                    color: #eee;
-                    background: rgba(0, 0, 0, 0.45);
-                }
-            </style>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default">Tutoriales</button>
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="caret"></span>
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="https://youtu.be/6HZswNFd84Y">Bienvenid@ a S.A.M.I.</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel-body text-center">
+                                <img src="../resources/images/inicio_modulo3.png" alt="..." class="img-responsive img-rounded center-block"></img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </ui:define>
     </ui:composition>
 </html>

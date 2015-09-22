@@ -16,6 +16,7 @@ import co.edu.sena.sami.jpa.sessions.SolicitudServiciosFacade;
 import co.edu.sena.sami.jpa.sessions.TipoDeServiciosFacade;
 import co.edu.sena.sami.jpa.sessions.TipoUsuarioFacade;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -79,6 +80,16 @@ public class SolicitudServiciosController implements Serializable {
             }
         }
         return items;
+    }
+    public List<SolicitudServicios> solicitudSinAvance() {
+        List<SolicitudServicios> csi = new ArrayList<>();
+        items = null;
+        for (SolicitudServicios c : getItems()) {
+            if (c.getAvanceList().isEmpty()) {
+                csi.add(c);
+            }
+        }
+        return csi;
     }
 
     public String obtenerAvanceFA(SolicitudServicios s) {

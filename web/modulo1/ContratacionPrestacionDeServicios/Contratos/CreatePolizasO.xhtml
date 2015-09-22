@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition>
+        <div class="modal fade" id="PolizasDialogo" tabindex="-1" role="dialog" aria-labelledby="PolizaDlgLabel" aria-hidden="true">
+            <div class="modal-dialog">
+
+                <div class="modal-content">       
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="PolizaDlgLabel">#{bundle.CreatePolizasTitle}</h4>
+                    </div>
+
+                    <form jsf:id="polizasForm" class="form-horizontal" role="form"> 
+                        <div class="modal-body">
+                            <h:panelGroup id="msgs">
+                                <p:messages/>
+                            </h:panelGroup>
+                            <h1><h:outputText value="Create/Edit"/></h1>
+                            <h:panelGrid columns="2">
+                                <label jsf:value="#{bundle.CreatePolizasLabel_numeroDePoliza}" jsf:for="numeroDePoliza" />
+                                <input type="text" maxlength="20" jsf:id="numeroDePoliza" pattern="[0-9]*"   jsf:value="#{contratosModulo1Controller.selectedPolizas.numeroDePoliza}" 
+                                       jsf:title="#{bundle.CreatePolizasTitle_numeroDePoliza}" required="true" jsf:requiredMessage="#{bundle.CreatePolizasRequiredMessage_numeroDePoliza}"></input>
+
+                                <label jsf:value="#{bundle.CreatePolizasLabel_valorDePoliza}"  jsf:for="valorDePoliza" />
+                                <input type="text" maxlength="20" jsf:id="valorDePoliza" pattern="[0-9]*"  jsf:value="#{contratosModulo1Controller.selectedPolizas.valorDePoliza}" 
+                                       jsf:title="#{bundle.CreatePolizasTitle_valorDePoliza}" required="true" jsf:requiredMessage="#{bundle.CreatePolizasRequiredMessage_valorDePoliza}"   ></input>
+
+                                <label jsf:value="#{bundle.CreatePolizasLabel_fechaAprobacion}" jsf:for="fechaAprobacion" />
+                                <p:calendar  id="fechaAprobacion" 
+                                             pattern="yyyy-MM-dd"
+                                             value="#{contratosModulo1Controller.selectedPolizas.fechaAprobacion}" 
+                                             title="#{bundle.CreatePolizasTitle_fechaAprobacion}"
+                                             showOn="button" navigator="true"
+                                             effect="fold"
+                                             maxdate="#{contratosModulo1Controller.selectedPolizas.vigenciaDesde}"
+                                             required="true" >
+                                    <!--  <p:ajax event="dateSelect" process="@this fechaInicioContrato" update="fechasuscripcion"/>
+                                     <p:ajax  event="valueChange"  process="@this fechaInicioContrato" update="fechasuscripcion"/>-->
+                                    <p:ajax event="dateSelect" process="@this fechaAprobacion" update="vigenciaDesde"/>
+                                    <p:ajax event="dateSelect" process="@this vigenciaDesde" update="fechaAprobacion"/>
+                                </p:calendar>
+                                <label jsf:value="#{bundle.CreatePolizasLabel_vigenciaDesde}"  jsf:for="vigenciaDesde" />
+
+                                <p:calendar  id="vigenciaDesde" 
+                                             effect="fold"
+                                             pattern="yyyy-MM-dd"
+                                             value="#{contratosModulo1Controller.selectedPolizas.vigenciaDesde}" 
+                                             title="#{bundle.CreatePolizasTitle_vigenciaDesde}"
+                                             showOn="button" navigator="true"
+                                             mindate="#{contratosModulo1Controller.selectedPolizas.fechaAprobacion}"
+                                             maxdate="#{contratosModulo1Controller.selectedPolizas.vigenciaHasta}"
+                                             required="true" requiredMessage="#{bundle.CreatePolizasRequiredMessage_vigenciaDesde}">
+
+                                    <!-- <p:ajax  event="valueChange"  process="@this fechaFinContrato" update="fechaInicioContrato"/>-->
+                                    <p:ajax event="dateSelect" process="@this vigenciaDesde" update="vigenciaHasta"/>
+                                    <p:ajax event="dateSelect" process="@this vigenciaHasta" update="vigenciaDesde"/>
+                                </p:calendar>
+                                <label jsf:value="#{bundle.CreatePolizasLabel_vigenciaHasta}" jsf:for="vigenciaHasta" />
+
+
+                                <p:calendar  id="vigenciaHasta" value="#{contratosModulo1Controller.selectedPolizas.vigenciaHasta}" 
+                                             title="#{bundle.CreatePolizasTitle_vigenciaHasta}"
+                                             pattern="yyyy-MM-dd"
+                                             showOn="button" navigator="true"
+                                             effect="fold"
+                                             mindate="#{contratosModulo1Controller.selectedPolizas.vigenciaDesde}"
+                                             required="true" requiredMessage="#{bundle.CreatePolizasRequiredMessage_vigenciaHasta}"  >
+
+                                    <p:ajax event="dateSelect" process="@this vigenciaHasta" update="vigenciaDesde"/>
+
+                                    <!-- <p:ajax  event="valueChange"  process="@this fechaInicioContrato" update="fechaFinContrato"/>-->
+                                </p:calendar>
+
+
+                                <label jsf:value="#{bundle.CreatePolizasLabel_idAseguradora}"  jsf:for="idAseguradora" />
+                                <h:selectOneMenu id="idAseguradora" value="#{contratosModulo1Controller.selectedPolizas.idAseguradora}" title="IdAseguradora" required="true" 
+                                                 requiredMessage="#{bundle.EditPolizasRequiredMessage_idAseguradora}">
+                                    <f:selectItem itemLabel="Seleccionar"/>
+                                    <f:selectItems value="#{aseguradoraController.itemsAvailableSelectOne}"
+                                                   var="idAseguradoraItem"
+                                                   itemValue="#{idAseguradoraItem}"/>
+                                </h:selectOneMenu>  
+
+                            </h:panelGrid>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <p:commandButton process="polizasForm" 
+                                             oncomplete="handleSubmit(arg,'PolizasDialogo')"
+                                             onclick="PF('PolizasDialogo').hide()" value="Guardar"
+                                             update="polizasForm msgs" />
+                            <p:commandButton value="Cancelar" process="@this"
+                                             onclick="PF('PolizasDialogo').hide()"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </ui:composition>
+</html>
+
