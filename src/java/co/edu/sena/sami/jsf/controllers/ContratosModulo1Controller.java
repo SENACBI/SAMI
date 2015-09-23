@@ -208,8 +208,15 @@ public class ContratosModulo1Controller implements Serializable {
         return "/modulo1/ContratacionPrestacionDeServicios/Contratos/ListContrato";
     }
 
-    public void update() {
+//  
+     public String update() {
+        try{
         persist(PersistAction.UPDATE, ResourceBundle.getBundle("/resources/Bundle").getString("ContratosUpdated"));
+        return "ListContrato";
+        }catch (Exception e) {
+            addErrorMessage("Error closing resource " + e.getClass().getName(), "Message: " + e.getMessage());
+            return null;
+        }
     }
 
     public void destroy() {
@@ -312,6 +319,10 @@ public class ContratosModulo1Controller implements Serializable {
             }
         }
 
+    }
+     private void addErrorMessage(String title, String msg) {
+        FacesMessage facesMsg = new FacesMessage(FacesMessage.SEVERITY_ERROR, title, msg);
+        FacesContext.getCurrentInstance().addMessage(null, facesMsg);
     }
 
     public void validarContrato(FacesContext contex, UIComponent component, Object value)
