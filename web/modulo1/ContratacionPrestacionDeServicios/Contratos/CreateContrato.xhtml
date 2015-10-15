@@ -162,7 +162,7 @@
                                      value="#{contratosModulo1Controller.selected.fechaAnexo}" 
                                      title="#{bundle.CreateContratosTitle_fechaAnexo}"
                                      showOn="button" navigator="true"
-                                     required="true" >  
+                                     required="true">  
                         </p:calendar>
                         <p:message id="fechaAnexoMessage" for="fechaAnexo" styleClass="error"/>
 
@@ -172,8 +172,7 @@
                                      value="#{contratosModulo1Controller.selected.fechaDeAutorizacion}" 
                                      title="#{bundle.CreateContratosTitle_fechaDeAutorizacion}"
                                      showOn="button" navigator="true"
-                                     required="true"    >                   
-
+                                     required="true" >                   
                         </p:calendar>
                         <p:message id="fechaDeAutorizacionMessage" for="fechaDeAutorizacion" styleClass="error"/>
 
@@ -194,8 +193,7 @@
                                      value="#{contratosModulo1Controller.selected.fechaDeIdoneidad}" 
                                      title="#{bundle.CreateContratosTitle_fechaDeIdoneidad}"
                                      showOn="button" navigator="true"
-                                     required="true"    >                  
-
+                                     required="true">                  
                         </p:calendar>
                         <p:message id="fechaDeIdoneidadMessage" for="fechaDeIdoneidad" styleClass="error"/>
 
@@ -255,7 +253,6 @@
                             <f:ajax execute="@this" render="fechaRegPresupuestalMessage"/>
                         </p:calendar>
                         <p:message id="fechaRegPresupuestalMessage" for="fechaRegPresupuestal" styleClass="error"/>
-
 
                         <label>Polizas</label>
                         <p:commandButton onclick="PF('PolizasDialogo').show()" value="Poliza" process="@this" update=":polizasForm" />
