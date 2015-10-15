@@ -95,6 +95,12 @@ public class LoginController implements Serializable {
     public boolean isSupervisionSuministros() {
         return getRequest().isUserInRole("webModulo3");
     }
+    public boolean isGestorContractual() {
+        return getRequest().isUserInRole("webModulo3")&& !getRequest().isUserInRole("invitadoContractual");
+    }
+    public boolean isInvitadoContractual() {
+        return getRequest().isUserInRole("invitadoContractual")||getRequest().isUserInRole("webModulo3")&& !getRequest().isUserInRole("gestorContractual");
+    }
 
     public boolean isGestionTalento() {
         return getRequest().isUserInRole("webModulo4");

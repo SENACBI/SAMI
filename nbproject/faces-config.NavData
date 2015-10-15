@@ -3,195 +3,195 @@
     <Scope Scope="Faces Configuration Only"/>
     <Scope Scope="Project">
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/Materiales/EditObservacion.xhtml" x="400" y="1350" zoom="true"/>
+        <Node id="Configuracion/Bancos/ModificarBancos.xhtml" x="4400" y="150" zoom="true"/>
         <Node id="modulo3/GestionContractual/EditarContrato.xhtml" x="3150" y="2550" zoom="true"/>
+        <Node id="modulo1/ContratacionPrestacionDeServicios/Contratistas/Ver.xhtml" x="3400" y="1650" zoom="true"/>
         <Node id="Configuracion/Programa de Formacion/AgregarProgramasFormacion.xhtml" x="4400" y="1800" zoom="true"/>
+        <Node id="Programa Formacion/Programa de Formacion/ConsultarProgramasFormacion.xhtml" x="2150" y="150" zoom="true"/>
+        <Node id="Configuracion/EPS/ModificarEps.xhtml" x="900" y="900" zoom="true"/>
         <Node id="modulo6/menu_Usuarios.xhtml" x="4650" y="1050" zoom="true"/>
+        <Node id="Configuracion/Arl/ModificarArl.xhtml" x="3650" y="750" zoom="true"/>
         <Node id="modulo6/index_modulo6.xhtml" x="4650" y="1800" zoom="true"/>
+        <Node id="Configuracion/Barrios/AgregarBarrios.xhtml" x="1650" y="1500" zoom="true"/>
         <Node id="modulo1/menu_modulo1.xhtml" x="1400" y="3300" zoom="true"/>
         <Node id="modulo5/index_modulo5.xhtml" x="5650" y="600" zoom="true"/>
         <Node id="Configuracion/Comunas/ModificarComunas.xhtml" x="5400" y="450" zoom="true"/>
+        <Node id="modulo6/menu_Instructor.xhtml" x="4900" y="750" zoom="true"/>
+        <Node id="Configuracion/Centro de Formacion/AgregarCentroFormacion.xhtml" x="1900" y="2400" zoom="true"/>
+        <Node id="modulo3/GestionContractual/CreatePagoContrato.xhtml" x="150" y="3150" zoom="true"/>
+        <Node id="inicio_sami/confimacion.xhtml" x="1900" y="150" zoom="true"/>
+        <Node id="modulo1/index_modulo1.xhtml" x="3400" y="450" zoom="true"/>
         <Node id="modulo5/Gestion Documental/Documentos/consultarGesdoc.xhtml" x="4900" y="1350" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Coordinacion/SolicitudesMateriales/Edit.xhtml" x="1900" y="450" zoom="true"/>
-        <Node id="modulo3/index_modulo3.xhtml" x="650" y="1950" zoom="true"/>
-        <Node id="Configuracion/Estrato Social/ListarEstratoSocial.xhtml" x="150" y="1650" zoom="true"/>
-        <Node id="modulo4/Gestion_Talento_Humano/Ordenes de viaje/verOrdenDeViaje.xhtml" x="5650" y="1200" zoom="true"/>
-        <Node id="Configuracion/Estrato Social/ModificarEstratoSocial.xhtml" x="1150" y="1800" zoom="true"/>
-        <Node id="Configuracion/Ciudad/AgregarCiudad.xhtml" x="5650" y="750" zoom="true"/>
-        <Node id="modulo4/Gestion_Talento_Humano/Comisiones/AgregarDestinosDlg.xhtml" x="4650" y="1950" zoom="true"/>
-        <Node id="Programa Formacion/Programa de Formacion/ListarProgramasFormacion.xhtml" x="3650" y="1650" zoom="true"/>
-        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/Facturas/Facturas.xhtml" x="3900" y="2400" zoom="true"/>
-        <Node id="Configuracion/Bancos/ListarBancos.xhtml" x="3400" y="1350" zoom="true"/>
-        <Node id="resources/html5gallery/skins/showcase/index.html" x="1150" y="150" zoom="true"/>
-        <Node id="modulo2/mantenimiento/solicitudDeMantenimiento/View.xhtml" x="5400" y="900" zoom="true"/>
-        <Node id="modulo4/Gestion_Talento_Humano/Ordenes de viaje/ordenesDeViaje.xhtml" x="2150" y="450" zoom="true"/>
-        <Node id="modulo1/ContratacionPrestacionDeServicios/polizas/List.xhtml" x="3150" y="2700" zoom="true"/>
-        <Node id="modulo5/Gestion Documental/Pqrsf/reporteIndividual.xhtml" x="7150" y="450" zoom="true"/>
-        <Node id="inicio_sami/mensaje_sami.xhtml" x="2150" y="2400" zoom="true"/>
-        <Node id="modulo4/Gestion_Talento_Humano/Comisiones/verInformeComision.xhtml" x="900" y="3450" zoom="true"/>
-        <Node id="inicio_sami/sami_ayuda.xhtml" x="900" y="1500" zoom="true"/>
-        <Node id="modulo3/GestionContractual/ListaFacturas.xhtml" x="2900" y="1050" zoom="true"/>
-        <Node id="modulo4/Gestion_Talento_Humano/Otros/historialComision.xhtml" x="650" y="3600" zoom="true"/>
-        <Node id="modulo4/Gestion_Talento_Humano/Ordenes de viaje/crearOrdenDeViaje.xhtml" x="150" y="2550" zoom="true"/>
-        <Node id="modulo3/GestionContractual/EditarSoporte.xhtml" x="6150" y="150" zoom="true"/>
-        <Node id="Configuracion/Centro de Formacion/ListarCentroFormacion.xhtml" x="900" y="4050" zoom="true"/>
-        <Node id="modulo3/GestionContractual/CreatePolizas.xhtml" x="1900" y="1350" zoom="true"/>
-        <Node id="modulo4/Gestion_Talento_Humano/Comisiones/informeComision.xhtml" x="6400" y="600" zoom="true"/>
-        <Node id="modulo1/ContratacionPrestacionDeServicios/Editor/Editor.xhtml" x="3900" y="1050" zoom="true"/>
-        <Node id="modulo3/GestionContractual/CrearContrato.xhtml" x="2150" y="3000" zoom="true"/>
-        <Node id="Programa Formacion/Programa de Formacion/AgregarProgramasFormacion.xhtml" x="900" y="2250" zoom="true"/>
-        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/EntradaMateriales/NotasMateriales.xhtml" x="1400" y="150" zoom="true"/>
-        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/ActasVerificacion/Create.xhtml" x="2900" y="1950" zoom="true"/>
-        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/Materiales/SolicitudesAprobadas.xhtml" x="6650" y="150" zoom="true"/>
-        <Node id="modulo4/Gestion_Talento_Humano/Base de datos/Modificar.xhtml" x="4150" y="1950" zoom="true"/>
-        <Node id="modulo2/mantenimiento/solicitudDeMantenimiento/CreateSolicitud.xhtml" x="4400" y="2100" zoom="true"/>
-        <Node id="modulo5/Gestion Documental/Pqrsf/CargarArchivos.xhtml" x="1900" y="1650" zoom="true"/>
-        <Node id="modulo4/Gestion_Talento_Humano/Comisiones/comision.xhtml" x="4900" y="300" zoom="true"/>
-        <Node id="modulo6/GestionMaterialesFormacion/Instructor/Materiales/Materiales.xhtml" x="1650" y="300" zoom="true"/>
-        <Node id="modulo6/GestionMaterialesFormacion/Instructor/MainPage.xhtml" x="2650" y="3000" zoom="true"/>
-        <Node id="Configuracion/Rol/ModificarRol.xhtml" x="900" y="1050" zoom="true"/>
-        <Node id="Configuracion/Arl/AgregarArl.xhtml" x="2400" y="2700" zoom="true"/>
-        <Node id="modulo5/Gestion Documental/Pqrsf/ListarProducidas.xhtml" x="150" y="2850" zoom="true"/>
-        <Node id="modulo5/Gestion Documental/Pqrsf/ListarRecibidas.xhtml" x="150" y="1500" zoom="true"/>
-        <Node id="Configuracion/Fondo de Pensiones/ModificarFondoPensiones.xhtml" x="2900" y="300" zoom="true"/>
-        <Node id="modulo3/GestionContractual/VerContrato.xhtml" x="4900" y="450" zoom="true"/>
-        <Node id="modulo1/ContratacionPrestacionDeServicios/Contratistas/Ver.xhtml" x="3400" y="1650" zoom="true"/>
-        <Node id="Configuracion/EPS/ModificarEps.xhtml" x="900" y="900" zoom="true"/>
-        <Node id="Programa Formacion/Programa de Formacion/ConsultarProgramasFormacion.xhtml" x="2150" y="150" zoom="true"/>
-        <Node id="Configuracion/Centro de Formacion/AgregarCentroFormacion.xhtml" x="1900" y="2400" zoom="true"/>
-        <Node id="modulo1/index_modulo1.xhtml" x="3400" y="450" zoom="true"/>
+        <Node id="Configuracion/Pais/AgregarPais.xhtml" x="2400" y="3300" zoom="true"/>
+        <Node id="Configuracion/Tipo Documento/ListarTipoDocumento.xhtml" x="3650" y="1350" zoom="true"/>
+        <Node id="Configuracion/Usuarios/Modificar.xhtml" x="2150" y="3150" zoom="true"/>
+        <Node id="modulo1/ContratacionPrestacionDeServicios/Contratos/EditContrato.xhtml" x="650" y="2850" zoom="true"/>
+        <Node id="modulo3/GestionContractual/ListInformes.xhtml" x="3150" y="1650" zoom="true"/>
+        <Node id="Configuracion/Estado Civil/ModificarEstadoCivil.xhtml" x="1650" y="2400" zoom="true"/>
+        <Node id="Configuracion/Estado Civil/ListarEstadoCivil.xhtml" x="1150" y="3000" zoom="true"/>
+        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/EntradaMateriales/ListNotaEntrada.xhtml" x="1400" y="1650" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/ActasVerificacion/Actas.xhtml" x="900" y="600" zoom="true"/>
         <Node id="modulo1/ContratacionPrestacionDeServicios/Contratos/CreatePolizas.xhtml" x="900" y="1950" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Instructor/SolicitudMateriales/SolicitudMateriales.xhtml" x="4150" y="750" zoom="true"/>
+        <Node id="modulo1/ContratacionPrestacionDeServicios/Aseguradora/Edit.xhtml" x="3650" y="1800" zoom="true"/>
+        <Node id="modulo3/index_modulo3.xhtml" x="650" y="1950" zoom="true"/>
         <Node id="modulo1/ContratacionPrestacionDeServicios/Contratistas/Agregar.xhtml" x="4650" y="1650" zoom="true"/>
+        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/Materiales/Materiales.xhtml" x="3900" y="1500" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/Materiales/Edit.xhtml" x="650" y="750" zoom="true"/>
+        <Node id="resources/html5gallery/index.html" x="4400" y="450" zoom="true"/>
+        <Node id="modulo4/Gestion_Talento_Humano/Ordenes de viaje/verOrdenDeViaje.xhtml" x="5650" y="1200" zoom="true"/>
+        <Node id="Configuracion/CCF/ListarCcf.xhtml" x="5900" y="150" zoom="true"/>
+        <Node id="Configuracion/Estrato Social/ListarEstratoSocial.xhtml" x="150" y="1650" zoom="true"/>
+        <Node id="modulo6/GestionMaterialesFormacion/Admin/Coordinacion/SolicitudesMateriales/Create.xhtml" x="1400" y="3000" zoom="true"/>
+        <Node id="modulo3/GestionContractual/VerSoporte.xhtml" x="5150" y="1050" zoom="true"/>
         <Node id="Configuracion/Programa de Formacion/ListarProgramasFormacion.xhtml" x="2650" y="900" zoom="true"/>
         <Node id="modulo4/Gestion_Talento_Humano/Base de datos/Listar.xhtml" x="400" y="3900" zoom="true"/>
+        <Node id="Configuracion/Estrato Social/ModificarEstratoSocial.xhtml" x="1150" y="1800" zoom="true"/>
+        <Node id="footer.xhtml" x="3400" y="2550" zoom="true"/>
         <Node id="resources/html5gallery/skins/gallery/index.html" x="1400" y="2250" zoom="true"/>
         <Node id="modulo3/GestionContractual/CreateInforme.xhtml" x="650" y="1800" zoom="true"/>
+        <Node id="Configuracion/Ciudad/AgregarCiudad.xhtml" x="5650" y="750" zoom="true"/>
         <Node id="template.xhtml" x="3650" y="2250" zoom="true"/>
+        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/Facturas/Edit.xhtml" x="150" y="450" zoom="true"/>
+        <Node id="modulo4/Gestion_Talento_Humano/Comisiones/AgregarDestinosDlg.xhtml" x="4650" y="1950" zoom="true"/>
+        <Node id="Programa Formacion/Rol/ListarRol.xhtml" x="650" y="3000" zoom="true"/>
+        <Node id="Programa Formacion/Rol/ModificarRol.xhtml" x="1150" y="1200" zoom="true"/>
+        <Node id="Configuracion/Bancos/AgregarBancos.xhtml" x="2900" y="1350" zoom="true"/>
+        <Node id="Programa Formacion/Programa de Formacion/ListarProgramasFormacion.xhtml" x="3650" y="1650" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/Materiales/Create.xhtml" x="3650" y="600" zoom="true"/>
+        <Node id="modulo4/Gestion_Talento_Humano/Relacion gastos de transporte/relacionGastos.xhtml" x="5900" y="1200" zoom="true"/>
         <Node id="modulo1/ContratacionPrestacionDeServicios/ImportarDocumentos/importarDocumentos.xhtml" x="1400" y="300" zoom="true"/>
         <Node id="modulo3/GestionContractual/viewInforme.xhtml" x="6150" y="1050" zoom="true"/>
+        <Node id="modulo4/Gestion_Talento_Humano/Comisiones/informesComisiones.xhtml" x="900" y="2400" zoom="true"/>
+        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/Facturas/Facturas.xhtml" x="3900" y="2400" zoom="true"/>
+        <Node id="Configuracion/CCF/ModificarCcf.xhtml" x="1650" y="450" zoom="true"/>
+        <Node id="modulo4/Gestion_Talento_Humano/Otros/cartasLaborales.xhtml" x="400" y="4050" zoom="true"/>
+        <Node id="Configuracion/Bancos/ListarBancos.xhtml" x="3400" y="1350" zoom="true"/>
+        <Node id="modulo2/mantenimiento/solicitudDeMantenimiento/View.xhtml" x="5400" y="900" zoom="true"/>
+        <Node id="resources/html5gallery/skins/mediapage/index.html" x="2150" y="2100" zoom="true"/>
+        <Node id="modulo5/Gestion Documental/Pqrsf/ListarInforme.xhtml" x="3900" y="600" zoom="true"/>
+        <Node id="resources/html5gallery/skins/showcase/index.html" x="1150" y="150" zoom="true"/>
+        <Node id="Configuracion/Ciudad/ListarCiudad.xhtml" x="7650" y="150" zoom="true"/>
+        <Node id="modulo4/Gestion_Talento_Humano/Ordenes de viaje/ordenesDeViaje.xhtml" x="2150" y="450" zoom="true"/>
         <Node id="Configuracion/index_configuracion.xhtml" x="5150" y="1350" zoom="true"/>
+        <Node id="Configuracion/Departamentos/AgregarDepartamentos.xhtml" x="2900" y="2250" zoom="true"/>
+        <Node id="modulo6/GestionMaterialesFormacion/Admin/Coordinacion/SolicitudesMateriales/SolicitudesNoAprobadas.xhtml" x="400" y="1800" zoom="true"/>
+        <Node id="modulo2/mantenimiento/solicitudDeMantenimiento/CreateAvance.xhtml" x="5150" y="600" zoom="true"/>
         <Node id="Configuracion/Fondo de Pensiones/AgregarFondoPensiones.xhtml" x="2150" y="1050" zoom="true"/>
-        <Node id="Configuracion/Usuarios/Listar.xhtml" x="1150" y="450" zoom="true"/>
+        <Node id="Configuracion/Pais/ListarPais.xhtml" x="400" y="3600" zoom="true"/>
+        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/Facturas/View.xhtml" x="2900" y="450" zoom="true"/>
+        <Node id="Configuracion/Ciudad/ModificarCiudad.xhtml" x="1650" y="1800" zoom="true"/>
+        <Node id="Configuracion/Departamentos/ListarDepartamentos.xhtml" x="6900" y="300" zoom="true"/>
         <Node id="modulo3/GestionContractual/Buzon.xhtml" x="900" y="2700" zoom="true"/>
+        <Node id="Configuracion/Usuarios/Listar.xhtml" x="1150" y="450" zoom="true"/>
+        <Node id="modulo1/ContratacionPrestacionDeServicios/polizas/List.xhtml" x="3150" y="2700" zoom="true"/>
+        <Node id="modulo6/GestionMaterialesFormacion/Instructor/SolicitudMateriales/View.xhtml" x="1150" y="1950" zoom="true"/>
+        <Node id="Configuracion/Rol/ListarRol.xhtml" x="3150" y="2850" zoom="true"/>
+        <Node id="Configuracion/Comunas/AgregarComunas.xhtml" x="3400" y="1500" zoom="true"/>
+        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/ActasVerificacion/Edit.xhtml" x="5650" y="300" zoom="true"/>
+        <Node id="Configuracion/Barrios/ListarBarrios.xhtml" x="3900" y="1350" zoom="true"/>
         <Node id="modulo5/Gestion Documental/Documentos/listaDocumentos.xhtml" x="1400" y="3750" zoom="true"/>
+        <Node id="Configuracion/EPS/AgregarEps.xhtml" x="1900" y="2100" zoom="true"/>
         <Node id="modulo4/Gestion_Talento_Humano/Ordenes de viaje/legalizar.xhtml" x="650" y="3150" zoom="true"/>
+        <Node id="modulo5/Gestion Documental/Pqrsf/reporteIndividual.xhtml" x="7150" y="450" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/Facturas/Create.xhtml" x="2400" y="1650" zoom="true"/>
+        <Node id="modulo4/Gestion_Talento_Humano/Comisiones/CrearComision.xhtml" x="2650" y="2550" zoom="true"/>
+        <Node id="Configuracion/Departamentos/ModificarDepartamentos.xhtml" x="6900" y="150" zoom="true"/>
+        <Node id="modulo2/mantenimiento/historial/Create.xhtml" x="1650" y="1650" zoom="true"/>
+        <Node id="inicio_sami/mensaje_sami.xhtml" x="2150" y="2400" zoom="true"/>
+        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/MainPage.xhtml" x="2900" y="2400" zoom="true"/>
         <Node id="modulo2/index_modulo2.xhtml" x="1900" y="2700" zoom="true"/>
+        <Node id="modulo4/Gestion_Talento_Humano/Comisiones/verInformeComision.xhtml" x="900" y="3450" zoom="true"/>
         <Node id="Configuracion/menu_configuracion.xhtml" x="2900" y="150" zoom="true"/>
-        <Node id="modulo6/GestionMaterialesFormacion/Admin/Coordinacion/Materiales/Materiales.xhtml" x="6400" y="300" zoom="true"/>
+        <Node id="modulo5/Gestion Documental/Pqrsf/reporteConsolidado.xhtml" x="6650" y="300" zoom="true"/>
+        <Node id="Configuracion/Sexo/ListarSexo.xhtml" x="400" y="600" zoom="true"/>
+        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/EntradaMateriales/ViewNota.xhtml" x="3650" y="1500" zoom="true"/>
+        <Node id="inicio_sami/sami_ayuda.xhtml" x="900" y="1500" zoom="true"/>
         <Node id="Configuracion/CCF/AgregarCcf.xhtml" x="1400" y="1350" zoom="true"/>
+        <Node id="modulo6/GestionMaterialesFormacion/Admin/Coordinacion/Materiales/Materiales.xhtml" x="6400" y="300" zoom="true"/>
         <Node id="modulo1/ContratacionPrestacionDeServicios/polizas/Edit.xhtml" x="400" y="450" zoom="true"/>
         <Node id="modulo4/Gestion_Talento_Humano/Base de datos/Consultar.xhtml" x="900" y="2100" zoom="true"/>
+        <Node id="modulo4/Gestion_Talento_Humano/Otros/historialComision.xhtml" x="650" y="3600" zoom="true"/>
+        <Node id="modulo3/GestionContractual/ListaFacturas.xhtml" x="2900" y="1050" zoom="true"/>
+        <Node id="Configuracion/Programa de Formacion/ConsultarProgramasFormacion.xhtml" x="4150" y="1650" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/EntradaMateriales/CreateNota.xhtml" x="900" y="750" zoom="true"/>
+        <Node id="modulo4/Gestion_Talento_Humano/Ordenes de viaje/crearOrdenDeViaje.xhtml" x="150" y="2550" zoom="true"/>
+        <Node id="resources/html5gallery/skins/vertical/index.html" x="1400" y="2400" zoom="true"/>
+        <Node id="resources/html5gallery/skins/horizontal/index.html" x="5400" y="1350" zoom="true"/>
         <Node id="Configuracion/Centro de Formacion/ModificarCentroFormacion.xhtml" x="2650" y="1500" zoom="true"/>
+        <Node id="Configuracion/Comunas/ListarComunas.xhtml" x="3900" y="300" zoom="true"/>
+        <Node id="modulo6/menu_Coordinacion.xhtml" x="2650" y="3150" zoom="true"/>
+        <Node id="modulo3/GestionContractual/EditarSoporte.xhtml" x="6150" y="150" zoom="true"/>
         <Node id="modulo4/Gestion_Talento_Humano/Comisiones/DestinosComision.xhtml" x="900" y="3150" zoom="true"/>
         <Node id="Configuracion/Rol/AgregarRol.xhtml" x="3650" y="2550" zoom="true"/>
         <Node id="modulo3/GestionContractual/ListaContratos.xhtml" x="3150" y="2100" zoom="true"/>
         <Node id="modulo1/ContratacionPrestacionDeServicios/Contratistas/ListContratistas.xhtml" x="650" y="900" zoom="true"/>
-        <Node id="modulo6/GestionMaterialesFormacion/Instructor/SolicitudMateriales/SolicitudesUsuario.xhtml" x="4650" y="1500" zoom="true"/>
-        <Node id="modulo2/menu_modulo2.xhtml" x="2150" y="2850" zoom="true"/>
-        <Node id="modulo1/ContratacionPrestacionDeServicios/Contratos/ViewContrato.xhtml" x="2900" y="600" zoom="true"/>
-        <Node id="Configuracion/Estrato Social/AgregarEstratoSocial.xhtml" x="1150" y="1650" zoom="true"/>
-        <Node id="Configuracion/Programa de Formacion/ModificarProgramasFormacion.xhtml" x="7150" y="600" zoom="true"/>
-        <Node id="resources/html5gallery/skins/light/index.html" x="2650" y="2700" zoom="true"/>
-        <Node id="Configuracion/Barrios/ModificarBarrios.xhtml" x="2400" y="750" zoom="true"/>
-        <Node id="modulo5/Gestion Documental/Pqrsf/ConsultarProducidas.xhtml" x="150" y="1950" zoom="true"/>
-        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/ActasVerificacion/View.xhtml" x="2150" y="1500" zoom="true"/>
-        <Node id="modulo1/ContratacionPrestacionDeServicios/Aseguradora/Create.xhtml" x="1400" y="1800" zoom="true"/>
-        <Node id="Configuracion/Arl/ModificarArl.xhtml" x="3650" y="750" zoom="true"/>
-        <Node id="Configuracion/Barrios/AgregarBarrios.xhtml" x="1650" y="1500" zoom="true"/>
-        <Node id="inicio_sami/confimacion.xhtml" x="1900" y="150" zoom="true"/>
-        <Node id="Configuracion/Tipo Documento/ListarTipoDocumento.xhtml" x="3650" y="1350" zoom="true"/>
-        <Node id="modulo1/ContratacionPrestacionDeServicios/Contratos/EditContrato.xhtml" x="650" y="2850" zoom="true"/>
-        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/EntradaMateriales/ListNotaEntrada.xhtml" x="1400" y="1650" zoom="true"/>
-        <Node id="modulo1/ContratacionPrestacionDeServicios/Aseguradora/Edit.xhtml" x="3650" y="1800" zoom="true"/>
-        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/Materiales/Materiales.xhtml" x="3900" y="1500" zoom="true"/>
-        <Node id="Configuracion/CCF/ListarCcf.xhtml" x="5900" y="150" zoom="true"/>
-        <Node id="footer.xhtml" x="3400" y="2550" zoom="true"/>
-        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/Facturas/Edit.xhtml" x="150" y="450" zoom="true"/>
-        <Node id="Programa Formacion/Rol/ListarRol.xhtml" x="650" y="3000" zoom="true"/>
-        <Node id="Configuracion/Bancos/AgregarBancos.xhtml" x="2900" y="1350" zoom="true"/>
-        <Node id="modulo4/Gestion_Talento_Humano/Relacion gastos de transporte/relacionGastos.xhtml" x="5900" y="1200" zoom="true"/>
-        <Node id="modulo4/Gestion_Talento_Humano/Comisiones/informesComisiones.xhtml" x="900" y="2400" zoom="true"/>
-        <Node id="resources/html5gallery/skins/mediapage/index.html" x="2150" y="2100" zoom="true"/>
-        <Node id="Configuracion/Departamentos/AgregarDepartamentos.xhtml" x="2900" y="2250" zoom="true"/>
-        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/Facturas/View.xhtml" x="2900" y="450" zoom="true"/>
-        <Node id="Configuracion/Departamentos/ListarDepartamentos.xhtml" x="6900" y="300" zoom="true"/>
-        <Node id="modulo6/GestionMaterialesFormacion/Instructor/SolicitudMateriales/View.xhtml" x="1150" y="1950" zoom="true"/>
-        <Node id="Configuracion/Comunas/AgregarComunas.xhtml" x="3400" y="1500" zoom="true"/>
-        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/ActasVerificacion/Edit.xhtml" x="5650" y="300" zoom="true"/>
-        <Node id="Configuracion/Barrios/ListarBarrios.xhtml" x="3900" y="1350" zoom="true"/>
-        <Node id="Configuracion/Departamentos/ModificarDepartamentos.xhtml" x="6900" y="150" zoom="true"/>
-        <Node id="modulo2/mantenimiento/historial/Create.xhtml" x="1650" y="1650" zoom="true"/>
-        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/MainPage.xhtml" x="2900" y="2400" zoom="true"/>
-        <Node id="Configuracion/Sexo/ListarSexo.xhtml" x="400" y="600" zoom="true"/>
-        <Node id="modulo6/menu_Coordinacion.xhtml" x="2650" y="3150" zoom="true"/>
         <Node id="modulo1/ContratacionPrestacionDeServicios/Contratos/CreateContrato.xhtml" x="1900" y="2550" zoom="true"/>
         <Node id="modulo2/mantenimiento/solicitudDeMantenimiento/ListSolicitud.xhtml" x="2900" y="1800" zoom="true"/>
+        <Node id="modulo6/GestionMaterialesFormacion/Instructor/SolicitudMateriales/SolicitudesUsuario.xhtml" x="4650" y="1500" zoom="true"/>
         <Node id="modulo6/menu_Almacen.xhtml" x="3900" y="1200" zoom="true"/>
+        <Node id="Configuracion/Centro de Formacion/ListarCentroFormacion.xhtml" x="900" y="4050" zoom="true"/>
+        <Node id="modulo3/GestionContractual/CreatePolizas.xhtml" x="1900" y="1350" zoom="true"/>
+        <Node id="modulo2/menu_modulo2.xhtml" x="2150" y="2850" zoom="true"/>
+        <Node id="modulo4/menu_modulo4.xhtml" x="1150" y="3150" zoom="true"/>
+        <Node id="modulo5/menu_modulo5.xhtml" x="2900" y="2100" zoom="true"/>
+        <Node id="modulo4/Gestion_Talento_Humano/Comisiones/informeComision.xhtml" x="6400" y="600" zoom="true"/>
+        <Node id="modulo1/ContratacionPrestacionDeServicios/Editor/Editor.xhtml" x="3900" y="1050" zoom="true"/>
+        <Node id="modulo3/GestionContractual/CrearContrato.xhtml" x="2150" y="3000" zoom="true"/>
+        <Node id="Configuracion/Estrato Social/AgregarEstratoSocial.xhtml" x="1150" y="1650" zoom="true"/>
+        <Node id="modulo1/ContratacionPrestacionDeServicios/Contratos/ViewContrato.xhtml" x="2900" y="600" zoom="true"/>
+        <Node id="Programa Formacion/Programa de Formacion/AgregarProgramasFormacion.xhtml" x="900" y="2250" zoom="true"/>
         <Node id="modulo3/menu_modulo3.xhtml" x="650" y="3750" zoom="true"/>
+        <Node id="Configuracion/Pais/ModificarPais.xhtml" x="650" y="1050" zoom="true"/>
+        <Node id="modulo6/GestionMaterialesFormacion/Admin/Coordinacion/MainPage.xhtml" x="3650" y="1200" zoom="true"/>
         <Node id="modulo3/GestionContractual/CreateSoporte.xhtml" x="2900" y="3000" zoom="true"/>
+        <Node id="resources/html5gallery/skins/darkness/index.html" x="5650" y="1050" zoom="true"/>
+        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/EntradaMateriales/NotasMateriales.xhtml" x="1400" y="150" zoom="true"/>
         <Node id="modulo4/Gestion_Talento_Humano/Comisiones/VerComision.xhtml" x="7400" y="450" zoom="true"/>
-        <Node id="modulo5/Gestion Documental/Pqrsf/ConsultarRecibidas.xhtml" x="5900" y="750" zoom="true"/>
+        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/ActasVerificacion/Create.xhtml" x="2900" y="1950" zoom="true"/>
         <Node id="modulo3/GestionContractual/ListaSoportes.xhtml" x="4400" y="1650" zoom="true"/>
+        <Node id="modulo5/Gestion Documental/Documentos/crearGesdoc.xhtml" x="4650" y="750" zoom="true"/>
+        <Node id="modulo5/Gestion Documental/Pqrsf/ConsultarRecibidas.xhtml" x="5900" y="750" zoom="true"/>
+        <Node id="modulo3/GestionContractual/VerFactura.xhtml" x="2400" y="600" zoom="true"/>
         <Node id="Configuracion/EPS/ListarEps.xhtml" x="5400" y="1200" zoom="true"/>
+        <Node id="Configuracion/Programa de Formacion/ModificarProgramasFormacion.xhtml" x="7150" y="600" zoom="true"/>
+        <Node id="modulo4/Gestion_Talento_Humano/Base de datos/Modificar.xhtml" x="4150" y="1950" zoom="true"/>
+        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/Materiales/SolicitudesAprobadas.xhtml" x="6650" y="150" zoom="true"/>
+        <Node id="modulo2/mantenimiento/solicitudDeMantenimiento/CreateSolicitud.xhtml" x="4400" y="2100" zoom="true"/>
+        <Node id="Configuracion/Usuarios/Consultar.xhtml" x="5400" y="300" zoom="true"/>
+        <Node id="modulo5/Gestion Documental/Pqrsf/CargarArchivos.xhtml" x="1900" y="1650" zoom="true"/>
+        <Node id="modulo5/Gestion Documental/Pqrsf/ConsultarInforme.xhtml" x="5150" y="1200" zoom="true"/>
         <Node id="modulo1/ContratacionPrestacionDeServicios/Aseguradora/List.xhtml" x="1150" y="1350" zoom="true"/>
+        <Node id="resources/html5gallery/skins/light/index.html" x="2650" y="2700" zoom="true"/>
+        <Node id="modulo4/Gestion_Talento_Humano/Comisiones/comision.xhtml" x="4900" y="300" zoom="true"/>
         <Node id="Configuracion/Arl/ListarArl.xhtml" x="1650" y="2100" zoom="true"/>
+        <Node id="modulo6/GestionMaterialesFormacion/Instructor/Materiales/Materiales.xhtml" x="1650" y="300" zoom="true"/>
+        <Node id="Programa Formacion/Programa de Formacion/ModificarProgramasFormacion.xhtml" x="150" y="150" zoom="true"/>
+        <Node id="Configuracion/Barrios/ModificarBarrios.xhtml" x="2400" y="750" zoom="true"/>
         <Node id="modulo4/index_modulo4.xhtml" x="6400" y="750" zoom="true"/>
+        <Node id="modulo6/GestionMaterialesFormacion/Instructor/MainPage.xhtml" x="2650" y="3000" zoom="true"/>
+        <Node id="Configuracion/Rol/ModificarRol.xhtml" x="900" y="1050" zoom="true"/>
+        <Node id="Programa Formacion/index_programa.xhtml" x="1150" y="600" zoom="true"/>
         <Node id="Programa Formacion/Rol/AgregarRol.xhtml" x="150" y="1350" zoom="true"/>
+        <Node id="modulo5/Gestion Documental/Pqrsf/ConsultarProducidas.xhtml" x="150" y="1950" zoom="true"/>
+        <Node id="Configuracion/Estado Civil/AgregarEstadoCivil.xhtml" x="1900" y="1200" zoom="true"/>
+        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/ActasVerificacion/View.xhtml" x="2150" y="1500" zoom="true"/>
+        <Node id="Configuracion/Arl/AgregarArl.xhtml" x="2400" y="2700" zoom="true"/>
+        <Node id="modulo5/Gestion Documental/Pqrsf/ListarProducidas.xhtml" x="150" y="2850" zoom="true"/>
+        <Node id="modulo5/Gestion Documental/Pqrsf/ListarRecibidas.xhtml" x="150" y="1500" zoom="true"/>
         <Node id="modulo6/GestionMaterialesFormacion/Admin/Coordinacion/SolicitudesMateriales/View.xhtml" x="150" y="1800" zoom="true"/>
+        <Node id="modulo6/GestionMaterialesFormacion/Admin/Coordinacion/SolicitudesMateriales/Solicitudes.xhtml" x="4900" y="900" zoom="true"/>
+        <Node id="modulo1/ContratacionPrestacionDeServicios/Aseguradora/Create.xhtml" x="1400" y="1800" zoom="true"/>
         <Node id="Configuracion/Usuarios/Agregar.xhtml" x="2650" y="750" zoom="true"/>
         <Node id="Configuracion/Fondo de Pensiones/ListarFondoPensiones.xhtml" x="2150" y="600" zoom="true"/>
         <Node id="index.xhtml" x="2150" y="1800" zoom="true"/>
         <Node id="sami_inicio.xhtml" x="4900" y="600" zoom="true"/>
+        <Node id="modulo3/GestionContractual/VerContrato.xhtml" x="4900" y="450" zoom="true"/>
+        <Node id="Configuracion/Fondo de Pensiones/ModificarFondoPensiones.xhtml" x="2900" y="300" zoom="true"/>
         <Node id="modulo3/GestionContractual/EditInforme.xhtml" x="400" y="4500" zoom="true"/>
-        <Node id="modulo1/ContratacionPrestacionDeServicios/Contratos/ListContrato.xhtml" x="650" y="3300" zoom="true"/>
-        <Node id="Configuracion/Bancos/ModificarBancos.xhtml" x="4400" y="150" zoom="true"/>
-        <Node id="modulo6/menu_Instructor.xhtml" x="4900" y="750" zoom="true"/>
-        <Node id="modulo3/GestionContractual/CreatePagoContrato.xhtml" x="150" y="3150" zoom="true"/>
-        <Node id="Configuracion/Pais/AgregarPais.xhtml" x="2400" y="3300" zoom="true"/>
-        <Node id="Configuracion/Usuarios/Modificar.xhtml" x="2150" y="3150" zoom="true"/>
-        <Node id="Configuracion/Estado Civil/ModificarEstadoCivil.xhtml" x="1650" y="2400" zoom="true"/>
-        <Node id="modulo3/GestionContractual/ListInformes.xhtml" x="3150" y="1650" zoom="true"/>
-        <Node id="Configuracion/Estado Civil/ListarEstadoCivil.xhtml" x="1150" y="3000" zoom="true"/>
-        <Node id="resources/html5gallery/index.html" x="4400" y="450" zoom="true"/>
-        <Node id="modulo6/GestionMaterialesFormacion/Admin/Coordinacion/SolicitudesMateriales/Create.xhtml" x="1400" y="3000" zoom="true"/>
-        <Node id="modulo3/GestionContractual/VerSoporte.xhtml" x="5150" y="1050" zoom="true"/>
-        <Node id="Programa Formacion/Rol/ModificarRol.xhtml" x="1150" y="1200" zoom="true"/>
-        <Node id="Configuracion/CCF/ModificarCcf.xhtml" x="1650" y="450" zoom="true"/>
-        <Node id="modulo4/Gestion_Talento_Humano/Otros/cartasLaborales.xhtml" x="400" y="4050" zoom="true"/>
-        <Node id="modulo5/Gestion Documental/Pqrsf/ListarInforme.xhtml" x="3900" y="600" zoom="true"/>
-        <Node id="Configuracion/Ciudad/ListarCiudad.xhtml" x="7650" y="150" zoom="true"/>
-        <Node id="modulo6/GestionMaterialesFormacion/Admin/Coordinacion/SolicitudesMateriales/SolicitudesNoAprobadas.xhtml" x="400" y="1800" zoom="true"/>
-        <Node id="modulo2/mantenimiento/solicitudDeMantenimiento/CreateAvance.xhtml" x="5150" y="600" zoom="true"/>
-        <Node id="Configuracion/Pais/ListarPais.xhtml" x="400" y="3600" zoom="true"/>
-        <Node id="Configuracion/Ciudad/ModificarCiudad.xhtml" x="1650" y="1800" zoom="true"/>
-        <Node id="Configuracion/Rol/ListarRol.xhtml" x="3150" y="2850" zoom="true"/>
-        <Node id="Configuracion/EPS/AgregarEps.xhtml" x="1900" y="2100" zoom="true"/>
-        <Node id="modulo4/Gestion_Talento_Humano/Comisiones/CrearComision.xhtml" x="2650" y="2550" zoom="true"/>
-        <Node id="modulo5/Gestion Documental/Pqrsf/reporteConsolidado.xhtml" x="6650" y="300" zoom="true"/>
-        <Node id="modulo6/GestionMaterialesFormacion/Admin/Almacen/EntradaMateriales/ViewNota.xhtml" x="3650" y="1500" zoom="true"/>
-        <Node id="Configuracion/Programa de Formacion/ConsultarProgramasFormacion.xhtml" x="4150" y="1650" zoom="true"/>
-        <Node id="resources/html5gallery/skins/horizontal/index.html" x="5400" y="1350" zoom="true"/>
-        <Node id="resources/html5gallery/skins/vertical/index.html" x="1400" y="2400" zoom="true"/>
-        <Node id="Configuracion/Comunas/ListarComunas.xhtml" x="3900" y="300" zoom="true"/>
-        <Node id="modulo4/menu_modulo4.xhtml" x="1150" y="3150" zoom="true"/>
-        <Node id="modulo5/menu_modulo5.xhtml" x="2900" y="2100" zoom="true"/>
-        <Node id="Configuracion/Pais/ModificarPais.xhtml" x="650" y="1050" zoom="true"/>
-        <Node id="modulo6/GestionMaterialesFormacion/Admin/Coordinacion/MainPage.xhtml" x="3650" y="1200" zoom="true"/>
-        <Node id="resources/html5gallery/skins/darkness/index.html" x="5650" y="1050" zoom="true"/>
-        <Node id="modulo5/Gestion Documental/Documentos/crearGesdoc.xhtml" x="4650" y="750" zoom="true"/>
-        <Node id="modulo3/GestionContractual/VerFactura.xhtml" x="2400" y="600" zoom="true"/>
-        <Node id="Configuracion/Usuarios/Consultar.xhtml" x="5400" y="300" zoom="true"/>
-        <Node id="modulo5/Gestion Documental/Pqrsf/ConsultarInforme.xhtml" x="5150" y="1200" zoom="true"/>
-        <Node id="Programa Formacion/Programa de Formacion/ModificarProgramasFormacion.xhtml" x="150" y="150" zoom="true"/>
-        <Node id="Programa Formacion/index_programa.xhtml" x="1150" y="600" zoom="true"/>
-        <Node id="Configuracion/Estado Civil/AgregarEstadoCivil.xhtml" x="1900" y="1200" zoom="true"/>
-        <Node id="modulo6/GestionMaterialesFormacion/Admin/Coordinacion/SolicitudesMateriales/Solicitudes.xhtml" x="4900" y="900" zoom="true"/>
         <Node id="modulo3/GestionContractual/EditarFactura.xhtml" x="400" y="900" zoom="true"/>
+        <Node id="modulo1/ContratacionPrestacionDeServicios/Contratos/ListContrato.xhtml" x="650" y="3300" zoom="true"/>
     </Scope>
     <Scope Scope="All Faces Configurations"/>
 </Scene>

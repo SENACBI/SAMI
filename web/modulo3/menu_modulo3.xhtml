@@ -12,11 +12,13 @@
                     Inicio
                 </a>
             </li>
+            <div jsf:rendered="#{loginController.gestorContractual}">
             <li class="MainMenu-item">
                 <a jsf:action="#{contratosController.prepareCreate()}" class="MainMenu-link">
                     Registrar Contrato
                 </a>
             </li>
+            </div>
             <li class="MainMenu-item">
                 <!--<a jsf:outcome="/modulo3/GestionContractual/ListaContratos" class="MainMenu-link">-->
                 <a jsf:action="#{contratosController.prepareList()}" class="MainMenu-link">
@@ -43,11 +45,13 @@
                     Lista de Soportes
                 </a>
             </li>
+            <div jsf:rendered="#{loginController.gestorContractual}">
             <li class="MainMenu-item">
                 <a jsf:action="#{pagosContratosController.prepareCreate()}" class="MainMenu-link">
                     Administrar Facturas
                 </a>
             </li>
+            </div>
             <li class="MainMenu-item">
                 <a jsf:action="#{pagosContratosController.prepareList()}" class="MainMenu-link">
                 <!--<a jsf:outcome="/modulo3/GestionContractual/ListaFacturas" class="MainMenu-link">-->

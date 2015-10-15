@@ -411,7 +411,7 @@ public class ContratosModulo1Controller implements Serializable {
         List<UsuariosContratos> selectUsuariosContratos = getUsuariosContratosFacade().findAll();
         HSSFRow header = sheet.createRow(0);
         HSSFCell cellHeader = header.createCell(0);
-        cellHeader.setCellValue(ResourceBundle.getBundle("/resources/Bundle").getString("ListInformesTitle_idContrato"));
+        cellHeader.setCellValue(ResourceBundle.getBundle("/resources/Bundle").getString("ListContratosTitle_idContrato"));
         cellHeader = header.createCell(1);
         cellHeader.setCellValue(ResourceBundle.getBundle("/resources/Bundle").getString("ListContratosTitle_fechaSuscripcion"));
         cellHeader = header.createCell(2);
