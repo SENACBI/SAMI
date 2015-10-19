@@ -18,7 +18,7 @@
                     <f:facet name="header">
                         Lista de Informes de supervisión
                     </f:facet>
-                    <p:column style="width:16px" >
+                    <p:column headerText="Contrato" style="width:75px" >
                         <p:rowToggler />
                     </p:column>
                     <p:column headerText="Número de Contrato" filterBy="#{item.idContrato}" filterMatchMode="contains">
@@ -45,44 +45,44 @@
                                 <f:facet name="header">
                                     Contrato Seleccionado
                                 </f:facet>
-                                <label jsf:value="#{bundle.ViewContratosLabel_numeroDeContrato}" class="FormLabelSCCSS" />
+                                <label jsf:value="#{bundle.ViewContratosLabel_numeroDeContrato}" style="color: darkcyan"/>
                                 <input class="FormInputSCCSS" disabled="true"
                                        value="#{item.idContrato.numeroDeContrato}" title="#{bundle.ViewContratosTitle_numeroDeContrato}" > 
                                 </input>
 
-                                <label jsf:value="#{bundle.ViewContratosLabel_idTipoContrato}" class="FormLabelSCCSS" />
+                                <label jsf:value="#{bundle.ViewContratosLabel_idTipoContrato}" style="color: darkcyan" />
                                 <input value="#{item.idContrato.idTipoContrato}" title="#{bundle.ViewContratosTitle_idTipoContrato}" class="FormInputDateSCCSS" disabled="true">                            
                                 </input>
 
-                                <label jsf:value="#{bundle.ViewContratosLabel_fechaSuscripcion}" class="FormLabelSCCSS" />
+                                <label jsf:value="#{bundle.ViewContratosLabel_fechaSuscripcion}" style="color: darkcyan" />
                                 <h:inputText id="fechaSuscripcionText" value="#{item.idContrato.fechasuscripcion}" title="#{bundle.ViewContratosTitle_fechaSuscripcion}" class="FormInputDateSCCSS"
                                              disabled="true" >
                                     <f:convertDateTime pattern="dd-MM-yyyy"/>
                                 </h:inputText>
 
-                                <label jsf:value="#{bundle.ViewContratosLabel_fechaInicioContrato}" class="FormLabelSCCSS" />
+                                <label jsf:value="#{bundle.ViewContratosLabel_fechaInicioContrato}" style="color: darkcyan" />
                                 <h:inputText value="#{item.idContrato.fechaInicioContrato}" title="#{bundle.ViewContratosTitle_fechaInicioContrato}" class="FormInputDateSCCSS"
                                              disabled="true" >
                                     <f:convertDateTime pattern="dd-MM-yyyy"/>
                                 </h:inputText>
 
-                                <label jsf:value="#{bundle.ViewContratosLabel_fechaFinContrato}" class="FormLabelSCCSS" />
+                                <label jsf:value="#{bundle.ViewContratosLabel_fechaFinContrato}" style="color: darkcyan" />
                                 <h:inputText value="#{item.idContrato.fechaFinContrato}" title="#{bundle.ViewContratosTitle_fechaFinContrato}" class="FormInputDateSCCSS"
                                              disabled="true" >
                                     <f:convertDateTime pattern="dd-MM-yyyy"/>
                                 </h:inputText>
 
-                                <label jsf:value="#{bundle.ViewContratosLabel_objetoContractual}" class="FormLabelSCCSS" />
+                                <label jsf:value="#{bundle.ViewContratosLabel_objetoContractual}" style="color: darkcyan" />
                                 <textarea jsf:value="#{item.idContrato.objetoContractual}" title="#{bundle.ViewContratosTitle_objetoContractual}" class="FormTextAreaSCCSS"
                                           rows="6" cols="45" disabled="true" >                           
                                 </textarea>
 
-                                <label jsf:value="#{bundle.ViewContratosLabel_valorContrato}" class="FormLabelSCCSS" />
+                                <label jsf:value="#{bundle.ViewContratosLabel_valorContrato}" style="color: darkcyan" />
                                 <input value="#{item.idContrato.valorContrato}" title="#{bundle.ViewContratosTitle_valorContrato}" class="FormInputSCCSS"
                                        disabled="true" >                          
                                 </input>                                             
 
-                                <label jsf:value="#{bundle.ViewContratosLabel_observaciones}" class="FormLabelSCCSS" />
+                                <label jsf:value="#{bundle.ViewContratosLabel_observaciones}" style="color: darkcyan" />
                                 <textarea jsf:value="#{item.idContrato.observaciones.toString()}" title="#{bundle.ViewContratosTitle_observaciones}" class="FormTextAreaSCCSS"
                                           rows="6" cols="45" disabled="true" >                           
                                 </textarea>
