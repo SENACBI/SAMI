@@ -24,10 +24,7 @@
                              paginator="true" style="font-size:12px"
                              rows="10"
                              paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
-                             rowsPerPageTemplate="10,20,30,40,50"
-                             >
-
-
+                             rowsPerPageTemplate="10,20,30,40,50">
                     <p:column>
                         <f:facet name="header">
                             <h:outputText value="#{bundle.ListAseguradoraTitle_nombreAseguradora}"/>
@@ -45,14 +42,9 @@
                             <p:confirm header="Confirmación" message="¿Esta seguro que desea eliminar el contrato?" icon="ui-icon-alert" />
                             <f:setPropertyActionListener value="#{item}" target="#{aseguradoraController.selected}"/>
                         </p:commandButton>
-
-                    </p:column> 
-
+                    </p:column>
                 </p:dataTable>
-
             </h:form>
-
-
         </ui:define>
     </ui:composition>
 

@@ -12,7 +12,8 @@
 
             <h:form>
 
-                <h:panelGrid columns="2">             
+                <h:panelGrid columns="2"> 
+                    <h1>Crear nueva aseguradora</h1>
                     <label jsf:value="#{bundle.CreateAseguradoraLabel_nombreAseguradora}" for="nombreAseguradora" />
                     <input id="nombreAseguradora" type="text"  pattern="[a-zA-Z Ã¡Ã©Ã­Ã³ÃºÃ�Ã‰Ã�Ã“Ãš]*"  maxlength="100"  jsf:value="#{aseguradoraController.selected.nombreAseguradora}" 
                            jsf:title="#{bundle.CreateAseguradoraTitle_nombreAseguradora}" required="true" jsf:requiredMessage="#{bundle.CreateAseguradoraRequiredMessage_nombreAseguradora}"></input>
