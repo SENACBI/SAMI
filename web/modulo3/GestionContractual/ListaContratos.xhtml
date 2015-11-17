@@ -189,7 +189,7 @@
                                 <f:setPropertyActionListener value="#{item}" target="#{contratosController.selected}"/>
                             </p:commandButton>
 
-                            <p:commandButton icon="ui-icon-pencil" title="Editar Contrato" action="#{contratosController.prepareEdit()}">
+                            <p:commandButton rendered="#{loginController.gestorContractual}" icon="ui-icon-pencil" title="Editar Contrato" action="#{contratosController.prepareEdit()}">
                                 <f:setPropertyActionListener value="#{item}" target="#{contratosController.selected}"/>
                             </p:commandButton>
 

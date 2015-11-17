@@ -14,7 +14,7 @@
                 <div>
                     <h:panelGroup rendered="true">
                         <div class="iniciar col-md-3 panel panel-default boxIndex" >
-                            <h4 class="text-center">INICIO SESIÓN</h4>
+                            <h4 class="text-center"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> INICIO SESIÓN</h4>
                             <div class="panel-body">
                                 <form jsf:id="LoginForm" class="" name="inicioDatos">
                                     <h:panelGroup id="messagePanel" layout="block">
@@ -40,12 +40,12 @@
                     .<!-- espacio entre cajas -->
                 </div>
                 <div class="col-md-8 panel panel-default boxIndex"><!-- info de modulos -->
-                    <h4 class="text-center">INFORMACIÓN DE MODULOS</h4>
+                    <h4 class="text-center"><span class="icon-books" aria-hidden="true"></span> MÓDULOS</h4>
                     <div class="panel-group boxIndex" id="accordion" role="tablist" aria-multiselectable="true">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="panel panel-default"><!--primer contenedor info -->
-                                    <div class=" botonRare panel-heading" role="tab" id="heading1">
+                                    <div class="panel-heading botonInfo" role="tab" id="heading1">
                                         <h4 class="panel-title">
                                             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
                                                 Contratación de prestación de servicios
@@ -62,7 +62,7 @@
                                         cual optimiza y agiliza el funcionamiento del módulo</p>
                                 </div>
                             </div><!-- se deja este div por fuera del contenedor para que el parrafo descriptivo ocupe el espacio de la fila -->
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="panel panel-default"><!--segundo contenedor info -->
                                     <div class="panel-heading botonInfo" role="tab" id="heading2">
                                         <h4 class="panel-title">
@@ -84,32 +84,6 @@
                                         descripción, fecha de cambio, instalación, tiempo de vida, cantidad, marca, y precio, 
                                         así como también podrá hacer un historial de toda la información de los arreglos corregidos 
                                         y materiales utilizados en la ejecución de dichos servicios.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="panel panel-default"><!--tercer contenedor info -->
-                                    <div class="panel-heading botonInfo" role="tab" id="heading3">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                                Gestión Talento Humano
-                                            </a>
-                                        </h4>
-                                    </div>
-                                </div><!--cierre tercer contenedor info -->
-                            </div>
-                            <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
-                                <div class="panel-body collapseInfo">
-                                    <span class="capitalLetter">T</span><p>iene como objetivo administrar la planta de personal y atender necesidades de los servidores 
-                                        públicos de la entidad además de velar por el bienestar de los funcionarios del centro. De acuerdo
-                                        a su objetivo son muchos los aspectos que esta dependencia maneja tales como: Bienestar, 
-                                        capacitación, actualización, desempeño y evaluación del talento humano, Logística administrativa 
-                                        (viáticos), vivienda entre otros. SAMI (Sistema Modular Integrado) solamente maneja la parte de 
-                                        logística administrativa (viáticos), es decir los usuarios de SAMI que requieren realizar un viaje
-                                        tienen disponible en la aplicación los formularios de: solicitud de comisión, ordenes de viaje 
-                                        y su legalización tanto de contratistas como de funcionarios de planta respectivamente, 
-                                        solicitudes de CDP y CRP, relación de gastos de transporte, informes y legalización de comisiones
-                                        para su diligenciamiento y de esta manera implementar cada vez más la tecnología en los procesos
-                                        administrativos.</p>
                                 </div>
                             </div>
                         </div>
@@ -139,55 +113,6 @@
                             </div>
                         </div>
                         <div class="row">.</div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="panel panel-default"><!-- quinto contenedor info -->
-                                    <div class="panel-heading botonInfo" role="tab" id="heading4">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                                Gestion Documental
-                                            </a>
-                                        </h4>
-                                    </div>
-                                </div><!--cierre quinto contenedor info -->
-                            </div>
-                            <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
-                                <div class="panel-body collapseInfo">
-                                    <span class="capitalLetter">P</span><p>ermite administrar el flujo de documentos de todo tipo usados 
-                                        dentro y fuera del SENA, de acuerdo con las normas técnicas y prácticas establecidas por la 
-                                        dirección general. Permite la recuperación de información así como establecer el tiempo que los
-                                        documentos deben guardarse, y asegurar la conservación indefinida de los documentos más valiosos,
-                                        también se encuentran las PQRSF, que son todos los documentos que llegan a la oficina de Gestión
-                                        Documental, además se realiza un seguimiento de las radicaciones producidas y recibidas dentro de
-                                        dicha oficina; la cual puede ser consultada en cualquier periodo de tiempo o cuando el líder lo
-                                        requiere.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="panel panel-default"><!-- sexto contenedor info -->
-                                    <div class="panel-heading botonInfo" role="tab" id="heading6">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                                                Gestión De Materiales
-                                            </a>
-                                        </h4>
-                                    </div>
-                                </div><!--cierre sexto contenedor info -->
-                            </div>
-                            <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
-                                <div class="panel-body collapseInfo">
-                                    <span class="capitalLetter">E</span><p>s el encargado de la supervisión y entrega de materiales de formación el cual comprende los 
-                                        Coordinadores académicos,y Almacenista, es donde se plantean las compras y entregas La cual 
-                                        parte desde una solicitud de Materiales hasta la autorización correspondiente a la salida de
-                                        material de formación la autorización pertinente a la salida del material y su pase a estado 
-                                        de orden del registro y supervisión de la entregada por parte de los 
-                                        proveedores contratados, informe de recepción y el monitoreo de la factura de compra, este 
-                                        modulo pretende realizar controles pertinentes para la entrega y salida del material del 
-                                        almacén del centro de formación. brindando asi una mejor organizacion en cuanto a los tramites
-                                        para la realizacion de un pedido de materiales en el almacen </p>
-                                </div>
-                            </div>
-                        </div>
                     </div><!--cierre del panel group de videos -->
                 </div><!--cierre del panel group de videos -->
 
@@ -199,7 +124,7 @@
                 <div class="row" id="boxMarge" ><!-- segunda fila(enlaces y nuestro...) -->
                     <div class="col-md-3 panel panel-default boxIndex">
                         <!-- Default panel contents -->
-                        <h4 class="text-center">ENLACES</h4>
+                        <h4 class="text-center"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> ENLACES</h4>
                         <!-- List group -->
                         <ul id="sessionBox" class="list-group">
                             <li class="list-group-item boxIndex"><a class="btn btn-default btn-lg btn-block" href="http://oferta.senasofiaplus.edu.co/" role="button">Sena Sofia Plus</a></li>
@@ -212,21 +137,26 @@
                         .<!-- espacio entre cajas-->
                     </div>
                     <div class="col-md-8 panel panel-default boxIndex">
-                        <h4 class="text-center">NUESTRO APLICATIVO</h4>
+                        <h4 class="text-center"><span class="glyphicon glyphicon-film" aria-hidden="true"></span> NUESTRO APLICATIVO</h4>
                         <div class="panel-group boxIndex" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-default"><!--primer contenedor video -->
                                 <div class="panel-heading" role="tab" id="headingOne">
                                     <h4 class="panel-title">
                                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                            Contratación de prestación de servicios
+                                            <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> Introducción de S.A.M.I.
                                         </a>
                                     </h4>
                                 </div>
                                 <div id="collapseOne" class="panel-collapse collapsing" role="tabpanel" aria-labelledby="headingOne">
                                     <div class="panel-body">
                                         <div class="embed-responsive embed-responsive-16by9">
-                                            <iframe class="embed-responsive-item" width="640" height="480" src="https://www.youtube.com/embed/C0DPdy98e4c" frameborder="0"></iframe>
+                                            <iframe class="embed-responsive-item" width="640" height="480" src="https://www.youtube.com/embed/6HZswNFd84Y" frameborder="0" allowfullscreen="true" ></iframe>
                                         </div>
+                                        <p>
+                                            <a href="https://www.youtube.com/channel/UCWeRtxO-XB1l3TmTOHM1uXw/videos" class="btn btn-default btn-lg btn-danger" role="button">
+                                                <span class="icon-youtube3" aria-hidden="true"></span> Canal Youtube
+                                            </a>
+                                        </p>
                                     </div>
                                 </div>
                             </div><!--cierre primer contenedor video -->
@@ -234,14 +164,19 @@
                                 <div class="panel-heading" role="tab" id="headingTwo">
                                     <h4 class="panel-title">
                                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Mantenimiento
+                                            <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> Módulo de contratación de prestación de servicios
                                         </a>
                                     </h4>
                                 </div>
                                 <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                     <div class="panel-body">
                                         <div class="embed-responsive embed-responsive-16by9">
-                                            <iframe class="embed-responsive-item" width="640" height="480" src="https://www.youtube.com/embed/C0DPdy98e4c"></iframe>
+                                            <iframe class="embed-responsive-item" width="640" height="480" src="https://www.youtube.com/embed/ZXBaH7OOGqo" frameborder="0" allowfullscreen="true"></iframe>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.youtube.com/playlist?list=PL84oWl8oQXEWape7Kd5Vg1Wnc79C-8Nld" class="btn btn-default btn-lg btn-danger" role="button">
+                                                <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>  Lista de reproducción/relacionados
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -250,14 +185,19 @@
                                 <div class="panel-heading" role="tab" id="headingThree">
                                     <h4 class="panel-title">
                                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Supervisión de contratos de compras, suministros y servicios
+                                            <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> Módulo de mantenimiento
                                         </a>
                                     </h4>
                                 </div>
                                 <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                     <div class="panel-body">
                                         <div class="embed-responsive embed-responsive-16by9">
-                                            <iframe class="embed-responsive-item" width="640" height="480" src="https://www.youtube.com/embed/C0DPdy98e4c" frameborder="0"></iframe>
+                                            <iframe class="embed-responsive-item" width="640" height="480" src="https://www.youtube.com/embed/hLGuuwirpao" frameborder="0" allowfullscreen="true"></iframe>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.youtube.com/playlist?list=PL84oWl8oQXEVBG2cR405a8BHzIs8-ijH3" class="btn btn-default btn-lg btn-danger" role="button">
+                                                <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>  Lista de reproducción/relacionados
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -266,50 +206,27 @@
                                 <div class="panel-heading" role="tab" id="headingFour">
                                     <h4 class="panel-title">
                                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                            Gestión y talento humano
+                                            <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> Módulo de Supervisión de contratos de compras, suministros y servicios
                                         </a>
                                     </h4>
                                 </div>
                                 <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                                     <div class="panel-body">
                                         <div class="embed-responsive embed-responsive-16by9">
-                                            <iframe class="embed-responsive-item" width="640" height="480" src="https://www.youtube.com/embed/C0DPdy98e4c" frameborder="0" allowfullscreen="true"></iframe>
+                                            <iframe class="embed-responsive-item" width="640" height="480" src="https://www.youtube.com/embed/ARTMo4LLhoA" frameborder="0" allowfullscreen="true"></iframe>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.youtube.com/playlist?list=PL84oWl8oQXEWhXuzXSg7JHFgafhmjxvBB" class="btn btn-default btn-lg btn-danger" role="button">
+                                                <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>  Lista de reproducción/relacionados
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div><!--cierre cuarto contenedor video -->
-                            <div class="panel panel-default"><!--quinto contenedor video -->
-                                <div class="panel-heading" role="tab" id="headingFive">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                            Gestión Documental
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                                    <div class="panel-body">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                                            <iframe class="embed-responsive-item" width="640" height="480" src="https://www.youtube.com/embed/C0DPdy98e4c" frameborder="0" allowfullscreen="true"></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!--cierre quinto contenedor video -->
-                            <div class="panel panel-default"><!--sexto contenedor video -->
-                                <div class="panel-heading" role="tab" id="headingSix">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                            Gestión de materiales de formación
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-                                    <div class="panel-body">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                                            <iframe class="embed-responsive-item" width="640" height="480" src="https://www.youtube.com/embed/C0DPdy98e4c" frameborder="0" allowfullscreen="true"></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!--cierre sexto contenedor video -->
+                             <button type="button" class="btn btn-default btn-lg btn-block Youtube">
+                                <span class="icon-youtube" aria-hidden="true"></span>
+                                <a href="https://www.youtube.com/channel/UCWeRtxO-XB1l3TmTOHM1uXw/videos"></a>
+                                 Canal YouTube</button>
                         </div><!--cierre del panel group de videos -->
                     </div><!--cierre de columna con panel de videos(nuestro aplicativo)-->
                 </div><!--cierre de fila (enlaces y nuestro...)-->

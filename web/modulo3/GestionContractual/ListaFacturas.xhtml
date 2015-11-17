@@ -51,7 +51,7 @@
                                  rowsPerPageTemplate="5,10,15" >
                         <f:facet name="header">
                         Lista de Facturas
-                        <p:commandButton id="toggler" type="button" value="Datos" style="float:right" icon="ui-icon-calculator" />
+                        <p:commandButton id="toggler" type="button" value="Columns" style="float:right" icon="ui-icon-calculator" />
                         <p:columnToggler datasource="facturasTable" trigger="toggler" transient="false"/>
                     </f:facet>
                         
@@ -109,11 +109,11 @@
                                 <f:setPropertyActionListener value="#{item}" target="#{pagosContratosController.selected}"/>
                             </p:commandButton>
                             
-                            <p:commandButton icon="ui-icon-pencil"  title="Editar Factura" action="#{pagosContratosController.prepareEdit()}">
+                            <p:commandButton rendered="#{loginController.gestorContractual}" icon="ui-icon-pencil"  title="Editar Factura" action="#{pagosContratosController.prepareEdit()}">
                                 <f:setPropertyActionListener value="#{item}" target="#{pagosContratosController.selected}"/>
                             </p:commandButton>
                             
-                            <p:commandButton icon="ui-icon-trash" title="Eliminar Factura" action="#{pagosContratosController.destroy()}"
+                            <p:commandButton rendered="#{loginController.gestorContractual}" icon="ui-icon-trash" title="Eliminar Factura" action="#{pagosContratosController.destroy()}"
                                              process="@this" update="facturasTable">
                                 <p:confirm header="Confirmación" message="¿Esta seguro que desea eliminar la factura?" icon="ui-icon-alert" />
                                 <f:setPropertyActionListener value="#{item}" target="#{pagosContratosController.selected}"/>

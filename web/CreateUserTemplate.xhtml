@@ -12,6 +12,54 @@
             <form jsf:id="usuarioCreateForm">
                 <h1>Crear contratistas</h1>
                 <div class="row form-group">
+                    <label class="control-label col-md-2" jsf:for="personalidadInputText">Tipo persona:</label>
+                    <div class="col-md-2">
+                        <select jsf:id="personalidadInputText" size="1"
+                                jsf:value="#{usuariosController.selected.personalidad}">
+                            <f:selectItem itemLabel="Seleccione"/>
+                            <f:selectItem itemLabel="personaJuridica" itemValue="personaJuridica"/>
+                            <f:selectItem itemLabel="personaNatural" itemValue="personaNatural"/>
+                            <f:ajax execute="@this" render="personalidadMessage personalidadForm personaform"/>
+                        </select>
+                    </div>
+                    <div class="col-md-8">
+                        <p:message id="personalidadMessage" for="personalidadInputText" styleClass="error"/>
+                    </div>
+                </div>
+                <h:panelGroup id="personalidadForm" >
+                    <div class="row form-group">
+                        <label class="control-label col-md-2" jsf:rendered="#{usuariosController.personaJuridica}"
+                               jsf:for="razonSocialInputText">Razón social:</label> 
+                        <div class="col-md-2">
+                            <p:inputText type="text" id="razonSocialInputText" required="false"
+                                         value="#{usuariosController.selected.razonSocial}"
+                                         rendered="#{usuariosController.personaJuridica}">
+                                <f:validateRegex pattern="[a-zA-Z áéíóúÁÉÍÓÚÑñ]*"/>
+                                <p:ajax process="@this" update="razonSocialMessage"/>
+                            </p:inputText>
+                        </div>
+                        <div class="col-md-2">
+                            <p:message id="razonSocialMessage" rendered="#{usuariosController.personaJuridica}"
+                                       for="razonSocialInputText" styleClass="error"/>
+                        </div>
+                        <label class="control-label col-md-2" jsf:rendered="#{usuariosController.personaJuridica}"
+                               jsf:for="repLegalInputText">Nombre representante legal:</label> 
+                        <div class="col-md-2">
+                            <p:inputText type="text" id="repLegalInputText" required="false"
+                                         value="#{usuariosController.selected.razonSocial}"
+                                         rendered="#{usuariosController.personaJuridica}">
+                                <f:validateRegex pattern="[a-zA-Z áéíóúÁÉÍÓÚÑñ]*"/>
+                                <p:ajax process="@this" update="repLegalMessage"/>
+                            </p:inputText>
+                        </div>
+                        <div class="col-md-2">
+                            <p:message id="repLegalMessage" rendered="#{usuariosController.personaJuridica}"
+                                       for="repLegalInputText" styleClass="error"/>
+                        </div>
+                    </div>
+                </h:panelGroup>
+
+                <div class="row form-group">
                     <label class="control-label col-md-2" value="#{bundle.CreateUsuariosLabel_idTipoDoc}" jsf:for="tipodocumentosInputText"></label> 
                     <div class="col-md-2">
                         <select class="Form-datos" jsf:id="tipodocumentosInputText" jsf:value="#{usuariosController.selected.idTipoDoc}" 
@@ -44,78 +92,71 @@
                         <p:message id="numeroidMessage" for="numeroidInputText" styleClass="error"/>
                     </div>
                 </div>
-                <!--div class="row form-group">
-                    <label class="control-label col-md-2" value="" jsf:for="primerNombreInputText"></label> 
-                    <div class="col-md-2">
-                        <p:inputText type="text" id="primerNombreInputText" required="true" 
-                                     requiredMessage=""
-                                     value="" maxlength="20"
-                                     title="">
-                            <f:validateRegex pattern="[a-zA-Z áéíóúÁÉÍÓÚÑñ]*"/>
-                            <p:ajax process="@this" update="primerNombreMessage"/>
-                        </p:inputText>
-                    </div>
-                    <div class="col-md-2">
-                        <p:message id="primerNombreMessage" for="primerNombreInputText" styleClass="error"/>
-                    </div-->
-                    
+                <h:panelGroup id="personaform">
                     <div class="row form-group">
-                        <label class="control-label col-md-2" value="#{bundle.CreateUsuariosLabel_primerNombre}" jsf:for="primerNombreInputText"></label> 
-                    <div class="col-md-2">
-                        <p:inputText type="text" id="primerNombreInputText" required="true" 
-                                     requiredMessage="#{bundle.CreateUsuariosRequiredMessage_razonSocial}"
-                                     value="#{usuariosController.selected.primerNombre}" maxlength="20"
-                                     title="#{bundle.CreateUsuariosTitle_razonSocial}">
-                            <f:validateRegex pattern="[a-zA-Z áéíóúÁÉÍÓÚÑñ]*"/>
-                            <p:ajax process="@this" update="primerNombreMessage"/>
-                        </p:inputText>
-                    </div>
-                    <div class="col-md-2">
-                        <p:message id="primerNombreMessage" for="primerNombreInputText" styleClass="error"/>
+                        <label class="control-label col-md-2" value="#{bundle.CreateUsuariosLabel_primerNombre}" jsf:for="primerNombreInputText"
+                               jsf:rendered="#{usuariosController.personaNatural}"></label> 
+                        <div class="col-md-2">
+                            <p:inputText type="text" id="primerNombreInputText"
+                                         value="#{usuariosController.selected.primerNombre}" maxlength="20"
+                                         title="#{bundle.CreateUsuariosTitle_razonSocial}"
+                                         rendered="#{usuariosController.personaNatural}">
+                                <f:validateRegex pattern="[a-zA-Z áéíóúÁÉÍÓÚÑñ]*"/>
+                                <p:ajax process="@this" update="primerNombreMessage"/>
+                            </p:inputText>
+                        </div>
+                        <div class="col-md-2">
+                            <p:message id="primerNombreMessage" rendered="#{usuariosController.personaNatural}" for="primerNombreInputText" styleClass="error"/>
+                        </div>
+
+                        <label class="control-label col-md-2" value="#{bundle.CreateUsuariosLabel_segundoNombre}" jsf:for="segundoNombreInputText"
+                               jsf:rendered="#{usuariosController.personaNatural}"></label> 
+                        <div class="col-md-2">
+                            <p:inputText type="text" id="segundoNombreInputText"
+                                         value="#{usuariosController.selected.segundoNombre}" maxlength="20"
+                                         title="#{bundle.CreateUsuariosTitle_segundoNombre}"
+                                         rendered="#{usuariosController.personaNatural}">
+                                <f:validateRegex pattern="[a-zA-Z áéíóúÁÉÍÓÚÑñ]*"/>
+                                <p:ajax process="@this" update="segundoNombreMessage"/>
+                            </p:inputText>
+                        </div>
+                        <div class="col-md-2">
+                            <p:message id="segundoNombreMessage" for="segundoNombreInputText" rendered="#{usuariosController.personaNatural}" styleClass="error"/>
+                        </div>
                     </div>
 
-                    <label class="control-label col-md-2" value="#{bundle.CreateUsuariosLabel_segundoNombre}" jsf:for="segundoNombreInputText"></label> 
-                    <div class="col-md-2">
-                        <p:inputText type="text" id="segundoNombreInputText"
-                                     value="#{usuariosController.selected.segundoNombre}" maxlength="20"
-                                     title="#{bundle.CreateUsuariosTitle_segundoNombre}">
-                            <f:validateRegex pattern="[a-zA-Z áéíóúÁÉÍÓÚÑñ]*"/>
-                            <p:ajax process="@this" update="segundoNombreMessage"/>
-                        </p:inputText>
-                    </div>
-                    <div class="col-md-2">
-                        <p:message id="segundoNombreMessage" for="segundoNombreInputText" styleClass="error"/>
-                    </div>
-                </div>
-                <div class="row form-group">
-                    <label class="control-label col-md-2" value="#{bundle.CreateUsuariosLabel_primerApellido}" jsf:for="primerApellidoInputText"></label> 
-                    <div class="col-md-2">
-                        <p:inputText type="text" id="primerApellidoInputText" 
-                                     required="true" 
-                                     requiredMessage="#{bundle.CreateUsuariosRequiredMessage_primerApellido}"
-                                     value="#{usuariosController.selected.primerApellido}" maxlength="20"
-                                     title="#{bundle.CreateUsuariosTitle_primerApellido}">
-                            <f:validateRegex pattern="[a-zA-Z áéíóúÁÉÍÓÚÑñ]*"/>
-                            <p:ajax process="@this" update="primerApellidoMessage"/>
-                        </p:inputText>
-                    </div>
-                    <div class="col-md-2">
-                        <p:message id="primerApellidoMessage" for="primerApellidoInputText" styleClass="error"/>
-                    </div>
+                    <div class="row form-group">
+                        <label class="control-label col-md-2" value="#{bundle.CreateUsuariosLabel_primerApellido}" jsf:for="primerApellidoInputText"
+                               jsf:rendered="#{usuariosController.personaNatural}"></label> 
+                        <div class="col-md-2">
+                            <p:inputText type="text" id="primerApellidoInputText" 
+                                         value="#{usuariosController.selected.primerApellido}" maxlength="20"
+                                         title="#{bundle.CreateUsuariosTitle_primerApellido}"
+                                         rendered="#{usuariosController.personaNatural}">
+                                <f:validateRegex pattern="[a-zA-Z áéíóúÁÉÍÓÚÑñ]*"/>
+                                <p:ajax process="@this" update="primerApellidoMessage"/>
+                            </p:inputText>
+                        </div>
+                        <div class="col-md-2">
+                            <p:message id="primerApellidoMessage" for="primerApellidoInputText" rendered="#{usuariosController.personaNatural}" styleClass="error"/>
+                        </div>
 
-                    <label class="control-label col-md-2" value="#{bundle.CreateUsuariosLabel_segundoApellido}" jsf:for="segundoApellidoInputText"></label> 
-                    <div class="col-md-2">
-                        <p:inputText type="text" id="segundoApellidoInputText" 
-                                     value="#{usuariosController.selected.segundoApellido}" maxlength="20"
-                                     title="#{bundle.CreateUsuariosTitle_segundoApellido}">
-                            <f:validateRegex pattern="[a-zA-Z áéíóúÁÉÍÓÚÑñ]*"/>
-                            <p:ajax process="@this" update="segundoApellidoMessage"/>
-                        </p:inputText>
+                        <label class="control-label col-md-2" value="#{bundle.CreateUsuariosLabel_segundoApellido}" jsf:for="segundoApellidoInputText"
+                               jsf:rendered="#{usuariosController.personaNatural}"></label> 
+                        <div class="col-md-2">
+                            <p:inputText type="text" id="segundoApellidoInputText" 
+                                         value="#{usuariosController.selected.segundoApellido}" maxlength="20"
+                                         title="#{bundle.CreateUsuariosTitle_segundoApellido}"
+                                         rendered="#{usuariosController.personaNatural}">
+                                <f:validateRegex pattern="[a-zA-Z áéíóúÁÉÍÓÚÑñ]*"/>
+                                <p:ajax process="@this" update="segundoApellidoMessage"/>
+                            </p:inputText>
+                        </div>
+                        <div class="col-md-2">
+                            <p:message id="segundoApellidoMessage" rendered="#{usuariosController.personaNatural}" for="segundoApellidoInputText" styleClass="error"/>
+                        </div>
                     </div>
-                    <div class="col-md-2">
-                        <p:message id="segundoApellidoMessage" for="segundoApellidoInputText" styleClass="error"/>
-                    </div>
-                </div>
+                </h:panelGroup>
                 <div class="row form-group">
                     <label class="control-label col-md-2" value="#{bundle.CreateUsuariosLabel_ciudad1}" jsf:for="ciudad1"></label> 
                     <div class="col-md-2">

@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:jsf="http://xmlns.jcp.org/jsf">
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">Crear Contrato</ui:define>
+        <ui:define name="menu"><ui:include src="/modulo1/menu_modulo1.xhtml"></ui:include></ui:define>
+        <ui:define name="body"> 
+
+            <section class="section-form">
+
+
+                    <h:form>
+                        <h1><h:outputText value="Create/Edit"/></h1>
+                        <h:panelGrid columns="2">
+                            <h:outputLabel value="IdContrato:" for="idContrato" />
+                            <h:inputText id="idContrato" value="#{contratosController.selected.idContrato}"
+                                         title="IdContrato" required="true" requiredMessage="The IdContrato field is required."/>
+                            
+                            <h:outputLabel value="NumeroDeContrato:" for="numeroDeContrato" />
+                            <h:inputText id="numeroDeContrato" value="#{contratosController.selected.numeroDeContrato}"
+                                         title="NumeroDeContrato" required="true" requiredMessage="The NumeroDeContrato field is required."/>
+                            
+                            <h:outputLabel value="Fechasuscripcion:" for="fechasuscripcion" />
+                            <h:inputText id="fechasuscripcion" value="#{contratosController.selected.fechasuscripcion}"
+                                         title="Fechasuscripcion" required="true" requiredMessage="The Fechasuscripcion field is required.">
+                                <f:convertDateTime pattern="MM/dd/yyyy" />
+                            </h:inputText>
+                            
+                            <h:outputLabel value="FechaInicioContrato:" for="fechaInicioContrato" />
+                            <h:inputText id="fechaInicioContrato" value="#{contratosController.selected.fechaInicioContrato}"
+                                         title="FechaInicioContrato" required="true" requiredMessage="The FechaInicioContrato field is required.">
+                                <f:convertDateTime pattern="MM/dd/yyyy" />
+                            </h:inputText>
+                            
+                            <h:outputLabel value="FechaFinContrato:" for="fechaFinContrato" />
+                            <h:inputText id="fechaFinContrato" value="#{contratosController.selected.fechaFinContrato}"
+                                         title="FechaFinContrato" required="true" requiredMessage="The FechaFinContrato field is required.">
+                                <f:convertDateTime pattern="MM/dd/yyyy" />
+                            </h:inputText>
+                            
+                            <h:outputLabel value="PlazoDias:" for="plazoDias" />
+                            <h:inputText id="plazoDias" value="#{contratosController.selected.plazoDias}" title="PlazoDias" />
+                            
+                            <h:outputLabel value="PlazoMeses:" for="plazoMeses" />
+                            <h:inputText id="plazoMeses" value="#{contratosController.selected.plazoMeses}" title="PlazoMeses" />
+                            
+                            <h:outputLabel value="ObjetoContractual:" for="objetoContractual" />
+                            <h:inputText id="objetoContractual" value="#{contratosController.selected.objetoContractual}"
+                                         title="ObjetoContractual" required="true" requiredMessage="The ObjetoContractual field is required."/>
+                            
+                            <h:outputLabel value="Obligaciones:" for="obligaciones" />
+                            <h:inputText id="obligaciones" value="#{contratosController.selected.obligaciones}" title="Obligaciones" />
+                            
+                            <h:outputLabel value="ValorContrato:" for="valorContrato" />
+                            <h:inputText id="valorContrato" value="#{contratosController.selected.valorContrato}" title="ValorContrato" />
+                            
+                            <h:outputLabel value="PrimerPago:" for="primerPago" />
+                            <h:inputText id="primerPago" value="#{contratosController.selected.primerPago}" title="PrimerPago" />
+                            
+                            <h:outputLabel value="UltimoPago:" for="ultimoPago" />
+                            <h:inputText id="ultimoPago" value="#{contratosController.selected.ultimoPago}" title="UltimoPago" />
+                            
+                            <h:outputLabel value="NumeroDeMensualidades:" for="numeroDeMensualidades" />
+                            <h:inputText id="numeroDeMensualidades" value="#{contratosController.selected.numeroDeMensualidades}"
+                                         title="NumeroDeMensualidades" />
+                            
+                            <h:outputLabel value="ValorMensual:" for="valorMensual" />
+                            <h:inputText id="valorMensual" value="#{contratosController.selected.valorMensual}" title="ValorMensual" />
+                            
+                            <h:outputLabel value="FechaAnexo:" for="fechaAnexo" />
+                            <h:inputText id="fechaAnexo" value="#{contratosController.selected.fechaAnexo}" title="FechaAnexo" >
+                                <f:convertDateTime pattern="MM/dd/yyyy" />
+                            </h:inputText>
+                            
+                            <h:outputLabel value="FechaDeAutorizacion:" for="fechaDeAutorizacion" />
+                            <h:inputText id="fechaDeAutorizacion" value="#{contratosController.selected.fechaDeAutorizacion}"
+                                         title="FechaDeAutorizacion" >
+                                <f:convertDateTime pattern="MM/dd/yyyy" />
+                            </h:inputText>
+                            
+                            <h:outputLabel value="FechaDeEstudioPrevio:" for="fechaDeEstudioPrevio" />
+                            <h:inputText id="fechaDeEstudioPrevio" value="#{contratosController.selected.fechaDeEstudioPrevio}"
+                                         title="FechaDeEstudioPrevio" >
+                                <f:convertDateTime pattern="MM/dd/yyyy" />
+                            </h:inputText>
+                            
+                            <h:outputLabel value="FechaDeIdoneidad:" for="fechaDeIdoneidad" />
+                            <h:inputText id="fechaDeIdoneidad" value="#{contratosController.selected.fechaDeIdoneidad}" title="FechaDeIdoneidad" >
+                                <f:convertDateTime pattern="MM/dd/yyyy" />
+                            </h:inputText>
+                            <h:outputLabel value="AdicionPresupuestal:" for="adicionPresupuestal" />
+                            <h:inputText id="adicionPresupuestal" value="#{contratosController.selected.adicionPresupuestal}" title="AdicionPresupuestal" />
+                            <h:outputLabel value="AdicionPlazoNuevaFecha:" for="adicionPlazoNuevaFecha" />
+                            <h:inputText id="adicionPlazoNuevaFecha" value="#{contratosController.selected.adicionPlazoNuevaFecha}" title="AdicionPlazoNuevaFecha" >
+                                <f:convertDateTime pattern="MM/dd/yyyy" />
+                            </h:inputText>
+                            <h:outputLabel value="IdPoliza:" for="idPoliza" />
+                            <h:inputText id="idPoliza" value="#{contratosController.selected.idPoliza}" title="IdPoliza" />
+                            
+                            <h:outputLabel value="IdCuentasBancarias:" for="idCuentasBancarias" />
+                            <h:inputText id="idCuentasBancarias" value="#{contratosController.selected.idCuentasBancarias}"
+                                         title="IdCuentasBancarias" />
+                            
+                            <h:outputLabel value="Observaciones:" for="observaciones" />
+                            <h:inputText id="observaciones" value="#{contratosController.selected.observaciones}" title="Observaciones" />
+                            
+                            <h:outputLabel value="Justificacion:" for="justificacion" />
+                            <h:inputText id="justificacion" value="#{contratosController.selected.justificacion}" title="Justificacion" />
+                            
+                            <h:outputLabel value="RegistroPresupuestal:" for="registroPresupuestal" />
+                            <h:inputText id="registroPresupuestal" value="#{contratosController.selected.registroPresupuestal}" 
+                                         title="RegistroPresupuestal" />
+                            
+                            <h:outputLabel value="FechaRegPresupuestal:" for="fechaRegPresupuestal" />
+                            <h:inputText id="fechaRegPresupuestal" value="#{contratosController.selected.fechaRegPresupuestal}"
+                                         title="FechaRegPresupuestal" >
+                                <f:convertDateTime pattern="MM/dd/yyyy" />
+                            </h:inputText>
+                            
+                            <h:outputLabel value="IdTipoContrato:" for="idTipoContrato" />
+                            <h:selectOneMenu id="idTipoContrato" value="#{contratosController.selected.idTipoContrato}"
+                                             title="IdTipoContrato" required="true" requiredMessage="The IdTipoContrato field is required.">
+                                <!-- TODO: update below reference to list of available items-->
+                                <f:selectItems value="#{fixme}"/>
+                            </h:selectOneMenu>
+                            
+                        </h:panelGrid>
+                    </h:form>
+
+            </section>
+
+        </ui:define>
+    </ui:composition>
+</html>
+
+
+

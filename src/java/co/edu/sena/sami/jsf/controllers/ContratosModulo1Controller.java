@@ -162,7 +162,6 @@ public class ContratosModulo1Controller implements Serializable {
     public String prepareEdit() {
         return "/modulo1/ContratacionPrestacionDeServicios/Contratos/EditContrato";
     }
-
     public String prepareView() {
         return "/modulo1/ContratacionPrestacionDeServicios/Contratos/ViewContrato";
     }

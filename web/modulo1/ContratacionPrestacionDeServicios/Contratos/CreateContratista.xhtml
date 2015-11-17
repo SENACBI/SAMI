@@ -18,6 +18,7 @@
                     <p:messages/>
                 </h:panelGroup>
                 <div class="row form-group">
+                    <h1>Crear contratistas</h1>
                     <label class="control-label col-md-2" value="#{bundle.CreateUsuariosLabel_idTipoDoc}" jsf:for="tipodocumentosInputText"></label> 
                     <div class="col-md-2">
                         <select class="Form-datos" jsf:id="tipodocumentosInputText" jsf:value="#{usuariosController.selected.idTipoDoc}" 
@@ -168,10 +169,9 @@
                         <p:message id="emailMessage" for="emailInputText" styleClass="error"/>
                     </div>
                 </div>
-                <p:commandButton process="usersForm" 
-                                 actionListener="#{contratosModulo1Controller.setSelectedUsuarios(selectedUsuarios)}"
+                <p:commandButton process="usersForm"
                                  oncomplete="handleSubmit(arg,'UsersDialog')"
-                                 action="#{usuariosController.create}"
+                                 action="#{usuariosController.create()}"
                                  onclick="PF('UsersDialog').hide()" 
                                  value="Guardar" 
                                  update="usersForm msgs" />

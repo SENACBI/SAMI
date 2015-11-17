@@ -18,8 +18,9 @@
         <ui:define name="body">
 
             <h:form id="AseguradoraListForm">
-                <h:commandButton value="Agregar Aseguradora" action="#{aseguradoraController.ModuloUnoPrepareCreate}"/>
+                <h:commandButton value="Agregar Aseguradora" rendered="#{loginController.noEsInvitado}" action="#{aseguradoraController.ModuloUnoPrepareCreate}"/>
 
+                <h1>Lista de aseguradoras</h1>
                 <p:dataTable id="datalist" value="#{aseguradoraController.items}" var="item"                               
                              paginator="true" style="font-size:12px"
                              rows="10"
@@ -31,13 +32,15 @@
                         </f:facet>
                         <h:outputText value="#{item.nombreAseguradora}"/>
                     </p:column>
-                    <p:column exportable="false" > 
+                    <p:column exportable="false" rendered="#{loginController.noEsInvitado}"> 
                         <f:facet name="header">Opciones</f:facet>
 
-                        <p:commandButton  id="editButton" icon="ui-icon-pencil" update="datalist" action="#{aseguradoraController.prepareEditModuloUno}">
+                        <p:commandButton  id="editButton" icon="ui-icon-pencil" update="datalist"
+                                          action="#{aseguradoraController.prepareEditModuloUno}">
                             <f:setPropertyActionListener value="#{item}" target="#{aseguradoraController.selected}"/>
                         </p:commandButton>
-                        <p:commandButton id="deleteButton" icon="ui-icon-trash" action="#{aseguradoraController.destroy}"
+                        <p:commandButton id="deleteButton" icon="ui-icon-trash"
+                                         action="#{aseguradoraController.destroy}"
                                          process="@this" update="datalist">
                             <p:confirm header="Confirmación" message="¿Esta seguro que desea eliminar el contrato?" icon="ui-icon-alert" />
                             <f:setPropertyActionListener value="#{item}" target="#{aseguradoraController.selected}"/>

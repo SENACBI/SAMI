@@ -11,7 +11,7 @@
         <ui:define name="body"> 
             <h:form id="UsuariosListForm">
                 <P>
-                    <p:commandButton rendered="#{loginController.contratacion}" icon="ui-icon-plusthick" action="#{usuariosController.prepareCreateModulo1()}" value="#{bundle.Create}"/>
+                    <p:commandButton rendered="#{loginController.noEsInvitado}" icon="ui-icon-plusthick" action="#{usuariosController.prepareCreateModulo1()}" value="#{bundle.Create}"/>
                 </P>
                 <h3>Exportar todos los datos</h3>
                 <h:commandLink>
@@ -28,6 +28,7 @@
                     <img src="../Recursos/Imagenes/csv.png" width="26"/>
                     <p:dataExporter type="csv" target="datalist" fileName="item"  />
                 </h:commandLink>
+                
                 <h1>Lista de contratistas</h1>
 
                 <p:dataTable id="datalist" value="#{usuariosController.items}" var="item"
@@ -99,11 +100,12 @@
                         <p:commandButton id="viewButton" icon="ui-icon-search" update="datalist" action="#{usuariosController.prepareViewUsuario()}">
                             <f:setPropertyActionListener value="#{item}" target="#{usuariosController.selected}"/>
                         </p:commandButton>
-                        <p:commandButton  id="editButton" icon="ui-icon-pencil" update="datalist" action="#{usuariosController.prepareModificarUsuario1()}">
+                        <p:commandButton  id="editButton" icon="ui-icon-pencil" update="datalist" rendered="#{loginController.noEsInvitado}"
+                                          action="#{usuariosController.prepareModificarUsuario1()}">
                             <f:setPropertyActionListener value="#{item}" target="#{usuariosController.selected}"/>
                         </p:commandButton>
                         <p:commandButton id="deleteButton" icon="ui-icon-trash" action="#{usuariosController.destroy}"
-                                         process="@this" update="datalist">
+                                         rendered="#{loginController.noEsInvitado}" process="@this" update="datalist">
                             <p:confirm header="Confirmación" message="¿Esta seguro que desea eliminar el contratista?" icon="ui-icon-alert" />
                             <f:setPropertyActionListener value="#{item}" target="#{usuariosController.selected}"/>
                         </p:commandButton>

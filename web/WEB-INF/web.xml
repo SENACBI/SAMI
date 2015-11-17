@@ -8,10 +8,6 @@
         <param-name>javax.faces.DATETIMECONVERTER_DEFAULT_TIMEZONE_IS_SYSTEM_TIMEZONE</param-name>
         <param-value>true</param-value>
     </context-param>
-    <context-param>
-        <param-name>primefaces.FONT_AWESOME</param-name>
-        <param-value>true</param-value>
-    </context-param>
     <servlet>
         <servlet-name>Faces Servlet</servlet-name>
         <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
@@ -95,7 +91,7 @@
         <display-name>webModulo3</display-name>
         <web-resource-collection>
             <web-resource-name>webModulo3</web-resource-name>
-            <description>Supervision Compras</description>
+            <description>Supervision Contratos administrativos</description>
             <url-pattern>/faces/modulo3/*</url-pattern>
         </web-resource-collection>
         <auth-constraint>
@@ -215,6 +211,30 @@
             <role-name>invitadoContractual</role-name>
         </auth-constraint>
     </security-constraint>
+    <security-constraint>
+        <display-name>supervisorContractual</display-name>
+        <web-resource-collection>
+            <web-resource-name>supervisorContractual</web-resource-name>
+            <description>supervisor de contratos</description>
+            <url-pattern>/faces/modulo3/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <description/>
+            <role-name>supervisorContractual</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-constraint>
+        <display-name>coordinadorAdministrativo</display-name>
+        <web-resource-collection>
+            <web-resource-name>coordinadorAdministrativo</web-resource-name>
+            <description>coordinador(a) Administrativo(a)</description>
+            <url-pattern>/faces/modulo3/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <description/>
+            <role-name>coordinadorAdministrativo</role-name>
+        </auth-constraint>
+    </security-constraint>
     <login-config>
         <auth-method>FORM</auth-method>
         <realm-name>sami-realm</realm-name>
@@ -228,12 +248,12 @@
         <role-name>webModulo1</role-name>
     </security-role>
     <security-role>
-        <description>Supervision de contratos
+        <description>Mantenimiento
 </description>
         <role-name>webModulo2</role-name>
     </security-role>
     <security-role>
-        <description>Supervision suministros
+        <description>Supervision de contratos administrativos
 </description>
         <role-name>webModulo3</role-name>
     </security-role>
@@ -279,5 +299,13 @@
     <security-role>
         <description>invitado modulo de gestion contractual</description>
         <role-name>invitadoContractual</role-name>
+    </security-role>
+    <security-role>
+        <description>supervisor de contratos</description>
+        <role-name>supervisorContractual</role-name>
+    </security-role>
+    <security-role>
+        <description>coordinador(a) Administrativo(a)</description>
+        <role-name>coordinadorAdministrativo</role-name>
     </security-role>
 </web-app>

@@ -12,7 +12,7 @@
         <ui:define name="body"> 
 
             <h:form >
-                <p:commandButton rendered="#{loginController.contratacion}" icon="ui-icon-plusthick" action="#{contratosModulo1Controller.prepareCreate}" value="#{bundle.Create}"/>
+                <p:commandButton rendered="#{loginController.noEsInvitado}" icon="ui-icon-plusthick" action="#{contratosModulo1Controller.prepareCreate}" value="Crear Contrato"/>
 
                 <h3>Exportar todos los datos</h3>
                 <h:commandLink>
@@ -29,39 +29,45 @@
                     <img src="../Recursos/Imagenes/csv.png" width="26"/>
                     <p:dataExporter type="csv" target="contratosModulo1Table" fileName="item"  />
                 </h:commandLink>
+                
+                <h1>Lista de contratos</h1>
 
                 <p:dataTable id="contratosModulo1Table" value="#{contratosModulo1Controller.items}" var="item"
                              paginator="true" style="font-size:12px"
                              paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
                              rows="10"
                              rowsPerPageTemplate="10,20,30,40,50">
-                    
+
                     <f:facet name="header">
+
                         <p:commandButton id="toggler" type="button" value="Datos" style="float:right" icon="ui-icon-calculator" />
                         <p:columnToggler datasource="contratosModulo1Table" trigger="toggler" transient="false"/>
                     </f:facet>
-                    
-                    <p:column  toggleable="false" filterBy="#{contratosModulo1Controller.getUsuariosByContratos(item).informacionUsuario()}">
+
+                   <!--<p:column style="width:16px" exportable="true" headerText="Contratista" toggleable="false">
+                        <p:rowToggler />
+                    </p:column>-->
+                   <p:column  toggleable="false" filterBy="#{contratosModulo1Controller.getUsuariosByContratos(item).informacionUsuario()}">
                         <f:facet name="header">
                             <h:outputText value="Contratista"/>
                         </f:facet>
-                        <h:outputText value="#{contratosModulo1Controller.getUsuariosByContratos(item).informacionUsuario()}"/>
+                       <h:outputText value="#{contratosModulo1Controller.getUsuariosByContratos(item).informacionUsuario()}"/>
                     </p:column>
-                    
-                    <p:column filterBy="#{item.numeroDeContrato}" filterMatchMode="contains" toggleable="false" >
+                    <p:column   filterBy="#{item.numeroDeContrato}" filterMatchMode="contains" toggleable="false" >
                         <f:facet name="header">
                             <h:outputText value="#{bundle.ListContratosTitle_numeroDeContrato}"/>
                         </f:facet>
                         <h:outputText value="#{item.numeroDeContrato}"/>
                     </p:column>
-                    
+
                     <p:column  toggleable="false" filterBy="#{contratosController.getUsuariosByContratos(item).polizas.toString()}" filterMatchMode="contains">
                         <f:facet name="header">
                             <h:outputText value="Poliza"/>
                         </f:facet>
                         <h:outputText value="#{contratosController.getUsuariosByContratos(item).polizas.toString()}"/>
                     </p:column>
-                    
+
+
                     <p:column toggleable="false">
                         <f:facet name="header">
                             <h:outputText value="#{bundle.ListContratosTitle_fechaInicioContrato}"/>
@@ -70,7 +76,6 @@
                             <f:convertDateTime pattern="MM/dd/yyyy" />
                         </h:outputText>
                     </p:column>
-                    
                     <p:column toggleable="false">
                         <f:facet name="header">
                             <h:outputText value="#{bundle.ListContratosTitle_fechaFinContrato}"/>
@@ -79,28 +84,27 @@
                             <f:convertDateTime pattern="MM/dd/yyyy" />
                         </h:outputText>
                     </p:column>
-                    
+
                     <p:column toggleable="false">
                         <f:facet name="header">
                             <h:outputText value="#{bundle.ListContratosTitle_valorContrato}"/>
                         </f:facet>
                         <h:outputText value="#{item.valorContrato}"/>
                     </p:column>
-                    
                     <p:column rendered="false" exportable="true" toggleable="false">
                         <f:facet name="header">
                             <h:outputText value="#{bundle.ListContratosTitle_valorContrato}"/>
                         </f:facet>
                         <h:outputText value="#{item.fechaDeIdoneidad}"/>
                     </p:column>
-                    
+
                     <p:column toggleable="false">
                         <f:facet name="header" >
                             <h:outputText value="#{bundle.ListContratosTitle_valorMensual}"/>
                         </f:facet>
                         <h:outputText value="#{item.valorMensual}"/>
                     </p:column>
-                    
+
                     <p:column toggleable="false">
                         <f:facet name="header">
                             <h:outputText value="#{bundle.ListContratosTitle_fechaDeAutorizacion}"/>
@@ -109,7 +113,8 @@
                             <f:convertDateTime pattern="MM/dd/yyyy" />
                         </h:outputText>
                     </p:column>
-                    
+
+
                     <p:column toggleable="false">
                         <f:facet name="header">
                             <h:outputText value="#{bundle.ListContratosTitle_fechaSuscripcion}"/>
@@ -118,65 +123,66 @@
                             <f:convertDateTime pattern="MM/dd/yyyy" />
                         </h:outputText>
                     </p:column>
-                    
+
+
                     <p:column>
                         <f:facet name="header">
                             <h:outputText value="#{bundle.ListContratosTitle_objetoContractual}"/>
                         </f:facet>
                         <h:outputText value="#{item.objetoContractual}"/>
                     </p:column>
-                    
                     <p:column>
                         <f:facet name="header">
                             <h:outputText value="#{bundle.ListContratosTitle_obligaciones}"/>
                         </f:facet>
                         <h:outputText value="#{item.obligaciones}"/>
                     </p:column>
-                    
+
+
+
+
                     <p:column>
                         <f:facet name="header">
                             <h:outputText value="#{bundle.ListContratosTitle_adicionPresupuestal}"/>
                         </f:facet>
                         <h:outputText value="#{item.adicionPresupuestal}"/>
                     </p:column>
-                    
-                    <p:column filterBy="#{item.idTipoContrato.nombreTipoContrato}" filterMatchMode="contains">
+
+
+
+
+                    <p:column>
                         <f:facet name="header">
                             <h:outputText value="#{bundle.ListContratosTitle_idTipoContrato}"/>
                         </f:facet>
                         <h:outputText value="#{item.idTipoContrato.nombreTipoContrato}"/>
                     </p:column>
-                    
+
+                   <!-- <p:rowExpansion >
+                        <h:outputText value="# {contratosModulo1Controller.getUsuariosByContratos(item).toStringModuloUno()}"/>
+
+                    </p:rowExpansion>-->
+
+
+
                     <p:column exportable="false" toggleable="false"  > 
                         <f:facet name="header">Opciones</f:facet>
                         <p:commandButton id="viewButton" icon="ui-icon-search" update="contratosModulo1Table" action="#{contratosModulo1Controller.prepareView}">
                             <f:setPropertyActionListener value="#{item}" target="#{contratosModulo1Controller.selected}"/>
                         </p:commandButton>
-                        <p:commandButton  id="editButton" icon="ui-icon-pencil" update="contratosModulo1Table" action="#{contratosModulo1Controller.prepareEdit}">
+
+                        <p:commandButton  id="editButton" icon="ui-icon-pencil" update="contratosModulo1Table" rendered="#{loginController.noEsInvitado}"
+                                          action="#{contratosModulo1Controller.prepareEdit}">
                             <f:setPropertyActionListener value="#{item}" target="#{contratosModulo1Controller.selected}"/>
                         </p:commandButton>
+
                     </p:column> 
+
                 </p:dataTable>
                 
-                <div class="container-fluid" jsf:rendered="#{loginController.gestionDocumental}">
-                    <div class="row">
-                        <div class="col-md-2 col-md-offset-4">
-                            <h5>Informe Talento Humano</h5>
-                            <h:commandLink id="excel">
-                                <img src="../Recursos/Imagenes/excel.png" />
-                                <p:dataExporter type="xls" target="contratosModulo1Table" fileName="Reporte" postProcessor="#{contratosModulo1Controller.postProcessXLS}" />
-                            </h:commandLink>
-                        </div>
-                        <div class="col-md-2">
-                            <h5>Reporte General</h5>
-                            <h:commandLink id="excel2">
-                                <img src="../Recursos/Imagenes/excel.png" />
-                                <p:dataExporter type="xls" target="contratosModulo1Table" fileName="Reporte" postProcessor="#{contratosModulo1Controller.postProcessXLS1}" />
-                            </h:commandLink>
-                        </div>
-                    </div>
-                </div>
             </h:form>
+
         </ui:define>
     </ui:composition>
+
 </html>

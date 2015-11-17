@@ -85,7 +85,9 @@ public class LoginController implements Serializable {
     public boolean isMantenimiento() {
         return getRequest().isUserInRole("webModulo2") ;
     }
-
+    public boolean isUsuarioInvitadoMantenimiento() {
+        return getRequest().isUserInRole("Invitado_Mantenimiento")||getRequest().isUserInRole("webModulo2");
+    }
     public boolean isOnlyMantenimiento() {
         return getRequest().isUserInRole("webModulo2") && !getRequest().isUserInRole("Invitado_Mantenimiento")&& !getRequest().isUserInRole("superMantenimiento");
     }
@@ -96,10 +98,21 @@ public class LoginController implements Serializable {
         return getRequest().isUserInRole("webModulo3");
     }
     public boolean isGestorContractual() {
-        return getRequest().isUserInRole("webModulo3")&& !getRequest().isUserInRole("invitadoContractual");
+        return getRequest().isUserInRole("webModulo3")&& !getRequest().isUserInRole("invitadoContractual")&& !getRequest().isUserInRole("supervisorContractual")&& !getRequest().isUserInRole("coordinadorAdministrativo");
     }
     public boolean isInvitadoContractual() {
-        return getRequest().isUserInRole("invitadoContractual")||getRequest().isUserInRole("webModulo3")&& !getRequest().isUserInRole("gestorContractual");
+        boolean m1 = isContratacion();
+        return getRequest().isUserInRole("invitadoContractual") && getRequest().isUserInRole("webModulo3")&& m1 && !getRequest().isUserInRole("gestorContractual")&& !getRequest().isUserInRole("supervisorContractual")&& !getRequest().isUserInRole("coordinadorAdministrativo");
+    }
+    public boolean isCoordinadorAdministrativo() {
+        return getRequest().isUserInRole("webModulo3")&& !getRequest().isUserInRole("gestorContractual")&& !getRequest().isUserInRole("supervisorContractual")&& !getRequest().isUserInRole("invitadoContractual");
+    }
+     public boolean isNoEsInvitado() {
+        return !getRequest().isUserInRole("invitadoContractual");
+    }
+     
+    public boolean isSupervisorContractual() {
+        return getRequest().isUserInRole("supervisorContractual")||getRequest().isUserInRole("webModulo3")&& !getRequest().isUserInRole("gestorContractual")&& !getRequest().isUserInRole("invitadoContractual")&& !getRequest().isUserInRole("coordinadorAdministrativo");
     }
 
     public boolean isGestionTalento() {
@@ -122,9 +135,7 @@ public class LoginController implements Serializable {
         return getRequest().isUserInRole("webusuariogeneral");
     }
     
-    public boolean isUsuarioInvitadoMantenimiento() {
-        return getRequest().isUserInRole("Invitado_Mantenimiento")||getRequest().isUserInRole("webModulo2");
-    }
+    
 
     public String login() {
         try {

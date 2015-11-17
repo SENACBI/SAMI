@@ -33,7 +33,7 @@ header{
 }
 .botonInfo{
     background: -webkit-linear-gradient(rgba(255, 255, 255, 1), rgba(194, 199, 195, 0.6));
-    padding-top: 19px;
+    padding-top: 42px;
     padding-bottom: 41px;
     text-align: center;
 }
@@ -62,6 +62,14 @@ header{
     background-color: rgba(255, 255, 255, 0);
     border: 1px solid rgba(221, 221, 221, 0);
     border-radius: 4px;
+}
+.MyPadding{
+    padding-bottom: 3.1em;
+}
+.Youtube{
+    background-color: #f7f3f3;
+    text-align: justify;
+    padding: 6px;
 }
 .boxPanel{
     border: 1px solid #37BDAC;

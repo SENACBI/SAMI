@@ -119,6 +119,12 @@ public class UsuariosController implements Serializable {
     public boolean isCarreraAdministrativa(){
         return selected.getIdTipoContrato() == null? false : selected.getIdTipoContrato().getIdTipoContrato() == (short) 2;
     }
+    public boolean isPersonaJuridica() {
+        return selected.getPersonalidad() == null? false : selected.getPersonalidad().equals("personaJuridica");
+    }
+    public boolean isPersonaNatural() {
+        return selected.getPersonalidad() == null? false : selected.getPersonalidad().equals("personaNatural");
+    }
     
     public String prepareCreate() {
         selected = new Usuarios();
@@ -156,6 +162,16 @@ public class UsuariosController implements Serializable {
     public String prepareListUsuario1() {
         return "/modulo1/ContratacionPrestacionDeServicios/ListContratistas";
     }
+    public byte generarDv(String nit) {
+       int[] nums = {3, 7, 13, 17, 19, 23, 29, 37, 41, 43, 47, 53, 59, 67, 71};
+       int sum = 0;
+       String str = nit;
+       for (int i = str.length() - 1, j = 0; i >= 0; i--, j++) {
+           sum += Character.digit(str.charAt(i), 10) * nums[j];
+       }
+       byte dv = (byte) ((sum % 11) > 1 ? (11 - (sum % 11)) : (sum % 11));
+       return dv;
+   }
     public String create() {
         try {
             selected.setFechaDeCreacion(new Date());
@@ -380,6 +396,7 @@ public class UsuariosController implements Serializable {
         } else {
             String documento = (String) value;
             selected.setNumeroDoc(documento);
+            selected.setDv(String.valueOf(generarDv(documento)));
         }
     }
 

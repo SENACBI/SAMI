@@ -23,7 +23,7 @@
                         <f:facet name="header">
                         Lista de Soportes
                         </f:facet>
-                        <p:column headerText="Ampliar" style="width:200px" >
+                        <p:column style="width:16px" >
                             <p:rowToggler />
                         </p:column>
 
@@ -56,23 +56,23 @@
                                 <f:facet name="header">
                                     Soporte Seleccionado
                                 </f:facet>
-                                <label jsf:value="#{bundle.ViewSoportesDeDocumentosLabel_idContrato}" style="color: darkcyan" />
+                                <label jsf:value="#{bundle.ViewSoportesDeDocumentosLabel_idContrato}" class="FormLabelSCCSS" />
                                 <input class="FormInputSCCSS" disabled="true"
                                        value="#{item.idContrato.numeroDeContrato}" title="#{bundle.ViewSoportesDeDocumentosTitle_idContrato}" >
                                 </input>
-                                <label jsf:value="#{bundle.ViewSoportesDeDocumentosLabel_tipoSoporte}" style="color: darkcyan" />
+                                <label jsf:value="#{bundle.ViewSoportesDeDocumentosLabel_tipoSoporte}" class="FormLabelSCCSS" />
                                 <input class="FormInputSCCSS" disabled="true"
                                        value="#{item.tipoSoporte}" title="#{bundle.ViewSoportesDeDocumentosTitle_tipoSoporte}" >
                                 </input>
-                                <label jsf:value="#{bundle.ViewSoportesDeDocumentosLabel_observacion}" style="color: darkcyan" />
+                                <label jsf:value="#{bundle.ViewSoportesDeDocumentosLabel_observacion}" class="FormLabelSCCSS" />
                                 <textarea  rows="6" cols="45" class="FormTextAreaSCCSS" disabled="true"
                                           jsf:value="#{item.observacion}" title="#{bundle.ViewSoportesDeDocumentosTitle_observacion}" >
                                 </textarea>
                             </p:panelGrid>
                         </p:rowExpansion>
 
-                        <p:column headerText="Opciones">
-                            <p:commandButton icon="fa fa-download" action="#{soportesDeDocumentosController.prepareView}">
+                        <p:column>
+                            <p:commandButton icon="ui-icon-search" action="#{soportesDeDocumentosController.prepareView}">
                                 <f:setPropertyActionListener value="#{item}" target="#{soportesDeDocumentosController.selected}"/>
                             </p:commandButton>
                             <p:commandButton icon="ui-icon-pencil" action="#{soportesDeDocumentosController.prepareEdit}">

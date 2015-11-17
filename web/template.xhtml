@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="#{request.contextPath}/resources/css/styleTemplate.css"/>
         <link rel="stylesheet" href="#{request.contextPath}/resources/css/fonts.css"/>
         <link rel="stylesheet" href="#{request.contextPath}/resources/css/styles.css"/>
+        <link rel="stylesheet" href="#{request.contextPath}/resources/css/otherFontStyle.css"/>
         <link rel="stylesheet" href="#{request.contextPath}/resources/css/estilos.css"/>
         <link rel="shortcut icon" href="#{request.contextPath}/resources/images/favicon.ico"/>               
     </head>
@@ -39,7 +40,7 @@
                             .
                         </div>
                         <div class="row text-center">
-                            <h5>Bienvenido,#{loginController.userLogueado.primerNombre} #{loginController.userLogueado.primerApellido}</h5>
+                            <h5><span class="glyphicon glyphicon-user"/> Bienvenido(a),#{loginController.userLogueado.primerNombre} #{loginController.userLogueado.primerApellido}</h5>
                         </div>
                         <div class="row text-center">
                             <h:form>
@@ -56,7 +57,7 @@
                                         <li><a jsf:outcome="/modulo5/index_modulo5.xhtml" jsf:rendered="#{loginController.gestionDocumental}" >Gestión documental</a></li>
                                         <li><a  jsf:outcome="/modulo6/index_modulo6.xhtml" jsf:rendered="#{loginController.gestionMateriales}" >Gestión de materiales de formación</a></li>
                                         <li role="separator" class="divider"></li>
-                                        <li><a jsf:action="#{loginController.logout}" onclick="PF('cerrarSesion').show();">Cerrar Sesión</a></li>
+                                        <li><a jsf:action="#{loginController.logout}" onclick="PF('cerrarSesion').show();"><span class="glyphicon glyphicon-off"/> Cerrar Sesión</a></li>
                                         <h:form>   
                                             <p:confirmDialog global="true"
                                                              showEffect="fade" 
@@ -95,11 +96,22 @@
             <div class="row">
                 <div class="col-md-1">.<!--espacio entre columnas-->
                 </div>
-                <div class="col-md-3">
-                    <h3 class="text-center">Contacto</h3>
+                <div class="col-md-1">
+                    <h3>.</h3>
+                    <p class="text-right hidden-xs">
+                        <span class="icon-mail4" aria-hidden="true"></span><br/>
+                        <span class="icon-facebook3" aria-hidden="true"></span><br/>
+                        <span class="icon-twitter3" aria-hidden="true"></span><br/>
+                        <span class="icon-phone-hang-up" aria-hidden="true"></span>
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <h3 class="text-center"><span class="icon-users" aria-hidden="true"/>Contacto</h3>
                     <p class="text-center">
-                        sena.cbi.sami@gmail.com<br/>facebook.com/contactosami<br/>@interactuasami 
-                        <br/>317-347-01-78<br/>SENA
+                        sena.cbi.sami@gmail.com<br/>
+                        facebook.com/contactosami<br/>
+                        @interactuasami<br/>
+                        317-347-01-78<br/>SENA
                     </p>
                 </div>
                 <div class="col-md-1">.<!--espacio entre columnas-->
@@ -112,7 +124,7 @@
                 <div class="col-md-1">.<!--espacio entre columnas-->
                 </div>
                 <div class="col-md-3 text-center">
-                    <h3 class="text-center">Opciones</h3>
+                    <h3 class="text-center"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> Opciones</h3>
                     <div class="row">
                         <div class="col-md-12">
                             <a href="http://oferta.senasofiaplus.edu.co/sofia-oferta/" class="icon-icon-sofia-01" target="_blank"></a>

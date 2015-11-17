@@ -25,21 +25,25 @@
                     Lista Contratos
                 </a>
             </li>
+            <div jsf:rendered="#{loginController.noEsInvitado}">
             <li class="MainMenu-item">
                 <a jsf:action="#{informesController.prepareBuzon()}" class="MainMenu-link">
                     Buzón de Supervisión
                 </a>
             </li>
+            </div>
             <li class="MainMenu-item">
                 <a jsf:outcome="/modulo3/GestionContractual/ListInformes" class="MainMenu-link">
                     Lista Informes
                 </a>
             </li>
+            <div jsf:rendered="#{loginController.supervisionSuministros}">
             <li class="MainMenu-item">
                 <a jsf:action="#{soportesDeDocumentosController.prepareCreate()}" class="MainMenu-link">
                     Registrar Soportes
                 </a>
             </li>
+            </div>
             <li class="MainMenu-item">
                 <a jsf:outcome="/modulo3/GestionContractual/ListaSoportes" class="MainMenu-link">
                     Lista de Soportes

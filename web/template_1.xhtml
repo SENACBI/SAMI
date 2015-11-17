@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="#{request.contextPath}/resources/css/styleTemplate.css"/>
         <link rel="stylesheet" href="#{request.contextPath}/resources/css/fonts.css"/>
         <link rel="stylesheet" href="#{request.contextPath}/resources/css/styles.css"/>
+        <link rel="stylesheet" href="#{request.contextPath}/resources/css/otherFontStyle.css"/>
         <link rel="shortcut icon" href="#{request.contextPath}/resources/images/favicon.ico"/>               
     </head>
     <body jsf:id="body">
@@ -47,9 +48,9 @@
                         </div>
                         <div class="col-md-8">
                             <ul class="nav nav-pills nav-justified">
-                                <li role="presentation"><a class="btn btn-default btn-lg btn-block boxIndex" jsf:outcome="/index.xhtml" role="button">INICIO</a></li>
-                                <li role="presentation"><a class="btn btn-default btn-lg btn-block boxIndex" jsf:outcome="/inicio_sami/sami_InfoModulosO.xhtml" role="button">INFORMACIÓN MODULOS</a></li>
-                                <li role="presentation"><a class="btn btn-default btn-lg btn-block boxIndex" jsf:outcome="/inicio_sami/sami_ayudaO.xhtml" role="button">AYUDA</a></li>
+                                <li role="presentation"><a class="btn btn-default btn-lg btn-block boxIndex" jsf:outcome="/index.xhtml" role="button"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> INICIO</a></li>
+                                <li role="presentation"><a class="btn btn-default btn-lg btn-block boxIndex" jsf:outcome="/inicio_sami/sami_InfoModulosO.xhtml" role="button"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> INFORMACIÓN MÓDULOS</a></li>
+                                <li role="presentation"><a class="btn btn-default btn-lg btn-block boxIndex" jsf:outcome="/inicio_sami/sami_ayudaO.xhtml" role="button"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> AYUDA</a></li>
                             </ul>
                         </div>
                     </div>
@@ -58,19 +59,30 @@
         </header>
         <div class="container"><!-- contenedor main -->
             <section class="row">
-                    <ui:insert name="menu"/>
-                    <ui:insert name="body"/>
+                <ui:insert name="menu"/>
+                <ui:insert name="body"/>
             </section>
         </div>
         <footer id="footer">
             <div class="row">
                 <div class="col-md-1">.<!--espacio entre columnas-->
                 </div>
-                <div class="col-md-3">
-                    <h3 class="text-center">Contacto</h3>
+                <div class="col-md-1 hidden-xs">
+                    <h3>.</h3>
+                    <p class="text-right">
+                        <span class="icon-mail4" aria-hidden="true"></span><br/>
+                        <span class="icon-facebook3" aria-hidden="true"></span><br/>
+                        <span class="icon-twitter3" aria-hidden="true"></span><br/>
+                        <span class="icon-phone-hang-up" aria-hidden="true"></span>
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <h3 class="text-center"><span class="icon-users" aria-hidden="true"/>Contacto</h3>
                     <p class="text-center">
-                        sena.cbi.sami@gmail.com<br/>facebook.com/contactosami<br/>@interactuasami 
-                        <br/>317-347-01-78<br/>SENA
+                        sena.cbi.sami@gmail.com<br/>
+                        facebook.com/contactosami<br/>
+                        @interactuasami<br/>
+                        317-347-01-78<br/>SENA
                     </p>
                 </div>
                 <div class="col-md-1">.<!--espacio entre columnas-->
@@ -83,7 +95,7 @@
                 <div class="col-md-1">.<!--espacio entre columnas-->
                 </div>
                 <div class="col-md-3 text-center">
-                    <h3 class="text-center">Opciones</h3>
+                    <h3 class="text-center"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> Opciones</h3>
                     <div class="row">
                         <div class="col-md-12">
                             <a href="http://oferta.senasofiaplus.edu.co/sofia-oferta/" class="icon-icon-sofia-01" target="_blank"></a>

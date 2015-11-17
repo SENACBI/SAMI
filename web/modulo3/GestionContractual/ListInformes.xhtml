@@ -18,7 +18,7 @@
                     <f:facet name="header">
                         Lista de Informes de supervisión
                     </f:facet>
-                    <p:column headerText="Contrato" style="width:75px" >
+                    <p:column style="width:16px" >
                         <p:rowToggler />
                     </p:column>
                     <p:column headerText="Número de Contrato" filterBy="#{item.idContrato}" filterMatchMode="contains">
@@ -45,44 +45,44 @@
                                 <f:facet name="header">
                                     Contrato Seleccionado
                                 </f:facet>
-                                <label jsf:value="#{bundle.ViewContratosLabel_numeroDeContrato}" style="color: darkcyan"/>
+                                <label jsf:value="#{bundle.ViewContratosLabel_numeroDeContrato}" class="FormLabelSCCSS" />
                                 <input class="FormInputSCCSS" disabled="true"
                                        value="#{item.idContrato.numeroDeContrato}" title="#{bundle.ViewContratosTitle_numeroDeContrato}" > 
                                 </input>
 
-                                <label jsf:value="#{bundle.ViewContratosLabel_idTipoContrato}" style="color: darkcyan" />
+                                <label jsf:value="#{bundle.ViewContratosLabel_idTipoContrato}" class="FormLabelSCCSS" />
                                 <input value="#{item.idContrato.idTipoContrato}" title="#{bundle.ViewContratosTitle_idTipoContrato}" class="FormInputDateSCCSS" disabled="true">                            
                                 </input>
 
-                                <label jsf:value="#{bundle.ViewContratosLabel_fechaSuscripcion}" style="color: darkcyan" />
+                                <label jsf:value="#{bundle.ViewContratosLabel_fechaSuscripcion}" class="FormLabelSCCSS" />
                                 <h:inputText id="fechaSuscripcionText" value="#{item.idContrato.fechasuscripcion}" title="#{bundle.ViewContratosTitle_fechaSuscripcion}" class="FormInputDateSCCSS"
                                              disabled="true" >
                                     <f:convertDateTime pattern="dd-MM-yyyy"/>
                                 </h:inputText>
 
-                                <label jsf:value="#{bundle.ViewContratosLabel_fechaInicioContrato}" style="color: darkcyan" />
+                                <label jsf:value="#{bundle.ViewContratosLabel_fechaInicioContrato}" class="FormLabelSCCSS" />
                                 <h:inputText value="#{item.idContrato.fechaInicioContrato}" title="#{bundle.ViewContratosTitle_fechaInicioContrato}" class="FormInputDateSCCSS"
                                              disabled="true" >
                                     <f:convertDateTime pattern="dd-MM-yyyy"/>
                                 </h:inputText>
 
-                                <label jsf:value="#{bundle.ViewContratosLabel_fechaFinContrato}" style="color: darkcyan" />
+                                <label jsf:value="#{bundle.ViewContratosLabel_fechaFinContrato}" class="FormLabelSCCSS" />
                                 <h:inputText value="#{item.idContrato.fechaFinContrato}" title="#{bundle.ViewContratosTitle_fechaFinContrato}" class="FormInputDateSCCSS"
                                              disabled="true" >
                                     <f:convertDateTime pattern="dd-MM-yyyy"/>
                                 </h:inputText>
 
-                                <label jsf:value="#{bundle.ViewContratosLabel_objetoContractual}" style="color: darkcyan" />
+                                <label jsf:value="#{bundle.ViewContratosLabel_objetoContractual}" class="FormLabelSCCSS" />
                                 <textarea jsf:value="#{item.idContrato.objetoContractual}" title="#{bundle.ViewContratosTitle_objetoContractual}" class="FormTextAreaSCCSS"
                                           rows="6" cols="45" disabled="true" >                           
                                 </textarea>
 
-                                <label jsf:value="#{bundle.ViewContratosLabel_valorContrato}" style="color: darkcyan" />
+                                <label jsf:value="#{bundle.ViewContratosLabel_valorContrato}" class="FormLabelSCCSS" />
                                 <input value="#{item.idContrato.valorContrato}" title="#{bundle.ViewContratosTitle_valorContrato}" class="FormInputSCCSS"
                                        disabled="true" >                          
                                 </input>                                             
 
-                                <label jsf:value="#{bundle.ViewContratosLabel_observaciones}" style="color: darkcyan" />
+                                <label jsf:value="#{bundle.ViewContratosLabel_observaciones}" class="FormLabelSCCSS" />
                                 <textarea jsf:value="#{item.idContrato.observaciones.toString()}" title="#{bundle.ViewContratosTitle_observaciones}" class="FormTextAreaSCCSS"
                                           rows="6" cols="45" disabled="true" >                           
                                 </textarea>
@@ -97,17 +97,17 @@
                                 <f:setPropertyActionListener value="#{item}" target="#{informesController.selected}"/>
                             </p:commandButton>
                 
-                            <p:commandButton icon="ui-icon-pencil" title="Editar Informe" action="#{informesController.prepareEdit()}">
+                            <p:commandButton rendered="#{loginController.supervisorContractual}" icon="ui-icon-pencil" title="Editar Informe" action="#{informesController.prepareEdit()}">
                                 <f:setPropertyActionListener value="#{item}" target="#{informesController.selected}"/>
                             </p:commandButton>
                             
-                            <p:commandButton icon="ui-icon-trash" title="Eliminar Informe" action="#{informesController.destroy()}"
+                            <p:commandButton rendered="#{loginController.supervisorContractual}" icon="ui-icon-trash" title="Eliminar Informe" action="#{informesController.destroy()}"
                                              process="@this" update="InformesTable">
                                 <p:confirm header="Confirmación" message="¿Esta seguro que desea eliminar el Informe?" icon="ui-icon-alert" />
                                 <f:setPropertyActionListener value="#{item}" target="#{informesController.selected}"/>
                             </p:commandButton>
                             
-                            <p:commandButton icon="ui-icon-star" value="Nuevo informe contrato" title="Crear nuevo informe de este contrato" 
+                            <p:commandButton rendered="#{loginController.supervisorContractual}" icon="ui-icon-star" value="Nuevo informe contrato" title="Crear nuevo informe de este contrato" 
                                              action="#{informesController.openCreate()}">
                                 <f:setPropertyActionListener value="#{item}" target="#{informesController.temp}"/>
                             </p:commandButton>

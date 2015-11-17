@@ -17,19 +17,15 @@
                 <h:panelGroup id="msgs">
                     <p:messages/>
                 </h:panelGroup>
-                <h1><h:outputText value="Create/Edit"/></h1>
+                <h1><h:outputText value="Crear Póliza"/></h1>
                 <h:panelGrid columns="2">
                     <label jsf:value="#{bundle.CreatePolizasLabel_numeroDePoliza}" jsf:for="numeroDePoliza" />
-                    <input type="text" maxlength="20" jsf:id="numeroDePoliza" pattern="[0-9]*"
-                           jsf:value="#{contratosModulo1Controller.selectedPolizas.numeroDePoliza}" 
-                           jsf:title="#{bundle.CreatePolizasTitle_numeroDePoliza}" required="true" 
-                           jsf:requiredMessage="#{bundle.CreatePolizasRequiredMessage_numeroDePoliza}"></input>
+                    <input type="text" maxlength="20" jsf:id="numeroDePoliza" pattern="[0-9]*"   jsf:value="#{contratosModulo1Controller.selectedPolizas.numeroDePoliza}" 
+                           jsf:title="#{bundle.CreatePolizasTitle_numeroDePoliza}" required="true" jsf:requiredMessage="#{bundle.CreatePolizasRequiredMessage_numeroDePoliza}"></input>
 
-                    <label jsf:value="#{bundle.CreatePolizasLabel_valorDePoliza}"  jsf:for="valorDePoliza"/>
-                    <input type="text" maxlength="20" jsf:id="valorDePoliza" pattern="[0-9]*"
-                           jsf:value="#{contratosModulo1Controller.selectedPolizas.valorDePoliza}" 
-                           jsf:title="#{bundle.CreatePolizasTitle_valorDePoliza}" required="true"
-                           jsf:requiredMessage="#{bundle.CreatePolizasRequiredMessage_valorDePoliza}"></input>
+                    <label jsf:value="#{bundle.CreatePolizasLabel_valorDePoliza}"  jsf:for="valorDePoliza" />
+                    <input type="text" maxlength="20" jsf:id="valorDePoliza" pattern="[0-9]*"  jsf:value="#{contratosModulo1Controller.selectedPolizas.valorDePoliza}" 
+                           jsf:title="#{bundle.CreatePolizasTitle_valorDePoliza}" required="true" jsf:requiredMessage="#{bundle.CreatePolizasRequiredMessage_valorDePoliza}"   ></input>
 
                     <label jsf:value="#{bundle.CreatePolizasLabel_fechaAprobacion}" jsf:for="fechaAprobacion" />
                     <p:calendar  id="fechaAprobacion" 
@@ -38,7 +34,8 @@
                                  title="#{bundle.CreatePolizasTitle_fechaAprobacion}"
                                  showOn="button" navigator="true"
                                  effect="fold"
-                                 maxdate="#{contratosModulo1Controller.selectedPolizas.vigenciaDesde}">
+                                 maxdate="#{contratosModulo1Controller.selectedPolizas.vigenciaDesde}"
+                                 required="true" >
                         <!--  <p:ajax event="dateSelect" process="@this fechaInicioContrato" update="fechasuscripcion"/>
                          <p:ajax  event="valueChange"  process="@this fechaInicioContrato" update="fechasuscripcion"/>-->
                         <p:ajax event="dateSelect" process="@this fechaAprobacion" update="vigenciaDesde"/>
@@ -78,15 +75,18 @@
 
 
                     <label jsf:value="#{bundle.CreatePolizasLabel_idAseguradora}"  jsf:for="idAseguradora" />
-                    <h:selectOneMenu id="idAseguradora" value="#{contratosModulo1Controller.selectedPolizas.idAseguradora}"
-                                     title="IdAseguradora" required="true" 
+                    <h:selectOneMenu id="idAseguradora" value="#{contratosModulo1Controller.selectedPolizas.idAseguradora}" title="IdAseguradora" required="true" 
                                      requiredMessage="#{bundle.EditPolizasRequiredMessage_idAseguradora}">
                         <f:selectItem itemLabel="Seleccionar"/>
                         <f:selectItems value="#{aseguradoraController.itemsAvailableSelectOne}"
                                        var="idAseguradoraItem"
                                        itemValue="#{idAseguradoraItem}"/>
                     </h:selectOneMenu>  
-                    <p:commandButton process="polizasForm" oncomplete="handleSubmit(arg,'PolizasDialogo')" onclick="PF('PolizasDialogo').hide()" value="Guardar" update="polizasForm msgs" />
+                    <p:commandButton process="polizasForm" 
+                                     oncomplete="handleSubmit(arg,'PolizasDialogo')"
+                                     onclick="PF('PolizasDialogo').hide()" 
+                                     value="Guardar" 
+                                     update="polizasForm msgs" />
                     <p:commandButton value="Cancelar" process="@this" onclick="PF('PolizasDialogo').hide()"/>
                 </h:panelGrid>
             </h:form>
