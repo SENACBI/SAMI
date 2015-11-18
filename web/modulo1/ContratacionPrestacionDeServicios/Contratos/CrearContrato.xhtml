@@ -14,10 +14,18 @@
             <section class="section-form">
 
 
-                    <h:form>
-                        <h1><h:outputText value="Create/Edit"/></h1>
-                        <h:panelGrid columns="2">
-                            <h:outputLabel value="IdContrato:" for="idContrato" />
+                <h:form>
+                    <h1><h:outputText value="Create/Edit"/></h1>
+                    <h:panelGrid columns="2">
+                        <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Link with href
+                        </a>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Button with data-target
+                        </button>
+                        <div class="collapse" id="collapseExample">
+                            <div class="well">
+                               <h:outputLabel value="IdContrato:" for="idContrato" />
                             <h:inputText id="idContrato" value="#{contratosController.selected.idContrato}"
                                          title="IdContrato" required="true" requiredMessage="The IdContrato field is required."/>
                             
@@ -52,6 +60,9 @@
                             <h:outputLabel value="ObjetoContractual:" for="objetoContractual" />
                             <h:inputText id="objetoContractual" value="#{contratosController.selected.objetoContractual}"
                                          title="ObjetoContractual" required="true" requiredMessage="The ObjetoContractual field is required."/>
+                            
+                            </div>
+                        </div>
                             
                             <h:outputLabel value="Obligaciones:" for="obligaciones" />
                             <h:inputText id="obligaciones" value="#{contratosController.selected.obligaciones}" title="Obligaciones" />
