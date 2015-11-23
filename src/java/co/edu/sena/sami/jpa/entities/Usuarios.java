@@ -67,11 +67,21 @@ import javax.xml.bind.annotation.XmlTransient;
     @NamedQuery(name = "Usuarios.findByEstado", query = "SELECT u FROM Usuarios u WHERE u.estado = :estado"),
     @NamedQuery(name = "Usuarios.findByNumCuentaBanco", query = "SELECT u FROM Usuarios u WHERE u.numCuentaBanco = :numCuentaBanco"),
     @NamedQuery(name = "Usuarios.findByNombreTipoCuenta", query = "SELECT u FROM Usuarios u WHERE u.nombreTipoCuenta = :nombreTipoCuenta"),
-    @NamedQuery(name = "Usuarios.findByGrado", query = "SELECT u FROM Usuarios u WHERE u.grado = :grado"),
     @NamedQuery(name = "Usuarios.findBySueldo", query = "SELECT u FROM Usuarios u WHERE u.sueldo = :sueldo"),
     @NamedQuery(name = "Usuarios.findByFechaIngreso", query = "SELECT u FROM Usuarios u WHERE u.fechaIngreso = :fechaIngreso"),
-    @NamedQuery(name = "Usuarios.findByPersonalidad", query = "SELECT u FROM Usuarios u WHERE u.personalidad = :personalidad"),
-    @NamedQuery(name = "Usuarios.findByDv", query = "SELECT u FROM Usuarios u WHERE u.dv = :dv")})
+    @NamedQuery(name = "Usuarios.findByNaturaleza", query = "SELECT u FROM Usuarios u WHERE u.naturaleza = :naturaleza"),
+    @NamedQuery(name = "Usuarios.findByDigitoVerificacion", query = "SELECT u FROM Usuarios u WHERE u.digito_verificacion = :digitoVerificacion"),
+    @NamedQuery(name = "Usuarios.findByTipoLabor", query = "SELECT u FROM Usuarios u WHERE u.tipo_labor = :tipoLabor"),
+    @NamedQuery(name = "Usuarios.findByNacionalidad", query = "SELECT u FROM Usuarios u WHERE u.nacionalidad = :nacionalidad"),
+    @NamedQuery(name = "Usuarios.findByRegimenIva", query = "SELECT u FROM Usuarios u WHERE u.regimen_iva = :regimenIva"),
+    @NamedQuery(name = "Usuarios.findByExclusionIva", query = "SELECT u FROM Usuarios u WHERE u.exclusion_iva = :exclusionIva"),
+    @NamedQuery(name = "Usuarios.findByDeclaracionRenta", query = "SELECT u FROM Usuarios u WHERE u.declaracion_renta = :declaracionRenta"),
+    @NamedQuery(name = "Usuarios.findByPension", query = "SELECT u FROM Usuarios u WHERE u.pension = :pension"),
+    @NamedQuery(name = "Usuarios.findByArea", query = "SELECT u FROM Usuarios u WHERE u.area = :area"),
+    @NamedQuery(name = "Usuarios.findByNivelAcademico", query = "SELECT u FROM Usuarios u WHERE u.nivel_academico = :nivelAcademico"),
+    @NamedQuery(name = "Usuarios.findByTituloAcademico", query = "SELECT u FROM Usuarios u WHERE u.titulo_academico = :tituloAcademico"),
+    @NamedQuery(name = "Usuarios.findByEspecializacion", query = "SELECT u FROM Usuarios u WHERE u.especializacion = :especializacion"),
+    @NamedQuery(name = "Usuarios.findByTituloEspecializacion", query = "SELECT u FROM Usuarios u WHERE u.titulo_especializacion = :tituloEspecializacion")})
 public class Usuarios implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
@@ -149,20 +159,50 @@ public class Usuarios implements Serializable {
     @Size(max = 45)
     @Column(name = "nombre_tipo_cuenta")
     private String nombreTipoCuenta;
-    @Column(name = "grado")
-    private Integer grado;
     // @Max(value=?)  @Min(value=?)//if you know range of your decimal fields consider using these annotations to enforce field validation
     @Column(name = "sueldo")
     private Double sueldo;
     @Column(name = "fecha_ingreso")
     @Temporal(TemporalType.DATE)
     private Date fechaIngreso;
-    @Size(max = 45)
-    @Column(name = "personalidad")
-    private String personalidad;
-    @Column(name = "dv")
-    private String dv;
-    @Size(max = 45)
+    //-----se agregan nuevos campos a esta entidad 19/11/2015 by: Jose Maldonado-------
+    @Size(max = 20)
+    @Column(name = "naturaleza")
+    private String naturaleza;
+    @Size(max = 1)
+    @Column(name = "digito_verificacion")
+    private String digito_verificacion;
+    @Size(max = 20)
+    @Column(name = "tipo_labor")
+    private String tipo_labor;
+    @Size(max = 20)
+    @Column(name = "nacionalidad")
+    private String nacionalidad;
+    @Size(max = 15)
+    @Column(name = "regimen_iva")
+    private String regimen_iva;
+    @Column(name = "exclusion_iva")
+    private boolean exclusion_iva;
+    @Column(name = "declaracion_renta")
+    private boolean declaracion_renta;
+    @Column(name = "pension")
+    private boolean pension;
+    @Size(max = 40)
+    @Column(name = "area")
+    private String area;
+    @Size(max = 30)
+    @Column(name = "nivel_academico")
+    private String nivel_academico;
+    @Size(max = 100)
+    @Column(name = "titulo_academico")
+    private String titulo_academico;
+    @Size(max = 30)
+    @Column(name = "especializacion")
+    private String especializacion;
+    @Size(max = 30)
+    @Column(name = "titulo_especializacion")
+    private String titulo_especializacion;
+    //--fin de nuevos campos----
     @JoinTable(name = "usuario_formacion_academica", joinColumns = {
         @JoinColumn(name = "id_usuario", referencedColumnName = "id_usuario")}, inverseJoinColumns = {
         @JoinColumn(name = "id_formacion", referencedColumnName = "id_formacion")})
@@ -448,14 +488,6 @@ public class Usuarios implements Serializable {
     public void setNombreTipoCuenta(String nombreTipoCuenta) {
         this.nombreTipoCuenta = nombreTipoCuenta;
     }
-    
-     public Integer getGrado() {
-        return grado;
-    }
-
-    public void setGrado(Integer grado) {
-        this.grado = grado;
-    }
 
     public Double getSueldo() {
         return sueldo;
@@ -473,22 +505,6 @@ public class Usuarios implements Serializable {
         this.fechaIngreso = fechaIngreso;
     }
 
-    public String getPersonalidad() {
-        return personalidad;
-    }
-
-    public void setPersonalidad(String personalidad) {
-        this.personalidad = personalidad;
-    }
-
-    public String getDv() {
-        return dv;
-    }
-
-    public void setDv(String dv) {
-        this.dv = dv;
-    }
-    
     @XmlTransient
     public List<FormacionAcademica> getFormacionAcademicaList() {
         return formacionAcademicaList;
@@ -692,6 +708,110 @@ public class Usuarios implements Serializable {
         this.idBanco = idBanco;
     }
 
+    public String getNaturaleza() {
+        return naturaleza;
+    }
+
+    public void setNaturaleza(String naturaleza) {
+        this.naturaleza = naturaleza;
+    }
+
+    public String getDigito_verificacion() {
+        return digito_verificacion;
+    }
+
+    public void setDigito_verificacion(String digito_verificacion) {
+        this.digito_verificacion = digito_verificacion;
+    }
+
+    public String getTipo_labor() {
+        return tipo_labor;
+    }
+
+    public void setTipo_labor(String tipo_labor) {
+        this.tipo_labor = tipo_labor;
+    }
+
+    public String getNacionalidad() {
+        return nacionalidad;
+    }
+
+    public void setNacionalidad(String nacionalidad) {
+        this.nacionalidad = nacionalidad;
+    }
+
+    public String getRegimen_iva() {
+        return regimen_iva;
+    }
+
+    public void setRegimen_iva(String regimen_iva) {
+        this.regimen_iva = regimen_iva;
+    }
+
+    public boolean isExclusion_iva() {
+        return exclusion_iva;
+    }
+
+    public void setExclusion_iva(boolean exclusion_iva) {
+        this.exclusion_iva = exclusion_iva;
+    }
+
+    public boolean isDeclaracion_renta() {
+        return declaracion_renta;
+    }
+
+    public void setDeclaracion_renta(boolean declaracion_renta) {
+        this.declaracion_renta = declaracion_renta;
+    }
+
+    public boolean isPension() {
+        return pension;
+    }
+
+    public void setPension(boolean pension) {
+        this.pension = pension;
+    }
+
+    public String getArea() {
+        return area;
+    }
+
+    public void setArea(String area) {
+        this.area = area;
+    }
+
+    public String getNivel_academico() {
+        return nivel_academico;
+    }
+
+    public void setNivel_academico(String nivel_academico) {
+        this.nivel_academico = nivel_academico;
+    }
+
+    public String getTitulo_academico() {
+        return titulo_academico;
+    }
+
+    public void setTitulo_academico(String titulo_academico) {
+        this.titulo_academico = titulo_academico;
+    }
+
+    public String getEspecializacion() {
+        return especializacion;
+    }
+
+    public void setEspecializacion(String especializacion) {
+        this.especializacion = especializacion;
+    }
+
+    public String getTitulo_especializacion() {
+        return titulo_especializacion;
+    }
+
+    public void setTitulo_especializacion(String titulo_especializacion) {
+        this.titulo_especializacion = titulo_especializacion;
+    }
+    
     @XmlTransient
     public List<UsuariosSolicitudMaterialesAlmacen> getUsuariosSolicitudMaterialesAlmacenList() {
         return usuariosSolicitudMaterialesAlmacenList;

@@ -156,7 +156,7 @@ public class ContratosModulo1Controller implements Serializable {
         selectedUsuarios = new Usuarios();
         selectedRol = new Rol();
         initializeEmbeddableKey();
-        return "/modulo1/ContratacionPrestacionDeServicios/Contratos/CreateContrato";
+        return "/modulo1/ContratacionPrestacionDeServicios/Contratos/CrearContrato";
     }
 
     public String prepareEdit() {

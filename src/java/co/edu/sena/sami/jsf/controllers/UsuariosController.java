@@ -120,10 +120,10 @@ public class UsuariosController implements Serializable {
         return selected.getIdTipoContrato() == null? false : selected.getIdTipoContrato().getIdTipoContrato() == (short) 2;
     }
     public boolean isPersonaJuridica() {
-        return selected.getPersonalidad() == null? false : selected.getPersonalidad().equals("personaJuridica");
+        return selected.getNaturaleza() == null? false : selected.getNaturaleza().equals("personaJuridica");
     }
     public boolean isPersonaNatural() {
-        return selected.getPersonalidad() == null? false : selected.getPersonalidad().equals("personaNatural");
+        return selected.getNaturaleza() == null? false : selected.getNaturaleza().equals("personaNatural");
     }
     
     public String prepareCreate() {
@@ -396,7 +396,7 @@ public class UsuariosController implements Serializable {
         } else {
             String documento = (String) value;
             selected.setNumeroDoc(documento);
-            selected.setDv(String.valueOf(generarDv(documento)));
+            selected.setDigito_verificacion(String.valueOf(generarDv(documento)));
         }
     }
 
