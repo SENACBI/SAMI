@@ -140,12 +140,8 @@ public class UsuariosController implements Serializable {
         initializeEmbeddableKey();
         return "/modulo1/ContratacionPrestacionDeServicios/Contratistas/AgregarN";
     }
-
-    public String prepareModificarUsuario() {
-        return "Modificar";
-    }
-     public String prepareModificarUsuario1() {
-        return "Agregar";
+     public String prepareModificarUsuario() {
+        return "ModificarTercero";
     }
 
     public String prepareConsultarUsuario() {

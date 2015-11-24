@@ -101,7 +101,7 @@
                             <f:setPropertyActionListener value="#{item}" target="#{usuariosController.selected}"/>
                         </p:commandButton>
                         <p:commandButton  id="editButton" icon="ui-icon-pencil" update="datalist" rendered="#{loginController.noEsInvitado}"
-                                          action="#{usuariosController.prepareModificarUsuario1()}">
+                                          action="#{usuariosController.prepareModificarUsuario()}">
                             <f:setPropertyActionListener value="#{item}" target="#{usuariosController.selected}"/>
                         </p:commandButton>
                         <p:commandButton id="deleteButton" icon="ui-icon-trash" action="#{usuariosController.destroy}"

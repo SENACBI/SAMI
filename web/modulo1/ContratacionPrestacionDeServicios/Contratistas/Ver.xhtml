@@ -13,8 +13,15 @@
                 <h:form>
                     <h1>Ver contratista</h1>
                     <p:fieldset style="font-size:12px">
-                    <h3><h:outputText value="#{usuariosController.selected.idUsuario}"/></h3>
                     <h:panelGrid columns="4" frame="border" border="1" bgcolor="rgba(35, 130, 118, 0.54)">
+                        
+                        <h:outputText value="Naturaleza:"/>
+                        <h:outputText value="#{usuariosController.selected.naturaleza}">
+                        </h:outputText>
+                        
+                        <h:outputText value="Tipo de labor:"/>
+                        <h:outputText value="#{usuariosController.selected.tipo_labor}">
+                        </h:outputText>
                         
                         <h:outputText value="Tipo de identificación:"/>
                         <h:outputText value="#{usuariosController.selected.idTipoDoc.nombreTipoDoc}">
@@ -23,13 +30,13 @@
                         <h:outputText value="Numero de Documento:"/>
                         <h:outputText value="#{usuariosController.selected.numeroDoc}"/>
                         
-                        <h:outputText value="Fecha de expedición:"/>
-                        <h:outputText value="#{usuariosController.selected.fechaExpedicionDoc}">
-                            <f:convertDateTime pattern="MM/dd/yyyy" />
-                        </h:outputText>
-                        
                         <h:outputText value="Ciudad de expedición:"/>
                         <h:outputText value="#{usuariosController.selected.ciudad1.nombreCiudad}">
+                        </h:outputText>
+                        
+                        <h:outputText value="Fecha de Nacimiento:"/>
+                        <h:outputText value="#{usuariosController.selected.fechaNac}">
+                            <f:convertDateTime pattern="MM/dd/yyyy" />
                         </h:outputText>
                         
                         <h:outputText value="Primer Nombre:" />
@@ -44,10 +51,12 @@
                         <h:outputText value="Segundo Apellido:"/>
                         <h:outputText value="#{usuariosController.selected.segundoApellido}"/>
                         
-                        <h:outputText value="Fecha de Nacimiento:"/>
-                        <h:outputText value="#{usuariosController.selected.fechaNac}">
-                            <f:convertDateTime pattern="MM/dd/yyyy" />
+                        <h:outputText value="Ciudad de domicilio:"/>
+                        <h:outputText value="#{usuariosController.selected.ciudad.nombreCiudad}">
                         </h:outputText>
+                        
+                        <h:outputText value="Direccion:"/>
+                        <h:outputText value="#{usuariosController.selected.direccionUsu}"/>
                         
                         <h:outputText value="Email:"/>
                         <h:outputText value="#{usuariosController.selected.email}"/>
@@ -55,46 +64,17 @@
                         <h:outputText value="Movíl:"/>
                         <h:outputText value="#{usuariosController.selected.telefonoPrincipalUsu}"/>
                         
-                        <h:outputText value="Telefono:"/>
-                        <h:outputText value="#{usuariosController.selected.telefonoAlternoUsu}"/>
-                        
-                        <h:outputText value="Ciudad de residencia:"/>
-                        <h:outputText value="#{usuariosController.selected.ciudad.nombreCiudad}">
-                        </h:outputText>
-                        
-                        <h:outputText value="Direccion:"/>
-                        <h:outputText value="#{usuariosController.selected.direccionUsu}"/>
-                        
-                        <h:outputText value="Factor Rh:"/>
-                        <h:outputText value="#{usuariosController.selected.gpRh}"/>
-               
-                        <h:outputText value="Fecha de creación:" />
-                        <h:outputText value="#{usuariosController.selected.fechaDeCreacion}">
-                            <f:convertDateTime pattern="MM/dd/yyyy HH:mm:ss" />
-                        </h:outputText>
-                        
-                        <h:outputText value="Grado:"/>
-                        <h:outputText value="#{usuariosController.selected.grado}"/>
-                        
-                        <h:outputText value="Sueldo:"/>
-                        <h:outputText value="#{usuariosController.selected.sueldo}"/>
-                        
-                        <h:outputText value="Fecha de ingreso:"/>
-                        <h:outputText value="#{usuariosController.selected.fechaIngreso}">
-                            <f:convertDateTime pattern="MM/dd/yyyy" />
-                        </h:outputText>
-                        
-                        <h:outputText value="Tipo de contrato:"/>
-                        <h:outputText value="#{usuariosController.selected.idTipoContrato.nombreContrato}">
-                        </h:outputText>
+                        <h:outputText value="Nacionalidad:"/>
+                        <h:outputText value="#{usuariosController.selected.nacionalidad}"/>
                         
                         <h:outputText value="Centro de formación:"/>
-                        <h:outputText value="#{usuariosController.selected.idCentroFormacion.nombreCentroFormacion}">
-                        </h:outputText>
+                        <h:outputText value="#{usuariosController.selected.idCentroFormacion.nombreCentroFormacion}"/>
                         
-                        <h:outputText value="A.R.L:"/>
-                        <h:outputText value="#{usuariosController.selected.idArl.nombreArl}">
-                        </h:outputText>
+                        <h:outputText value="Área:"/>
+                        <h:outputText value="#{usuariosController.selected.area}"/>
+                        
+                        <h:outputText value="Género:"/>
+                        <h:outputText value="#{usuariosController.selected.idSexo.nombreSexo}"/>
                         
                         <h:outputText value="E.P.S:"/>
                         <h:outputText value="#{usuariosController.selected.idEps.nombreEps}">
@@ -108,17 +88,47 @@
                         <h:outputText value="#{usuariosController.selected.idCcf.nombreCcf}">
                         </h:outputText>
                         
-                        <h:outputText value="Género:"/>
-                        <h:outputText id="idSexo" value="#{usuariosController.selected.idSexo.nombreSexo}">
+                        <h:outputText value="A.R.L:"/>
+                        <h:outputText value="#{usuariosController.selected.idArl.nombreArl}">
                         </h:outputText>
                         
-                        <h:outputText value="Estado Civil:"/>
-                        <h:outputText value="#{usuariosController.selected.idEstadoCivil.nombreEstadoCivil}">
+                        <h:outputText value="Nivel académico:"/>
+                        <h:outputText value="#{usuariosController.selected.nivel_academico}"/>
+                        
+                        <h:outputText value="Título Obtenido:"/>
+                        <h:outputText value="#{usuariosController.selected.titulo_academico}"/>
+                        
+                        <h:outputText value="Especialización:"/>
+                        <h:outputText value="#{usuariosController.selected.especializacion}"/>
+                        
+                        <h:outputText value="Título Obtenido:"/>
+                        <h:outputText value="#{usuariosController.selected.titulo_especializacion}"/>
+                        
+                        <h:outputText value="Banco:"/>
+                        <h:outputText value="#{usuariosController.selected.idBanco.nombreDeBanco}"/>
+                        
+                        <h:outputText value="Tipo de cuenta:"/>
+                        <h:outputText value="#{usuariosController.selected.nombreTipoCuenta}"/>
+                        
+                        <h:outputText value="Número de cuenta:"/>
+                        <h:outputText value="#{usuariosController.selected.numCuentaBanco}"/>
+                        
+                        <h:outputText value="Fecha de creación:" />
+                        <h:outputText value="#{usuariosController.selected.fechaDeCreacion}">
+                            <f:convertDateTime pattern="MM/dd/yyyy HH:mm:ss" />
                         </h:outputText>
                         
-                        <h:outputText value="Estrato Social:"/>
-                        <h:outputText value="#{usuariosController.selected.idEstratoSocial.nombreEstrato}">
-                        </h:outputText>
+                        <h:outputText value="Régimen IVA:"/>
+                        <h:outputText value="#{usuariosController.selected.regimen_iva}"/>
+                        
+                        <h:outputText value="Excluido IVA:"/>
+                        <h:outputText value="#{usuariosController.selected.exclusion_iva}"/>
+                        
+                        <h:outputText value="Declarante de renta:"/>
+                        <h:outputText value="#{usuariosController.selected.exclusion_iva}"/>
+                        
+                        <h:outputText value="Pensionado:"/>
+                        <h:outputText value="#{usuariosController.selected.exclusion_iva}"/>
                         
                     </h:panelGrid>
                     </p:fieldset>
