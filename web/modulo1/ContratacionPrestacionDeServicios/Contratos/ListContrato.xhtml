@@ -89,20 +89,13 @@
                         <f:facet name="header">
                             <h:outputText value="#{bundle.ListContratosTitle_valorContrato}"/>
                         </f:facet>
-                        <h:outputText value="#{item.valorContrato}"/>
+                        <h:outputText value="#{item.valorInicialContrato}"/>
                     </p:column>
                     <p:column rendered="false" exportable="true" toggleable="false">
                         <f:facet name="header">
                             <h:outputText value="#{bundle.ListContratosTitle_valorContrato}"/>
                         </f:facet>
                         <h:outputText value="#{item.fechaDeIdoneidad}"/>
-                    </p:column>
-
-                    <p:column toggleable="false">
-                        <f:facet name="header" >
-                            <h:outputText value="#{bundle.ListContratosTitle_valorMensual}"/>
-                        </f:facet>
-                        <h:outputText value="#{item.valorMensual}"/>
                     </p:column>
 
                     <p:column toggleable="false">
@@ -138,24 +131,11 @@
                         <h:outputText value="#{item.obligaciones}"/>
                     </p:column>
 
-
-
-
                     <p:column>
                         <f:facet name="header">
                             <h:outputText value="#{bundle.ListContratosTitle_adicionPresupuestal}"/>
                         </f:facet>
-                        <h:outputText value="#{item.adicionPresupuestal}"/>
-                    </p:column>
-
-
-
-
-                    <p:column>
-                        <f:facet name="header">
-                            <h:outputText value="#{bundle.ListContratosTitle_idTipoContrato}"/>
-                        </f:facet>
-                        <h:outputText value="#{item.idTipoContrato.nombreTipoContrato}"/>
+                        <h:outputText value="#{item.valorAdicionPresupuestal}"/>
                     </p:column>
 
                    <!-- <p:rowExpansion >

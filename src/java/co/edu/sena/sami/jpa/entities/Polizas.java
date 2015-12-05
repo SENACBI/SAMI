@@ -39,7 +39,8 @@ import javax.xml.bind.annotation.XmlTransient;
     @NamedQuery(name = "Polizas.findByValorDePoliza", query = "SELECT p FROM Polizas p WHERE p.valorDePoliza = :valorDePoliza"),
     @NamedQuery(name = "Polizas.findByVigenciaDesde", query = "SELECT p FROM Polizas p WHERE p.vigenciaDesde = :vigenciaDesde"),
     @NamedQuery(name = "Polizas.findByVigenciaHasta", query = "SELECT p FROM Polizas p WHERE p.vigenciaHasta = :vigenciaHasta"),
-    @NamedQuery(name = "Polizas.findByFechaAprobacion", query = "SELECT p FROM Polizas p WHERE p.fechaAprobacion = :fechaAprobacion")})
+    @NamedQuery(name = "Polizas.findByFechaAprobacion", query = "SELECT p FROM Polizas p WHERE p.fechaAprobacion = :fechaAprobacion"),
+    @NamedQuery(name = "Polizas.findByPorcentajeAsegurado", query = "SELECT p FROM Polizas p WHERE p.porcentajeAsegurado = :porcentajeAsegurado")})
 public class Polizas implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
@@ -64,6 +65,11 @@ public class Polizas implements Serializable {
     @Column(name = "fecha_aprobacion")
     @Temporal(TemporalType.DATE)
     private Date fechaAprobacion;
+    @Column(name = "fecha_expedicion")
+    @Temporal(TemporalType.DATE)
+    private Date fechaExpedicion;
+    @Column(name = "porcentaje_asegurado")
+    private Integer porcentajeAsegurado;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "polizas")
     private List<UsuariosContratos> usuariosContratosList;
     @JoinColumn(name = "id_aseguradora", referencedColumnName = "id_aseguradora")
@@ -124,6 +130,22 @@ public class Polizas implements Serializable {
         this.fechaAprobacion = fechaAprobacion;
     }
 
+    public Date getFechaExpedicion() {
+        return fechaExpedicion;
+    }
+
+    public void setFechaExpedicion(Date fechaExpedicion) {
+        this.fechaExpedicion = fechaExpedicion;
+    }
+
+    public Integer getPorcentajeAsegurado() {
+        return porcentajeAsegurado;
+    }
+
+    public void setPorcentajeAsegurado(Integer porcentajeAsegurado) {
+        this.porcentajeAsegurado = porcentajeAsegurado;
+    }
+
     @XmlTransient
     public List<UsuariosContratos> getUsuariosContratosList() {
         return usuariosContratosList;
@@ -140,6 +162,7 @@ public class Polizas implements Serializable {
     public void setIdAseguradora(Aseguradora idAseguradora) {
         this.idAseguradora = idAseguradora;
     }
+    
 
     @Override
     public int hashCode() {

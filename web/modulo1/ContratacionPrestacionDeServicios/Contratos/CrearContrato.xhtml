@@ -26,21 +26,180 @@
                     <form jsf:id="contratoForm" >
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane active" id="home">
-                                <label jsf:value="#{bundle.CreateContratosLabel_idTipoContrato}" for="idTipoContrato" />
-                                <h:selectOneMenu id="idTipoContrato" value="#{contratosModulo1Controller.selected.idTipoContrato}" title="#{bundle.CreateContratosTitle_idTipoContrato}" 
-                                                 required="true" requiredMessage="#{bundle.CreateContratosRequiredMessage_idTipoContrato}">
-                                    <f:selectItems value="#{tipoDeContratoController.itemsAvailableSelectOne}" var="idTipoContratoItem"
-                                                   itemValue="#{idTipoContratoItem}"/>
-                                </h:selectOneMenu>
-                                <p:message id="idTipoContratoMessage" for="idTipoContrato" styleClass="error"/>
 
-                                <label  for="numeroDeContrato" 
+                                <div class="row form-group">
+
+                                    <label class="control-label col-md-2" jsf:for="fechaEstudioMercado">Fecha de estudio de mercado:</label>
+                                    <div class="col-md-2">
+                                        <p:calendar  id="fechaEstudioMercado" pattern="yyyy-MM-dd"
+                                                     value="#{contratosModulo1Controller.selected.fechaEstudioMercado}" 
+                                                     title="Fecha de estudio de mercado"
+                                                     showOn="button" navigator="true">
+                                            <f:ajax execute="@this" render="fechaEstudioMercadoMessage"/>
+                                        </p:calendar>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p:message id="fechaEstudioMercadoMessage" for="fechaEstudioMercado" styleClass="error"/>
+                                    </div>
+
+                                    <label class="control-label col-md-2" jsf:for="fechaSolicitudContratacion">fecha de Solicitud de Contratación: </label>
+                                    <div class="col-md-2">
+                                        <p:calendar  id="fechaSolicitudContratacion" 
+                                                     pattern="yyyy-MM-dd"
+                                                     value="#{contratosModulo1Controller.selected.fechaSolicitudContratacion}" 
+                                                     title="Fecha de solicitud de contratación"
+                                                     showOn="button" navigator="true"> 
+                                            <f:ajax execute="@this" render="fechaSolicitudContratacionMessage"/>
+                                        </p:calendar>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p:message id="fechaSolicitudContratacionMessage" for="fechaSolicitudContratacion" styleClass="error"/>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <label class="control-label col-md-2" jsf:for="fechaVerificacion">fecha de verificación del plan de compras: </label>
+                                    <div class="col-md-2">
+                                        <p:calendar  id="fechaVerificacion" 
+                                                     pattern="yyyy-MM-dd"
+                                                     value="#{contratosModulo1Controller.selected.fechaVerificacionPlanCompras}" 
+                                                     title="Fecha de de verificación del plan de compras"
+                                                     showOn="button" navigator="true">
+                                            <f:ajax execute="@this" render="fechaVerificacionMessage"/>
+                                        </p:calendar>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p:message id="fechaVerificacionMessage" for="fechaVerificacion" styleClass="error"/>
+                                    </div>
+
+                                    <label class="control-label col-md-2" jsf:for="numeroCdp">Número de CDP: </label>
+                                    <div class="col-md-2">
+                                        <p:inputText type="text" maxlength="45" id="numeroCdp"
+                                                     value="#{contratosModulo1Controller.selected.numeroCdp}" 
+                                                     title="Número de CDP">                      
+                                            <f:ajax execute="@this" render="numeroCdpMessage"/>
+                                        </p:inputText>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p:message id="numeroCdpMessage" for="numeroCdp" styleClass="error"/>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <label class="control-label col-md-2" jsf:for="fechaCdp">fecha CDP: </label>
+                                    <div class="col-md-2">
+                                        <p:calendar  id="fechaCdp" 
+                                                     pattern="yyyy-MM-dd"
+                                                     value="#{contratosModulo1Controller.selected.fechaCdp}" 
+                                                     title="fecha CDP"
+                                                     showOn="button" navigator="true">
+                                            <f:ajax execute="@this" render="fechaCdpMessage"/>
+                                        </p:calendar>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p:message id="fechaCdpMessage" for="fechaCdp" styleClass="error"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile">
+                                <div class="row form-group">
+
+                                    <label class="control-label col-md-2" jsf:for="numeroAutorizacion">Número de Autorización de contratacion
+                                        de servicios personales para el centro de formación: </label>
+                                    <div class="col-md-2">
+                                        <p:inputText type="text" maxlength="45" id="numeroAutorizacion"
+                                                     value="#{contratosModulo1Controller.selected.numeroAutorizacionServicios}" 
+                                                     title="Número de Autorización de contratacion
+                                                     de servicios personales para el centro de formación">                   
+                                            <f:ajax execute="@this" render="numeroAutorizacionMessage"/>
+                                        </p:inputText>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p:message id="numeroAutorizacionMessage" for="numeroAutorizacion" styleClass="error"/>
+                                    </div>
+
+                                    <label class="control-label col-md-2" jsf:value="#{bundle.CreateContratosLabel_fechaDeAutorizacion}"
+                                           jsf:for="fechaDeAutorizacion" />
+                                    <div class="col-md-2">
+                                        <p:calendar  id="fechaDeAutorizacion" 
+                                                     pattern="yyyy-MM-dd"
+                                                     value="#{contratosModulo1Controller.selected.fechaDeAutorizacion}" 
+                                                     title="#{bundle.CreateContratosTitle_fechaDeAutorizacion}"
+                                                     showOn="button" navigator="true">
+                                            <f:ajax execute="@this" render="fechaDeAutorizacionMessage"/>
+                                        </p:calendar>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p:message id="fechaDeAutorizacionMessage" for="fechaDeAutorizacion" styleClass="error"/>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+
+                                    <label class="control-label col-md-2" jsf:value="#{bundle.CreateContratosLabel_fechaDeEstudioPrevio}"
+                                           jsf:for="fechaDeEstudioPrevio" />
+                                    <div class="col-md-2">
+                                        <p:calendar  id="fechaDeEstudioPrevio" 
+                                                     pattern="yyyy-MM-dd"
+                                                     value="#{contratosModulo1Controller.selected.fechaDeEstudioPrevio}" 
+                                                     title="#{bundle.CreateContratosTitle_fechaDeEstudioPrevio}"
+                                                     showOn="button" navigator="true"> 
+                                            <f:ajax execute="@this" render="fechaDeEstudioPrevioMessage"/>
+                                        </p:calendar>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p:message id="fechaDeEstudioPrevioMessage" for="fechaDeEstudioPrevio" styleClass="error"/>
+                                    </div>
+
+                                    <label class="control-label col-md-2" jsf:value="#{bundle.CreateContratosLabel_fechaDeIdoneidad}"
+                                           jsf:for="fechaDeIdoneidad" />
+                                    <div class="col-md-2">
+                                        <p:calendar  id="fechaDeIdoneidad" 
+                                                     pattern="yyyy-MM-dd"
+                                                     value="#{contratosModulo1Controller.selected.fechaDeIdoneidad}" 
+                                                     title="#{bundle.CreateContratosTitle_fechaDeIdoneidad}"
+                                                     showOn="button" navigator="true"> 
+                                            <f:ajax execute="@this" render="fechaDeIdoneidadMessage"/>
+                                        </p:calendar>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p:message id="fechaDeIdoneidadMessage" for="fechaDeIdoneidad" styleClass="error"/>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+
+                                    <label class="control-label col-md-2" jsf:for="numeroActaSeleccion">Número de acta de selección: </label>
+                                    <div class="col-md-2">
+                                        <p:inputText type="text" maxlength="45" id="numeroActaSeleccion"
+                                                     value="#{contratosModulo1Controller.selected.numeroActaSeleccion}" 
+                                                     title="Número de acta de selección">                      
+                                            <f:ajax execute="@this" render="numeroActaSeleccionMessage"/>
+                                        </p:inputText>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p:message id="numeroActaSeleccionMessage" for="numeroActaSeleccion" styleClass="error"/>
+                                    </div>
+
+                                    <label class="control-label col-md-2" jsf:for="fechaActaSeleccion">Fecha del acta de selección:</label>
+                                    <div class="col-md-2">
+                                        <p:calendar  id="fechaActaSeleccion" 
+                                                     pattern="yyyy-MM-dd"
+                                                     value="#{contratosModulo1Controller.selected.fechaActaSeleccion}" 
+                                                     title="Fecha del acta de selección"
+                                                     showOn="button" navigator="true"> 
+                                            <f:ajax execute="@this" render="fechaActaSeleccionMessage"/>
+                                        </p:calendar>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p:message id="fechaActaSeleccionMessage" for="fechaActaSeleccion" styleClass="error"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div role="tabpanel" class="tab-pane" id="settings">
+                                <label  jsf:for="numeroDeContrato" 
                                         jsf:value="#{bundle.CreateContratosLabel_numeroDeContrato}"/>
-                                <p:inputText type="text" maxlength="11" id="numeroDeContrato" value="#{contratosModulo1Controller.selected.numeroDeContrato}" 
-                                             title="#{bundle.CreateContratosTitle_numeroDeContrato}" required="true" 
-                                             requiredMessage="#{bundle.CreateContratosRequiredMessage_numeroDeContrato}" 
-                                             validator="#{contratosModulo1Controller.validarContratoModuloUno}">
-                                    <f:validateRegex  pattern="[0-9]*"></f:validateRegex>                        
+                                <p:inputText type="text" maxlength="11" id="numeroDeContrato"
+                                             value="#{contratosModulo1Controller.selected.numeroDeContrato}" 
+                                             title="#{bundle.CreateContratosTitle_numeroDeContrato}"
+                                             validator="#{contratosModulo1Controller.validarContratoModuloUno}">                 
                                     <f:ajax execute="@this" render="numeroDeContratoMessage"/>
                                 </p:inputText>
                                 <p:message id="numeroDeContratoMessage" for="numeroDeContrato" styleClass="error"/>
@@ -53,16 +212,13 @@
                                              title="#{bundle.CreateContratosTitle_fechaSuscripcion}"
                                              showOn="button" navigator="true"
                                              effect="fold"
-                                             maxdate="#{contratosModulo1Controller.selected.fechaInicioContrato}"
-                                             required="true" requiredMessage="#{bundle.CreateContratosRequiredMessage_fechaInicioContrato}">
-                                    <!--  <p:ajax event="dateSelect" process="@this fechaInicioContrato" update="fechasuscripcion"/>
-                                     <p:ajax  event="valueChange"  process="@this fechaInicioContrato" update="fechasuscripcion"/>-->
+                                             maxdate="#{contratosModulo1Controller.selected.fechaInicioContrato}">
                                     <p:ajax event="dateSelect" process="@this fechasuscripcion" update="fechaInicioContrato"/>
                                     <p:ajax event="dateSelect" process="@this fechaInicioContrato" update="fechasuscripcion"/>
                                 </p:calendar>
                                 <p:message id="fechasuscripcionMessage" for="fechasuscripcion" styleClass="error"/>
 
-                                <label jsf:value="#{bundle.CreateContratosLabel_fechaInicioContrato}" for="fechaInicioContrato" />
+                                <label jsf:value="#{bundle.CreateContratosLabel_fechaInicioContrato}" jsf:for="fechaInicioContrato" />
                                 <p:calendar  id="fechaInicioContrato" 
                                              effect="fold"
                                              pattern="yyyy-MM-dd"
@@ -70,55 +226,40 @@
                                              title="#{bundle.CreateContratosTitle_fechaInicioContrato}"
                                              showOn="button" navigator="true"
                                              mindate="#{contratosModulo1Controller.selected.fechasuscripcion}"
-                                             maxdate="#{contratosModulo1Controller.selected.fechaFinContrato}"
-                                             required="true" requiredMessage="#{bundle.CreateContratosRequiredMessage_fechaInicioContrato}">
-
-                                    <!-- <p:ajax  event="valueChange"  process="@this fechaFinContrato" update="fechaInicioContrato"/>-->
+                                             maxdate="#{contratosModulo1Controller.selected.fechaFinContrato}">
                                     <p:ajax event="dateSelect" process="@this fechaInicioContrato" update="fechaFinContrato"/>
                                     <p:ajax event="dateSelect" process="@this fechaFinContrato" update="fechaInicioContrato"/>
                                 </p:calendar>
                                 <p:message id="fechaInicioContratoMessage" for="fechaInicioContrato" styleClass="error"/>
-                                <label  jsf:value="#{bundle.CreateContratosLabel_fechaFinContrato}" for="fechaFinContrato" />
+
+                                <label  jsf:value="#{bundle.CreateContratosLabel_fechaFinContrato}" jsf:for="fechaFinContrato" />
                                 <p:calendar  id="fechaFinContrato" value="#{contratosModulo1Controller.selected.fechaFinContrato}" 
                                              title="#{bundle.CreateContratosTitle_fechaFinContrato}"
                                              pattern="yyyy-MM-dd"
                                              showOn="button" navigator="true"
                                              effect="fold"
-                                             mindate="#{contratosModulo1Controller.selected.fechaInicioContrato}"
-                                             required="true" requiredMessage="#{bundle.CreateContratosRequiredMessage_fechaFinContrato}"  >
-
+                                             mindate="#{contratosModulo1Controller.selected.fechaInicioContrato}">
                                     <p:ajax event="dateSelect" process="@this fechaFinContrato" update="fechaInicioContrato"/>
-
-                                    <!-- <p:ajax  event="valueChange"  process="@this fechaInicioContrato" update="fechaFinContrato"/>-->
                                 </p:calendar>
                                 <p:message id="fechaFinContratoMessage" for="fechaFinContrato" styleClass="error"/>
-                            </div>
-                            <div role="tabpanel" class="tab-pane" id="profile">
-                                <label  jsf:value="#{bundle.CreateContratosLabel_plazoDias}" for="plazoDias" />
-                                <p:inputText type="number" id="plazoDias" maxlength="11" 
-                                             value="#{contratosModulo1Controller.selected.plazoDias}" 
+
+                                <label  jsf:value="#{bundle.CreateContratosLabel_plazoDias}" jsf:for="plazoDias" />
+                                <p:inputText type="number" id="plazoDias" maxlength="10" 
+                                             value="#{contratosModulo1Controller.selected.plazoNumeroDias}" 
                                              title="#{bundle.CreateContratosTitle_plazoDias}">
                                     <f:ajax execute="@this" render="plazoDiasMessage"/>
                                 </p:inputText>
                                 <p:message id="plazoDiasMessage" for="plazoDias" styleClass="error"/>
 
-                                <label jsf:value="#{bundle.CreateContratosLabel_plazoMeses}" for="plazoMeses" />
-                                <p:inputText type="number" maxlength="8" 
-                                             id="plazoMeses" value="#{contratosModulo1Controller.selected.plazoMeses}" 
-                                             title="#{bundle.CreateContratosTitle_plazoMeses}">                      
-                                    <f:ajax execute="@this" render="plazoMesesMessage"/>
-                                </p:inputText>
-                                <p:message id="plazoMesesMessage" for="plazoMeses" styleClass="error"/>
-
-                                <label jsf:value="#{bundle.CreateContratosLabel_objetoContractual}" for="objetoContractual" />
-                                <p:inputTextarea  id="objetoContractual" maxlength="500" value="#{contratosModulo1Controller.selected.objetoContractual}" title="#{bundle.CreateContratosTitle_objetoContractual}" 
-                                                  required="true" requiredMessage="#{bundle.CreateContratosRequiredMessage_objetoContractual}">
-
+                                <label jsf:value="#{bundle.CreateContratosLabel_objetoContractual}" jsf:for="objetoContractual" />
+                                <p:inputTextarea  id="objetoContractual" maxlength="500" 
+                                                  value="#{contratosModulo1Controller.selected.objetoContractual}"
+                                                  title="#{bundle.CreateContratosTitle_objetoContractual}">
                                     <f:ajax execute="@this" render="objetoContractualMessage"/>
                                 </p:inputTextarea>
                                 <p:message id="objetoContractualMessage" for="objetoContractual" styleClass="error"/>
 
-                                <label jsf:value="#{bundle.CreateContratosLabel_obligaciones}" for="obligaciones" />
+                                <label jsf:value="#{bundle.CreateContratosLabel_obligaciones}" jsf:for="obligaciones" />
                                 <p:inputTextarea id="obligaciones" maxlength="4000" 
                                                  value="#{contratosModulo1Controller.selected.obligaciones}" 
                                                  title="#{bundle.CreateContratosTitle_obligaciones}">
@@ -126,18 +267,16 @@
                                     <f:ajax execute="@this" render="obligacionesMessage"/>
                                 </p:inputTextarea>
                                 <p:message id="obligacionesMessage" for="obligaciones" styleClass="error"/>
-                            </div>
-                            <div role="tabpanel" class="tab-pane" id="messages">
-                                <label jsf:value="#{bundle.CreateContratosLabel_valorContrato}"  for="valorContrato"/> 
+
+                                <label jsf:value="#{bundle.CreateContratosLabel_valorContrato}" jsf:for="valorContrato"/> 
                                 <p:inputText type="number"  maxlength="10" id="valorContrato"  
-                                             value="#{contratosModulo1Controller.selected.valorContrato}"
-                                             requiredMessage="#{bundle.CreateContratosRequiredMessage_valorContrato}"
+                                             value="#{contratosModulo1Controller.selected.valorInicialContrato}"
                                              title="#{bundle.CreateContratosTitle_valorContrato}">                    
                                     <f:ajax execute="@this" render="valorContratoMessage"/>
                                 </p:inputText>
                                 <p:message id="valorContratoMessage" for="valorContrato" styleClass="error"/>
 
-                                <label jsf:value="#{bundle.CreateContratosLabel_primerPago}" for="primerPago" />
+                                <label jsf:value="#{bundle.CreateContratosLabel_primerPago}" jsf:for="primerPago" />
                                 <p:inputText type="number"  maxlength="9" id="primerPago" 
                                              value="#{contratosModulo1Controller.selected.primerPago}" 
                                              title="#{bundle.CreateContratosTitle_primerPago}">                  
@@ -145,22 +284,23 @@
                                 </p:inputText>
                                 <p:message id="primerPagoMessage" for="primerPago" styleClass="error"/>
 
-                                <label  jsf:value="#{bundle.CreateContratosLabel_ultimoPago}" for="ultimoPago" />
-                                <p:inputText type="number" maxlength="10" id="ultimoPago" value="#{contratosModulo1Controller.selected.ultimoPago}" 
+                                <label  jsf:value="#{bundle.CreateContratosLabel_ultimoPago}" jsf:for="ultimoPago" />
+                                <p:inputText type="number" maxlength="10" id="ultimoPago" 
+                                             value="#{contratosModulo1Controller.selected.ultimoPago}" 
                                              title="#{bundle.CreateContratosTitle_ultimoPago}">                       
                                     <f:ajax execute="@this" render="ultimoPagoMessage"/>
                                 </p:inputText>
                                 <p:message id="ultimoPagoMessage" for="ultimoPago" styleClass="error"/>
 
-                                <label jsf:value="#{bundle.CreateContratosLabel_numeroDeMensualidades}" for="numeroDeMensualidades" />
-                                <p:inputText type="number" maxlength="8" id="numeroDeMensualidades" 
+                                <label jsf:value="#{bundle.CreateContratosLabel_numeroDeMensualidades}" jsf:for="numeroDeMensualidades" />
+                                <p:inputText type="number" maxlength="4" id="numeroDeMensualidades" 
                                              value="#{contratosModulo1Controller.selected.numeroDeMensualidades}" 
                                              title="#{bundle.CreateContratosTitle_numeroDeMensualidades}">                      
                                     <f:ajax execute="@this" render="numeroDeMensualidadesMessage"/>
                                 </p:inputText>
                                 <p:message id="numeroDeMensualidadesMessage" for="numeroDeMensualidades" styleClass="error"/>
 
-                                <label jsf:value="#{bundle.CreateContratosLabel_valorMensual}" for="valorMensual" />
+                                <label jsf:value="#{bundle.CreateContratosLabel_valorMensual}" jsf:for="valorMensual" />
                                 <p:inputText type="number" maxlength="9" id="valorMensual" 
                                              value="#{contratosModulo1Controller.selected.valorMensual}"  
                                              title="#{bundle.CreateContratosTitle_valorMensual}">                     
@@ -168,112 +308,156 @@
                                 </p:inputText>
                                 <p:message id="valorMensualMessage" for="valorMensual" styleClass="error"/>
 
-                                <label jsf:value="#{bundle.CreateContratosLabel_fechaAnexo}" for="fechaAnexo" />
-                                <p:calendar  id="fechaAnexo" 
-                                             pattern="yyyy-MM-dd"
-                                             value="#{contratosModulo1Controller.selected.fechaAnexo}" 
-                                             title="#{bundle.CreateContratosTitle_fechaAnexo}"
-                                             showOn="button" navigator="true">  
-                                </p:calendar>
-                                <p:message id="fechaAnexoMessage" for="fechaAnexo" styleClass="error"/>
+                                <label jsf:value="#{bundle.CreateContratosLabel_observaciones}" jsf:for="observaciones" />
 
-                                <label jsf:value="#{bundle.CreateContratosLabel_fechaDeAutorizacion}" for="fechaDeAutorizacion" />
-                                <p:calendar  id="fechaDeAutorizacion" 
-                                             pattern="yyyy-MM-dd"
-                                             value="#{contratosModulo1Controller.selected.fechaDeAutorizacion}" 
-                                             title="#{bundle.CreateContratosTitle_fechaDeAutorizacion}"
-                                             showOn="button" navigator="true">                   
-                                </p:calendar>
-                                <p:message id="fechaDeAutorizacionMessage" for="fechaDeAutorizacion" styleClass="error"/>
-
-                                <label jsf:value="#{bundle.CreateContratosLabel_fechaDeEstudioPrevio}" for="fechaDeEstudioPrevio" />
-                                <p:calendar  id="fechaDeEstudioPrevio" 
-                                             pattern="yyyy-MM-dd"
-                                             value="#{contratosModulo1Controller.selected.fechaDeEstudioPrevio}" 
-                                             title="#{bundle.CreateContratosTitle_fechaDeEstudioPrevio}"
-                                             showOn="button" navigator="true">                     
-                                </p:calendar>
-                                <p:message id="fechaDeEstudioPrevioMessage" for="fechaDeEstudioPrevio" styleClass="error"/>
-
-                                <label jsf:value="#{bundle.CreateContratosLabel_fechaDeIdoneidad}" for="fechaDeIdoneidad" />
-                                <p:calendar  id="fechaDeIdoneidad" 
-                                             pattern="yyyy-MM-dd"
-                                             value="#{contratosModulo1Controller.selected.fechaDeIdoneidad}" 
-                                             title="#{bundle.CreateContratosTitle_fechaDeIdoneidad}"
-                                             showOn="button" navigator="true">                  
-                                </p:calendar>
-                                <p:message id="fechaDeIdoneidadMessage" for="fechaDeIdoneidad" styleClass="error"/>
-                            </div>
-                            <div role="tabpanel" class="tab-pane" id="settings">
-                                <label jsf:value="#{bundle.CreateContratosLabel_adicionPresupuestal}" for="adicionPresupuestal" />
-                                <p:inputText type="number"  maxlength="9" id="adicionPresupuestal" 
-                                             value="#{contratosModulo1Controller.selected.adicionPresupuestal}" 
-                                             title="#{bundle.CreateContratosTitle_adicionPresupuestal}" >                      
-                                    <f:ajax execute="@this" render="adicionPresupuestalMessage"/>
-                                </p:inputText>
-                                <p:message id="adicionPresupuestalMessage" for="adicionPresupuestal" styleClass="error"/>
-
-                                <label jsf:value="#{bundle.CreateContratosLabel_adicionPlazoNuevaFecha}" for="adicionPlazoNuevaFecha" />
-                                <p:calendar  id="adicionPlazoNuevaFecha" 
-                                             pattern="yyyy-MM-dd"
-                                             value="#{contratosModulo1Controller.selected.adicionPlazoNuevaFecha}" 
-                                             title="#{bundle.CreateContratosTitle_adicionPlazoNuevaFecha}"
-                                             showOn="button" navigator="true"> 
-                                </p:calendar>
-                                <p:message id="adicionPlazoNuevaFechaMessage" for="adicionPlazoNuevaFecha" styleClass="error"/>
-                                <label jsf:value="#{bundle.CreateContratosLabel_observaciones}" for="observaciones" />
-
-                                <p:inputTextarea id="observaciones" maxlength="5000" 
+                                <p:inputTextarea id="observaciones" maxlength="5000"
                                                  value="#{contratosModulo1Controller.selected.observaciones}" 
                                                  title="#{bundle.CreateContratosTitle_observaciones}">
 
                                     <f:ajax execute="@this" render="observacionesMessage"/>
                                 </p:inputTextarea>
-                                <p:message id="observacionesMessage" for="observaciones" styleClass="error"/>   
+                                <p:message id="observacionesMessage" for="observaciones" styleClass="error"/>
 
-                                <label jsf:value="#{bundle.CreateContratosLabel_justificacion}"  for="justificacion" />
-                                <p:inputTextarea  id="justificacion" maxlength="500" value="#{contratosModulo1Controller.selected.justificacion}" 
-                                                  title="#{bundle.CreateContratosTitle_justificacion}" >
-                                    <f:ajax execute="@this" render="justificacionMessage"/>
-                                </p:inputTextarea>
-                                <p:message id="justificacionMessage" for="justificacion" styleClass="error"/> 
-
-                                <label value="#{bundle.CreateUsuariosContratosLabel_usuarios}" jsf:for="Usuario" class="FormLabelSCCSS" />
-                                <p:autoComplete id="Usuario" value="#{contratosModulo1Controller.selectedUsuarios}" 
-                                                required="true" requiredMessage="#{bundle.CreateUsuariosContratosRequiredMessage_usuarios}"
+                                <label value="#{bundle.CreateUsuariosContratosLabel_usuarios}" jsf:for="Usuario"/>
+                                <p:autoComplete id="Usuario" value="#{contratosModulo1Controller.selectedUsuarios}"
                                                 completeMethod="#{usuariosController.getListNumeroDocumentoAutoComplete}" 
                                                 var="usuario" itemLabel="#{usuario.informacionUsuario()}" itemValue="#{usuario}" 
                                                 converter="usuariosConverter" 
                                                 forceSelection="true" maxResults="10"/> 
                                 <p:message id="UsuarioMessage" for="Usuario" />
+                                
+                                <label jsf:for="Supervisor">Supervisor:</label>
+                                <p:autoComplete id="Supervisor" value="#{contratosController.selectedSupervisor}"
+                                                completeMethod="#{usuariosController.getListNumeroDocumentoAutoComplete}" 
+                                                var="usuario" itemLabel="#{usuario.informacionUsuario()}" itemValue="#{usuario}" 
+                                                converter="usuariosConverter"
+                                                forceSelection="true" maxResults="10"/> 
+                                <p:message id="SupervisorMessage" for="Supervisor" />
 
-                                <label jsf:value="Número registro presupuestal:" for="registroPresupuestal" />
-                                <p:inputText type="text"  maxlength="25" id="registroPresupuestal" value="#{contratosModulo1Controller.selected.registroPresupuestal}" 
-                                             title="" >                      
+                                <label jsf:for="registroPresupuestal">Número registro presupuestal: </label>
+                                <p:inputText type="text"  maxlength="25" id="registroPresupuestal"
+                                             value="#{contratosModulo1Controller.selected.registroPresupuestal}" 
+                                             title="Número registro presupuestal" >                      
                                     <f:ajax execute="@this" render="registroPresupuestalMessage"/>
                                 </p:inputText>
                                 <p:message id="registroPresupuestalMessage" for="registroPresupuestal" styleClass="error"/>
 
-                                <label jsf:value="Fecha de registro presupuestal:" for="fechaRegPresupuestal" />
+                                <label jsf:for="fechaRegPresupuestal">Fecha de registro presupuestal: </label>
                                 <p:calendar  id="fechaRegPresupuestal"
                                              pattern="yyyy-MM-dd"
                                              value="#{contratosModulo1Controller.selected.fechaRegPresupuestal}" 
-                                             title=""
+                                             title="Fecha de registro presupuestal"
                                              showOn="button" navigator="true" >                   
                                     <f:ajax execute="@this" render="fechaRegPresupuestalMessage"/>
                                 </p:calendar>
                                 <p:message id="fechaRegPresupuestalMessage" for="fechaRegPresupuestal" styleClass="error"/>
 
+                                <label jsf:for="numeroRadicado">Número de contrato radicado: </label>
+                                <p:inputText type="text"  maxlength="45" id="numeroRadicado"
+                                             value="#{contratosModulo1Controller.selected.numeroContratoRadicado}" 
+                                             title="Número de contrato radicado" >                      
+                                    <f:ajax execute="@this" render="numeroRadicadoMessage"/>
+                                </p:inputText>
+                                <p:message id="numeroRadicadoMessage" for="numeroRadicado" styleClass="error"/>
+
+                                <label jsf:for="fechaRadicado">Fecha de contrato radicado: </label>
+                                <p:calendar  id="fechaRadicado"
+                                             pattern="yyyy-MM-dd"
+                                             value="#{contratosModulo1Controller.selected.fechaContratoRadicado}" 
+                                             title="Fecha de contrato radicado"
+                                             showOn="button" navigator="true" >                   
+                                    <f:ajax execute="@this" render="fechaRadicadoMessage"/>
+                                </p:calendar>
+                                <p:message id="fechaRadicadoMessage" for="fechaRadicado" styleClass="error"/>
+
+                                <label jsf:for="periodoDias">Periodo de ejecución en días: </label>
+                                <p:inputText type="number" id="periodoDias" maxlength="11" 
+                                             value="#{contratosModulo1Controller.selected.periodoEjecucionDias}" 
+                                             title="Periodo de ejecución en días">
+                                    <f:ajax execute="@this" render="periodoDiasMessage"/>
+                                </p:inputText>
+                                <p:message id="periodoDiasMessage" for="periodoDias" styleClass="error"/>
+
+                                <label jsf:for="periodoMeses">Periodo de ejecución en meses: </label>
+                                <p:inputText type="number" id="periodoMeses" maxlength="11" 
+                                             value="#{contratosModulo1Controller.selected.periodoEjecucionMeses}" 
+                                             title="Periodo de ejecución en meses">
+                                    <f:ajax execute="@this" render="periodoMesesMessage"/>
+                                </p:inputText>
+                                <p:message id="periodoMesesMessage" for="periodoMeses" styleClass="error"/>
+
+                                <label jsf:for="rubroPresupuestal">Rubro presupuestal: </label>
+                                <p:inputText type="text"  maxlength="50" id="rubroPresupuestal"
+                                             value="#{contratosModulo1Controller.selected.rubroPresupuestal}" 
+                                             title="Rubro presupuestal" >                      
+                                    <f:ajax execute="@this" render="rubroPresupuestalMessage"/>
+                                </p:inputText>
+                                <p:message id="rubroPresupuestalMessage" for="rubroPresupuestal" styleClass="error"/>
+
+                                <label jsf:for="valorHora">Valor de hora: </label>
+                                <p:inputText type="number" maxlength="9" id="valorHora" 
+                                             value="#{contratosModulo1Controller.selected.valorHora}"  
+                                             title="valor de hora">                     
+                                    <f:ajax execute="@this" render="valorHoraMessage"/>
+                                </p:inputText>
+                                <p:message id="valorHoraMessage" for="valorHora" styleClass="error"/>
 
                                 <label>Polizas</label>
                                 <p:commandButton onclick="PF('PolizasDialogo').show()" value="Poliza" process="@this" update=":polizasForm" />
 
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" jsf:value="#{contratosModulo1Controller.selected.ejecucionMultidestino}"/>
+                                        El contrato se ejecutará en más de un destino
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div role="tabpanel" class="tab-pane" id="messages">
+
+                                <label jsf:for="tipoAdicionPresupuestal">Tipo adición presupuestal:</label>
+                                <select jsf:id="tipoAdicionPresupuestal" size="1"
+                                        jsf:value="#{contratosModulo1Controller.selected.tipoAdicionPresupuestal}">
+                                    <f:selectItem itemLabel="Seleccione"/>
+                                    <f:selectItem itemLabel="Adición en valor" itemValue="Adición en valor"/>
+                                    <f:selectItem itemLabel="Adición en tiempo" itemValue="Adición en tiempo"/>
+                                    <f:selectItem itemLabel="Adición en valor y tiempo" itemValue="Adición en valor y tiempo"/>
+                                    <f:selectItem itemLabel="Ninguna" itemValue="Ninguna"/>
+                                    <f:ajax execute="@this" render="tipoAdicionPresupuestalMessage"/>
+                                </select>
+                                <p:message id="tipoAdicionPresupuestalMessage" for="tipoAdicionPresupuestal" styleClass="error"/>
+
+                                <label jsf:value="#{bundle.CreateContratosLabel_adicionPresupuestal}" jsf:for="adicionPresupuestal" />
+                                <p:inputText type="number"  maxlength="9" id="adicionPresupuestal" 
+                                             value="#{contratosModulo1Controller.selected.valorAdicionPresupuestal}" 
+                                             title="#{bundle.CreateContratosTitle_adicionPresupuestal}" >                      
+                                    <f:ajax execute="@this" render="adicionPresupuestalMessage"/>
+                                </p:inputText>
+                                <p:message id="adicionPresupuestalMessage" for="adicionPresupuestal" styleClass="error"/>
+
+                                <label jsf:value="#{bundle.CreateContratosLabel_adicionPlazoNuevaFecha}" jsf:for="adicionPlazoNuevaFecha" />
+                                <p:inputText type="number"  maxlength="9" id="adicionPlazoNuevaFecha" 
+                                             value="#{contratosModulo1Controller.selected.adicionNumeroDias}" 
+                                             title="Número de días adición" >                      
+                                    <f:ajax execute="@this" render="adicionPlazoNuevaFechaMessage"/>
+                                </p:inputText>
+                                <p:message id="adicionPlazoNuevaFechaMessage" for="adicionPlazoNuevaFecha" styleClass="error"/>
+
+                                <label jsf:value="Fecha de liquidación del contrato:" for="fechaLiquidacion" />
+                                <p:calendar  id="fechaLiquidacion"
+                                             pattern="yyyy-MM-dd"
+                                             value="#{contratosModulo1Controller.selected.fechaLiquidacionContrato}" 
+                                             title="Fecha de liquidación del contrato"
+                                             showOn="button" navigator="true" >                   
+                                    <f:ajax execute="@this" render="fechaLiquidacionMessage"/>
+                                </p:calendar>
+                                <p:message id="fechaLiquidacionMessage" for="fechaLiquidacion" styleClass="error"/>
                             </div>
                         </div>
 
                         <div class="form-actions">
                             <div class="pull-right">
-                                <h:commandButton p:class="Button-guardar" value ="#{bundle.Save}"
+                                <h:commandButton p:class="Button-guardar" value="#{bundle.Save}"
                                                  action="#{contratosModulo1Controller.create}"/>
                                 <h:button p:class="Button-cancelar" value="#{bundle.Cancel}" outcome="/modulo1/ContratacionPrestacionDeServicios/Contratos/ListContrato"/>
 

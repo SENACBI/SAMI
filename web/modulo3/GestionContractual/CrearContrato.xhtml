@@ -70,7 +70,7 @@
                         <h:message id="ObjetoContractualMessage" for="objetoContractual" />
                         
                         <label value="#{bundle.CreateContratosLabel_valorContrato}" jsf:for="valorContrato" class="FormLabelSCCSS" />
-                        <input type="number" jsf:id="valorContrato" jsf:value="#{contratosController.selected.valorContrato}" title="#{bundle.CreateContratosTitle_valorContrato}" class="FormInputSCCSS"
+                        <input type="number" jsf:id="valorContrato" jsf:value="#{contratosController.selected.valorInicialContrato}" title="#{bundle.CreateContratosTitle_valorContrato}" class="FormInputSCCSS"
                                required="true" jsf:requiredMessage="El valor del contrato es obligatorio" maxlength="9" 
                                jsf:validatorMessage="El número no puede ser menor a cero">
                             <f:ajax execute="@this" render="ValorContratoMessage" />

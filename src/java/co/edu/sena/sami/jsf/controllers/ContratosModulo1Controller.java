@@ -1,11 +1,13 @@
 package co.edu.sena.sami.jsf.controllers;
 
+import co.edu.sena.sami.jpa.entities.Cargo;
 import co.edu.sena.sami.jpa.entities.Contratos;
 import co.edu.sena.sami.jpa.entities.Polizas;
 import co.edu.sena.sami.jpa.entities.Rol;
 import co.edu.sena.sami.jpa.entities.Usuarios;
 import co.edu.sena.sami.jpa.entities.UsuariosContratos;
 import co.edu.sena.sami.jpa.entities.UsuariosContratosPK;
+import co.edu.sena.sami.jpa.sessions.CargoFacade;
 import co.edu.sena.sami.jpa.sessions.ContratosFacade;
 import co.edu.sena.sami.jpa.sessions.PolizasFacade;
 import co.edu.sena.sami.jpa.sessions.UsuariosContratosFacade;
@@ -54,6 +56,8 @@ public class ContratosModulo1Controller implements Serializable {
     private UsuariosContratosFacade usuariosContratosFacade;
     @EJB
     private co.edu.sena.sami.jpa.sessions.ContratosFacade ejbFacade;
+    @EJB
+    private CargoFacade cargoFacade;
     
     private List<Contratos> items = null;
     private Contratos selected;
@@ -61,7 +65,9 @@ public class ContratosModulo1Controller implements Serializable {
     private UsuariosContratos selectedUsuariosContratos;
     private Usuarios selectedUsuarios;
     private Rol selectedRol;
-    private List<UsuariosContratos> listaUsuariosContratos ;
+    private Usuarios selectedSupervisor;
+    private UsuariosContratos selectedSupervisorContratos;
+    private List<UsuariosContratos> listaUsuariosContratos;
 
     public ContratosModulo1Controller() {
     }
@@ -88,6 +94,14 @@ public class ContratosModulo1Controller implements Serializable {
     public void setSelectedUsuarios(Usuarios selectedUsuarios) {
         this.selectedUsuarios = selectedUsuarios;
     }
+    
+    public CargoFacade getCargoFacade() {
+        return cargoFacade;
+    }
+    
+    public void setCargoFacade(CargoFacade cargoFacade) {
+        this.cargoFacade = cargoFacade;
+    }
 
     public Rol getSelectedRol() {
         return selectedRol;
@@ -100,6 +114,22 @@ public class ContratosModulo1Controller implements Serializable {
     public UsuariosContratos getSelectedUsuariosContratos() {
         return selectedUsuariosContratos;
     }
+    
+    public Usuarios getSelectedSupervisor() {
+        return selectedSupervisor;
+    }
+
+    public void setSelectedSupervisor(Usuarios selectedSupervisor) {
+        this.selectedSupervisor = selectedSupervisor;
+    }
+    
+     public UsuariosContratos getSelectedSupervisorContratos() {
+        return selectedSupervisorContratos;
+    }
+
+    public void setSelectedSupervisorContratos(UsuariosContratos selectedSupervisorContratos) {
+        this.selectedSupervisorContratos = selectedSupervisorContratos;
+    }
 
     public Usuarios getUsuariosByContratos(Contratos contrato) {
         if (getUsuariosContratosFacade().findByIdContrato(contrato) == null) {
@@ -109,8 +139,44 @@ public class ContratosModulo1Controller implements Serializable {
         }
     }
 
-  
-    
+  public List<UsuariosContratos> getUsuariosSupervisores(Contratos contrato) {
+        if (contrato != null) {
+            return getUsuariosContratosFacade().findByIdContratoSupervisor(contrato);
+        } else {
+            return null;
+        }
+    }
+
+    public String obtenerCargo(Rol r) {
+        Cargo c = new Cargo();
+        switch (r.getIdRol()) {
+            case 1:
+                c = getCargoFacade().find(15);
+                break;
+            case 2:
+                c = getCargoFacade().find(13);
+                break;
+            default:
+                return null;
+        }
+        return c.getNombreCargo();
+    }
+
+    public UsuariosContratos getSupervisoresByRol(Contratos c) {
+        if (getUsuariosContratosFacade().findByIdRol(c) == null) {
+            return new UsuariosContratos();
+        } else {
+            return getUsuariosContratosFacade().findByIdRol(c);
+        }
+    }
+
+     public UsuariosContratos getContratistasByRol(Contratos c) {
+        if (getUsuariosContratosFacade().findByIdRol(c) == null) {
+            return new UsuariosContratos();
+        } else {
+            return getUsuariosContratosFacade().findByIdRol(c);
+        }
+    }
     
     public void setSelectedUsuariosContratos(UsuariosContratos selectedUsuariosContratos) {
         this.selectedUsuariosContratos = selectedUsuariosContratos;
@@ -155,7 +221,10 @@ public class ContratosModulo1Controller implements Serializable {
 
         selectedUsuarios = new Usuarios();
         selectedRol = new Rol();
-        initializeEmbeddableKey();
+        selectedSupervisor = new Usuarios();
+        selectedSupervisorContratos = new UsuariosContratos();
+        selectedSupervisorContratos.setUsuariosContratosPK(new UsuariosContratosPK());
+        //initializeEmbeddableKey();
         return "/modulo1/ContratacionPrestacionDeServicios/Contratos/CrearContrato";
     }
 
@@ -173,12 +242,24 @@ public class ContratosModulo1Controller implements Serializable {
         selectedUsuariosContratos.setPolizas(selectedPolizas);
         selectedUsuariosContratos.setRol(new Rol(1));
         selectedUsuariosContratos.setUsuarios(selectedUsuarios);
+        
+        selectedSupervisorContratos.setContratos(selected);
+        selectedSupervisorContratos.setPolizas(selectedPolizas);
+        selectedSupervisorContratos.setRol(new Rol(2));
+        selectedSupervisorContratos.setUsuarios(selectedSupervisor);
+       
+        selectedSupervisorContratos.getUsuariosContratosPK().setIdContrato(selectedSupervisorContratos.getContratos().getIdContrato());
+        selectedSupervisorContratos.getUsuariosContratosPK().setIdRol(selectedSupervisorContratos.getRol().getIdRol());
+        selectedSupervisorContratos.getUsuariosContratosPK().setIdUsuario(selectedSupervisorContratos.getUsuarios().getIdUsuario());
+        selectedSupervisorContratos.getUsuariosContratosPK().setNumeroDePoliza(selectedSupervisorContratos.getPolizas().getNumeroDePoliza());
+        
         selectedUsuariosContratos.getUsuariosContratosPK().setIdContrato(selectedUsuariosContratos.getContratos().getIdContrato());
         selectedUsuariosContratos.getUsuariosContratosPK().setIdRol(selectedUsuariosContratos.getRol().getIdRol());
         selectedUsuariosContratos.getUsuariosContratosPK().setIdUsuario(selectedUsuariosContratos.getUsuarios().getIdUsuario());
         selectedUsuariosContratos.getUsuariosContratosPK().setNumeroDePoliza(selectedUsuariosContratos.getPolizas().getNumeroDePoliza());
         try {
             getUsuariosContratosFacade().create(selectedUsuariosContratos);
+            getUsuariosContratosFacade().create(selectedSupervisorContratos);
         } catch (Exception ex) {
             JsfUtil.addErrorMessage(ex, ResourceBundle.getBundle("/resources/Bundle").getString("PersistenceErrorOccured"));
         }
@@ -504,7 +585,7 @@ public class ContratosModulo1Controller implements Serializable {
             cell = row.createCell(5);
             cell.setCellValue(item.getContratos().getObjetoContractual()== null? "":item.getContratos().getObjetoContractual());
             cell = row.createCell(6);
-            cell.setCellValue(item.getContratos().getValorContrato());
+            cell.setCellValue(item.getContratos().getValorInicialContrato());
             cell = row.createCell(7);
             cell.setCellValue(item.getUsuarios().getDireccionUsu());
             cell = row.createCell(8);
@@ -525,22 +606,20 @@ public class ContratosModulo1Controller implements Serializable {
             cell = row.createCell(15);
             cell.setCellValue(item.getUsuarios().getIdCcf().getNombreCcf() == null? "":item.getUsuarios().getIdCcf().getNombreCcf());
             cell = row.createCell(16);
-            cell.setCellValue(item.getContratos().getPlazoMeses());
-            cell = row.createCell(17);
             cell.setCellValue(item.getContratos().getFechaInicioContrato());
             cell.setCellStyle(cellStyleDate);
-            cell = row.createCell(18);
+            cell = row.createCell(17);
             cell.setCellValue(item.getContratos().getFechaFinContrato());
             cell.setCellStyle(cellStyleDate);
+            cell = row.createCell(18);
+            cell.setCellValue(item.getUsuarios().getRazonSocial() == null? "":item.getUsuarios().getRazonSocial());
             cell = row.createCell(19);
             cell.setCellValue(item.getUsuarios().getRazonSocial() == null? "":item.getUsuarios().getRazonSocial());
             cell = row.createCell(20);
-            cell.setCellValue(item.getUsuarios().getRazonSocial() == null? "":item.getUsuarios().getRazonSocial());
-            cell = row.createCell(21);
             cell.setCellValue(item.getUsuarios().getNumCuentaBanco() == null? "":item.getUsuarios().getNumCuentaBanco());
-            cell = row.createCell(22);           
+            cell = row.createCell(21);           
             cell.setCellValue(item.getUsuarios().getIdBanco() == null? "":item.getUsuarios().getIdBanco().getNombreDeBanco());
-            cell = row.createCell(23);
+            cell = row.createCell(22);
             cell.setCellValue(item.getUsuarios().getNombreTipoCuenta() == null? "":item.getUsuarios().getNombreTipoCuenta());
 
         }
@@ -660,7 +739,7 @@ public class ContratosModulo1Controller implements Serializable {
             cell = row.createCell(9);
             cell.setCellValue(item.getContratos().getFechaDeEstudioPrevio());
             cell = row.createCell(10);
-            cell.setCellValue(item.getContratos().getFechaAnexo());
+            cell.setCellValue(item.getContratos().getFechaEstudioMercado());
             cell = row.createCell(11);
             cell.setCellValue(item.getContratos().getFechaDeAutorizacion());
             cell = row.createCell(12);

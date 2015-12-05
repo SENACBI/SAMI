@@ -43,27 +43,41 @@ import javax.xml.bind.annotation.XmlTransient;
     @NamedQuery(name = "Contratos.findByFechasuscripcion", query = "SELECT c FROM Contratos c WHERE c.fechasuscripcion BETWEEN :fechaInicio AND :fechaFin"),
     @NamedQuery(name = "Contratos.findByFechaInicioContrato", query = "SELECT c FROM Contratos c WHERE c.fechaInicioContrato = :fechaInicioContrato"),
     @NamedQuery(name = "Contratos.findByFechaFinContrato", query = "SELECT c FROM Contratos c WHERE c.fechaFinContrato = :fechaFinContrato"),
-    @NamedQuery(name = "Contratos.findByPlazoDias", query = "SELECT c FROM Contratos c WHERE c.plazoDias = :plazoDias"),
-    @NamedQuery(name = "Contratos.findByPlazoMeses", query = "SELECT c FROM Contratos c WHERE c.plazoMeses = :plazoMeses"),
+    @NamedQuery(name = "Contratos.findByPlazoNumeroDias", query = "SELECT c FROM Contratos c WHERE c.plazoNumeroDias = :plazoNumeroDias"),
     @NamedQuery(name = "Contratos.findByObjetoContractual", query = "SELECT c FROM Contratos c WHERE c.objetoContractual = :objetoContractual"),
     @NamedQuery(name = "Contratos.findByObligaciones", query = "SELECT c FROM Contratos c WHERE c.obligaciones = :obligaciones"),
-    @NamedQuery(name = "Contratos.findByValorContrato", query = "SELECT c FROM Contratos c WHERE c.valorContrato = :valorContrato"),
+    @NamedQuery(name = "Contratos.findByValorInicialContrato", query = "SELECT c FROM Contratos c WHERE c.valorInicialContrato = :valorInicialContrato"),
     @NamedQuery(name = "Contratos.findByPrimerPago", query = "SELECT c FROM Contratos c WHERE c.primerPago = :primerPago"),
     @NamedQuery(name = "Contratos.findByUltimoPago", query = "SELECT c FROM Contratos c WHERE c.ultimoPago = :ultimoPago"),
     @NamedQuery(name = "Contratos.findByNumeroDeMensualidades", query = "SELECT c FROM Contratos c WHERE c.numeroDeMensualidades = :numeroDeMensualidades"),
     @NamedQuery(name = "Contratos.findByValorMensual", query = "SELECT c FROM Contratos c WHERE c.valorMensual = :valorMensual"),
-    @NamedQuery(name = "Contratos.findByFechaAnexo", query = "SELECT c FROM Contratos c WHERE c.fechaAnexo = :fechaAnexo"),
+    @NamedQuery(name = "Contratos.findByFechaEstudioMercado", query = "SELECT c FROM Contratos c WHERE c.fechaEstudioMercado = :fechaEstudioMercado"),
     @NamedQuery(name = "Contratos.findByFechaDeAutorizacion", query = "SELECT c FROM Contratos c WHERE c.fechaDeAutorizacion = :fechaDeAutorizacion"),
     @NamedQuery(name = "Contratos.findByFechaDeEstudioPrevio", query = "SELECT c FROM Contratos c WHERE c.fechaDeEstudioPrevio = :fechaDeEstudioPrevio"),
     @NamedQuery(name = "Contratos.findByFechaDeIdoneidad", query = "SELECT c FROM Contratos c WHERE c.fechaDeIdoneidad = :fechaDeIdoneidad"),
-    @NamedQuery(name = "Contratos.findByAdicionPresupuestal", query = "SELECT c FROM Contratos c WHERE c.adicionPresupuestal = :adicionPresupuestal"),
-    @NamedQuery(name = "Contratos.findByAdicionPlazoNuevaFecha", query = "SELECT c FROM Contratos c WHERE c.adicionPlazoNuevaFecha = :adicionPlazoNuevaFecha"),
+    @NamedQuery(name = "Contratos.findByValorAdicionPresupuestal", query = "SELECT c FROM Contratos c WHERE c.valorAdicionPresupuestal = :valorAdicionPresupuestal"),
+    @NamedQuery(name = "Contratos.findByAdicionNumeroDias", query = "SELECT c FROM Contratos c WHERE c.adicionNumeroDias = :adicionNumeroDias"),
     @NamedQuery(name = "Contratos.findByIdPoliza", query = "SELECT c FROM Contratos c WHERE c.idPoliza = :idPoliza"),
     @NamedQuery(name = "Contratos.findByIdCuentasBancarias", query = "SELECT c FROM Contratos c WHERE c.idCuentasBancarias = :idCuentasBancarias"),
     @NamedQuery(name = "Contratos.findByObservaciones", query = "SELECT c FROM Contratos c WHERE c.observaciones = :observaciones"),
     @NamedQuery(name = "Contratos.findByJustificacion", query = "SELECT c FROM Contratos c WHERE c.justificacion = :justificacion"),
     @NamedQuery(name = "Contratos.findByRegistroPresupuestal", query = "SELECT c FROM Contratos c WHERE c.registroPresupuestal = :registroPresupuestal"),
-    @NamedQuery(name = "Contratos.findByFechaRegPresupuestal", query = "SELECT c FROM Contratos c WHERE c.fechaRegPresupuestal = :fechaRegPresupuestal")})
+    @NamedQuery(name = "Contratos.findByFechaSolicitudContratacion", query = "SELECT c FROM Contratos c WHERE c.fechaSolicitudContratacion = :fechaSolicitudContratacion"),
+    @NamedQuery(name = "Contratos.findByFechaVerificacionPlanCompras", query = "SELECT c FROM Contratos c WHERE c.fechaVerificacionPlanCompras = :fechaVerificacionPlanCompras"),
+    @NamedQuery(name = "Contratos.findByNumeroCdp", query = "SELECT c FROM Contratos c WHERE c.numeroCdp = :numeroCdp"),
+    @NamedQuery(name = "Contratos.findByFechaCdp", query = "SELECT c FROM Contratos c WHERE c.fechaCdp = :fechaCdp"),
+    @NamedQuery(name = "Contratos.findByNumeroActaSeleccion", query = "SELECT c FROM Contratos c WHERE c.numeroActaSeleccion = :numeroActaSeleccion"),
+    @NamedQuery(name = "Contratos.findByFechaActaSeleccion", query = "SELECT c FROM Contratos c WHERE c.fechaActaSeleccion = :fechaActaSeleccion"),
+    @NamedQuery(name = "Contratos.findByNumeroContratoRadicado", query = "SELECT c FROM Contratos c WHERE c.numeroContratoRadicado = :numeroContratoRadicado"),
+    @NamedQuery(name = "Contratos.findByFechaContratoRadicado", query = "SELECT c FROM Contratos c WHERE c.fechaContratoRadicado = :fechaContratoRadicado"),
+    @NamedQuery(name = "Contratos.findByTipoAdicionPresupuestal", query = "SELECT c FROM Contratos c WHERE c.tipoAdicionPresupuestal = :tipoAdicionPresupuestal"),
+    @NamedQuery(name = "Contratos.findByTipoNumeroAutorizacionServicios", query = "SELECT c FROM Contratos c WHERE c.numeroAutorizacionServicios = :numeroAutorizacionServicios"),
+    @NamedQuery(name = "Contratos.findByFechaLiquidacionContrato", query = "SELECT c FROM Contratos c WHERE c.fechaLiquidacionContrato = :fechaLiquidacionContrato"),
+    @NamedQuery(name = "Contratos.findByPeriodoEjecucionDias", query = "SELECT c FROM Contratos c WHERE c.periodoEjecucionDias = :periodoEjecucionDias"),
+    @NamedQuery(name = "Contratos.findByPeriodoEjecucionMeses", query = "SELECT c FROM Contratos c WHERE c.periodoEjecucionMeses = :periodoEjecucionMeses"),
+    @NamedQuery(name = "Contratos.findByRubroPresupuestal", query = "SELECT c FROM Contratos c WHERE c.rubroPresupuestal = :rubroPresupuestal"),
+    @NamedQuery(name = "Contratos.findByValorHora", query = "SELECT c FROM Contratos c WHERE c.valorHora = :valorHora"),
+    @NamedQuery(name = "Contratos.findByEjecucionMultidestino", query = "SELECT c FROM Contratos c WHERE c.ejecucionMultidestino = :ejecucionMultidestino")})
 public class Contratos implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
@@ -71,39 +85,26 @@ public class Contratos implements Serializable {
     @Basic(optional = false)
     @Column(name = "id_contrato")
     private Integer idContrato;
-    @Basic(optional = false)
-    @NotNull
     @Column(name = "numero_de_contrato")
     private String numeroDeContrato;
-    @Basic(optional = false)
-    @NotNull
     @Column(name = "Fecha_suscripcion")
     @Temporal(TemporalType.DATE)
     private Date fechasuscripcion;
-    @Basic(optional = false)
-    @NotNull
     @Column(name = "fecha_inicio_contrato")
     @Temporal(TemporalType.DATE)
     private Date fechaInicioContrato;
-    @Basic(optional = false)
-    @NotNull
     @Column(name = "fecha_fin_contrato")
     @Temporal(TemporalType.DATE)
     private Date fechaFinContrato;
-    @Column(name = "plazo_dias")
-    private Integer plazoDias;
-    @Column(name = "plazo_meses")
-    private Short plazoMeses;
-    @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 500)
+    @Column(name = "plazo_numero_dias")
+    private Integer plazoNumeroDias;
     @Column(name = "objeto_contractual")
     private String objetoContractual;
     @Size(max = 4000)
     @Column(name = "obligaciones")
     private String obligaciones;
-    @Column(name = "valor_contrato")
-    private Long valorContrato;
+    @Column(name = "valor_inicial_contrato")
+    private Long valorInicialContrato;
     @Column(name = "primer_pago")
     private Integer primerPago;
     @Column(name = "ultimo_pago")
@@ -112,9 +113,9 @@ public class Contratos implements Serializable {
     private Short numeroDeMensualidades;
     @Column(name = "valor_mensual")
     private Integer valorMensual;
-    @Column(name = "fecha_anexo")
+    @Column(name = "fecha_estudio_mercado")
     @Temporal(TemporalType.DATE)
-    private Date fechaAnexo;
+    private Date fechaEstudioMercado;
     @Column(name = "fecha_de_autorizacion")
     @Temporal(TemporalType.DATE)
     private Date fechaDeAutorizacion;
@@ -124,11 +125,10 @@ public class Contratos implements Serializable {
     @Column(name = "fecha_de_idoneidad")
     @Temporal(TemporalType.DATE)
     private Date fechaDeIdoneidad;
-    @Column(name = "adicion_presupuestal")
-    private Integer adicionPresupuestal;
-    @Column(name = "adicion_plazo_nueva_fecha")
-    @Temporal(TemporalType.DATE)
-    private Date adicionPlazoNuevaFecha;
+    @Column(name = "valor_adicion_presupuestal")
+    private Integer valorAdicionPresupuestal;
+    @Column(name = "adicion_numero_dias")
+    private Integer adicionNumeroDias;
     @Column(name = "id_poliza")
     private Integer idPoliza;
     @Column(name = "id_cuentas_bancarias")
@@ -145,6 +145,50 @@ public class Contratos implements Serializable {
     @Column(name = "fecha_reg_presupuestal")
     @Temporal(TemporalType.DATE)
     private Date fechaRegPresupuestal;
+    @Column(name = "fecha_solicitud_contratacion")
+    @Temporal(TemporalType.DATE)
+    private Date fechaSolicitudContratacion;
+    @Column(name = "fecha_verificacion_plan_compras")
+    @Temporal(TemporalType.DATE)
+    private Date fechaVerificacionPlanCompras;
+    @Size(max = 45)
+    @Column(name = "numero_cdp")
+    private String numeroCdp;
+    @Column(name = "fecha_cdp")
+    @Temporal(TemporalType.DATE)
+    private Date fechaCdp;
+    @Size(max = 45)
+    @Column(name = "numero_acta_seleccion")
+    private String numeroActaSeleccion;
+    @Column(name = "fecha_acta_seleccion")
+    @Temporal(TemporalType.DATE)
+    private Date fechaActaSeleccion;
+    @Size(max = 45)
+    @Column(name = "numero_contrato_radicado")
+    private String numeroContratoRadicado;
+    @Column(name = "fecha_contrato_radicado")
+    @Temporal(TemporalType.DATE)
+    private Date fechaContratoRadicado;
+    @Size(max = 45)
+    @Column(name = "tipo_adicion_presupuestal")
+    private String tipoAdicionPresupuestal;
+    @Size(max = 45)
+    @Column(name = "numero_autorizacion_servicios")
+    private String numeroAutorizacionServicios;
+    @Column(name = "fecha_liquidacion_contrato")
+    @Temporal(TemporalType.DATE)
+    private Date fechaLiquidacionContrato;
+    @Column(name = "periodo_ejecucion_dias")
+    private Integer periodoEjecucionDias;
+    @Column(name = "periodo_ejecucion_meses")
+    private Integer periodoEjecucionMeses;
+    @Size(max = 50)
+    @Column(name = "rubro_presupuestal")
+    private String rubroPresupuestal;
+    @Column(name = "valor_hora")
+    private Integer valorHora;
+    @Column(name = "ejecucion_multidestino")
+    private boolean ejecucionMultidestino;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "idContrato")
     private List<SoportesDeDocumentos> soportesDeDocumentosList;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "idContrato")
@@ -219,20 +263,12 @@ public class Contratos implements Serializable {
         this.fechaFinContrato = fechaFinContrato;
     }
 
-    public Integer getPlazoDias() {
-        return plazoDias;
+    public Integer getPlazoNumeroDias() {
+        return plazoNumeroDias;
     }
 
-    public void setPlazoDias(Integer plazoDias) {
-        this.plazoDias = plazoDias;
-    }
-
-    public Short getPlazoMeses() {
-        return plazoMeses;
-    }
-
-    public void setPlazoMeses(Short plazoMeses) {
-        this.plazoMeses = plazoMeses;
+    public void setPlazoNumeroDias(Integer plazoNumeroDias) {
+        this.plazoNumeroDias = plazoNumeroDias;
     }
 
     public String getObjetoContractual() {
@@ -251,14 +287,15 @@ public class Contratos implements Serializable {
         this.obligaciones = obligaciones;
     }
 
-    public Long getValorContrato() {
-        return valorContrato;
+    public Long getValorInicialContrato() {
+        return valorInicialContrato;
     }
 
-    public void setValorContrato(Long valorContrato) {
-        this.valorContrato = valorContrato;
+    public void setValorInicialContrato(Long valorInicialContrato) {
+        this.valorInicialContrato = valorInicialContrato;
     }
 
+    
     public Integer getPrimerPago() {
         return primerPago;
     }
@@ -291,14 +328,15 @@ public class Contratos implements Serializable {
         this.valorMensual = valorMensual;
     }
 
-    public Date getFechaAnexo() {
-        return fechaAnexo;
+    public Date getFechaEstudioMercado() {
+        return fechaEstudioMercado;
     }
 
-    public void setFechaAnexo(Date fechaAnexo) {
-        this.fechaAnexo = fechaAnexo;
+    public void setFechaEstudioMercado(Date fechaEstudioMercado) {
+        this.fechaEstudioMercado = fechaEstudioMercado;
     }
 
+    
     public Date getFechaDeAutorizacion() {
         return fechaDeAutorizacion;
     }
@@ -323,22 +361,22 @@ public class Contratos implements Serializable {
         this.fechaDeIdoneidad = fechaDeIdoneidad;
     }
 
-    public Integer getAdicionPresupuestal() {
-        return adicionPresupuestal;
+    public Integer getValorAdicionPresupuestal() {
+        return valorAdicionPresupuestal;
     }
 
-    public void setAdicionPresupuestal(Integer adicionPresupuestal) {
-        this.adicionPresupuestal = adicionPresupuestal;
+    public void setValorAdicionPresupuestal(Integer valorAdicionPresupuestal) {
+        this.valorAdicionPresupuestal = valorAdicionPresupuestal;
     }
 
-    public Date getAdicionPlazoNuevaFecha() {
-        return adicionPlazoNuevaFecha;
+    public Integer getAdicionNumeroDias() {
+        return adicionNumeroDias;
     }
 
-    public void setAdicionPlazoNuevaFecha(Date adicionPlazoNuevaFecha) {
-        this.adicionPlazoNuevaFecha = adicionPlazoNuevaFecha;
+    public void setAdicionNumeroDias(Integer adicionNumeroDias) {
+        this.adicionNumeroDias = adicionNumeroDias;
     }
-
+    
     public Integer getIdPoliza() {
         return idPoliza;
     }
@@ -387,6 +425,133 @@ public class Contratos implements Serializable {
         this.fechaRegPresupuestal = fechaRegPresupuestal;
     }
 
+    public Date getFechaSolicitudContratacion() {
+        return fechaSolicitudContratacion;
+    }
+
+    public void setFechaSolicitudContratacion(Date fechaSolicitudContratacion) {
+        this.fechaSolicitudContratacion = fechaSolicitudContratacion;
+    }
+
+    public Date getFechaVerificacionPlanCompras() {
+        return fechaVerificacionPlanCompras;
+    }
+
+    public void setFechaVerificacionPlanCompras(Date fechaVerificacionPlanCompras) {
+        this.fechaVerificacionPlanCompras = fechaVerificacionPlanCompras;
+    }
+
+    public String getNumeroCdp() {
+        return numeroCdp;
+    }
+
+    public void setNumeroCdp(String numeroCdp) {
+        this.numeroCdp = numeroCdp;
+    }
+
+    public Date getFechaCdp() {
+        return fechaCdp;
+    }
+
+    public void setFechaCdp(Date fechaCdp) {
+        this.fechaCdp = fechaCdp;
+    }
+
+    public String getNumeroActaSeleccion() {
+        return numeroActaSeleccion;
+    }
+
+    public void setNumeroActaSeleccion(String numeroActaSeleccion) {
+        this.numeroActaSeleccion = numeroActaSeleccion;
+    }
+
+    public Date getFechaActaSeleccion() {
+        return fechaActaSeleccion;
+    }
+
+    public void setFechaActaSeleccion(Date fechaActaSeleccion) {
+        this.fechaActaSeleccion = fechaActaSeleccion;
+    }
+
+    public String getNumeroContratoRadicado() {
+        return numeroContratoRadicado;
+    }
+
+    public void setNumeroContratoRadicado(String numeroContratoRadicado) {
+        this.numeroContratoRadicado = numeroContratoRadicado;
+    }
+
+    public Date getFechaContratoRadicado() {
+        return fechaContratoRadicado;
+    }
+
+    public void setFechaContratoRadicado(Date fechaContratoRadicado) {
+        this.fechaContratoRadicado = fechaContratoRadicado;
+    }
+
+    public String getTipoAdicionPresupuestal() {
+        return tipoAdicionPresupuestal;
+    }
+
+    public void setTipoAdicionPresupuestal(String tipoAdicionPresupuestal) {
+        this.tipoAdicionPresupuestal = tipoAdicionPresupuestal;
+    }
+
+    public String getNumeroAutorizacionServicios() {
+        return numeroAutorizacionServicios;
+    }
+
+    public void setNumeroAutorizacionServicios(String numeroAutorizacionServicios) {
+        this.numeroAutorizacionServicios = numeroAutorizacionServicios;
+    }
+
+    public Date getFechaLiquidacionContrato() {
+        return fechaLiquidacionContrato;
+    }
+
+    public void setFechaLiquidacionContrato(Date fechaLiquidacionContrato) {
+        this.fechaLiquidacionContrato = fechaLiquidacionContrato;
+    }
+
+    public Integer getPeriodoEjecucionDias() {
+        return periodoEjecucionDias;
+    }
+
+    public void setPeriodoEjecucionDias(Integer periodoEjecucionDias) {
+        this.periodoEjecucionDias = periodoEjecucionDias;
+    }
+
+    public Integer getPeriodoEjecucionMeses() {
+        return periodoEjecucionMeses;
+    }
+
+    public void setPeriodoEjecucionMeses(Integer periodoEjecucionMeses) {
+        this.periodoEjecucionMeses = periodoEjecucionMeses;
+    }
+
+    public String getRubroPresupuestal() {
+        return rubroPresupuestal;
+    }
+
+    public void setRubroPresupuestal(String rubroPresupuestal) {
+        this.rubroPresupuestal = rubroPresupuestal;
+    }
+
+    public Integer getValorHora() {
+        return valorHora;
+    }
+
+    public void setValorHora(Integer valorHora) {
+        this.valorHora = valorHora;
+    }
+
+    public boolean isEjecucionMultidestino() {
+        return ejecucionMultidestino;
+    }
+
+    public void setEjecucionMultidestino(boolean ejecucionMultidestino) {
+        this.ejecucionMultidestino = ejecucionMultidestino;
+    }
     
     @XmlTransient
     public List<SoportesDeDocumentos> getSoportesDeDocumentosList() {
